@@ -1,0 +1,4320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+						</xsd:sequence>
+						<xsd:attribute name="name" use="required" type="xsd:string" />
+						<xsd:attribute name="type" type="xsd:string" />
+						<xsd:attribute name="mimetype" type="xsd:string" />
+						<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ok" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="cancel" xml:space="preserve">
+		<value>Cancel</value>
+	</data>
+	<data name="error" xml:space="preserve">
+		<value>Error</value>
+	</data>
+	<data name="unknown" xml:space="preserve">
+		<value>Something went wrong.
+Please try again later or contact our developers team for support</value>
+	</data>
+	<data name="auth_invalidCredential" xml:space="preserve">
+		<value>The IDP token or requestURL is invalid</value>
+	</data>
+	<data name="auth_userDisabled" xml:space="preserve">
+		<value>The user's account is disabled on the server</value>
+	</data>
+	<data name="auth_operationNotAllowed" xml:space="preserve">
+		<value>The administrator disabled sign in with the specified identity provider</value>
+	</data>
+	<data name="auth_emailAlreadyInUse" xml:space="preserve">
+		<value>The email used to attempt a sign up is already in use</value>
+	</data>
+	<data name="auth_invalidEmail" xml:space="preserve">
+		<value>The email is invalid</value>
+	</data>
+	<data name="auth_wrongPassword" xml:space="preserve">
+		<value>The user attempted sign in with a wrong password</value>
+	</data>
+	<data name="auth_codeTooManyRequests" xml:space="preserve">
+		<value>Too many requests were made to this service.
+Please, try again later</value>
+	</data>
+	<data name="auth_userNotFound" xml:space="preserve">
+		<value>The user account with the given credentials was not found.
+Would you like to create a new account?</value>
+	</data>
+	<data name="auth_accountExistsWithDifferentCredential" xml:space="preserve">
+		<value>Account linking is required</value>
+	</data>
+	<data name="auth_invalidUserToken" xml:space="preserve">
+		<value>User's saved auth credential is invalid, you need to sign in again</value>
+	</data>
+	<data name="auth_userTokenExpired" xml:space="preserve">
+		<value>The saved token has expired, for example, the user may have changed account password on another device. The user needs to sign in again on the device that made this request</value>
+	</data>
+	<data name="auth_userMismatch" xml:space="preserve">
+		<value>An attempt was made to reauthenticate with a user which is not the current user</value>
+	</data>
+	<data name="auth_credentialAlreadyInUse" xml:space="preserve">
+		<value>Attempt to link with a credential that has already been linked with a different Firebase account</value>
+	</data>
+	<data name="auth_missingPhoneNumber" xml:space="preserve">
+		<value>A phone number was not provided in a call to verify email</value>
+	</data>
+	<data name="auth_invalidPhoneNumber" xml:space="preserve">
+		<value>An invalid phone number was provided in a call to verify email</value>
+	</data>
+	<data name="auth_missingVerificationCode" xml:space="preserve">
+		<value>The phone auth credential was created with an empty verification code</value>
+	</data>
+	<data name="auth_invalidVerificationCode" xml:space="preserve">
+		<value>An invalid verification code was used in the verifyPhoneNumber request</value>
+	</data>
+	<data name="auth_missingVerificationID" xml:space="preserve">
+		<value>The phone auth credential was created with an empty verification ID</value>
+	</data>
+	<data name="auth_invalidVerificationID" xml:space="preserve">
+		<value>An invalid verification ID was used in the verifyPhoneNumber request</value>
+	</data>
+	<data name="auth_missingAppCredential" xml:space="preserve">
+		<value>The APNS device token is missing in the verifyClient request</value>
+	</data>
+	<data name="auth_invalidAppCredential" xml:space="preserve">
+		<value>An invalid APNS device token was used in the verifyClient request</value>
+	</data>
+	<data name="auth_sessionExpired" xml:space="preserve">
+		<value>The SMS code has expired</value>
+	</data>
+	<data name="auth_quotaExceeded" xml:space="preserve">
+		<value>The quota of SMS messages for a given project has been exceeded</value>
+	</data>
+	<data name="auth_notificationNotForwarded" xml:space="preserve">
+		<value>The app fails to forward remote notification to FIRAuth</value>
+	</data>
+	<data name="auth_appNotVerified" xml:space="preserve">
+		<value>The app could not be verified by Firebase during phone number authentication</value>
+	</data>
+	<data name="auth_captchaCheckFailed" xml:space="preserve">
+		<value>The reCAPTCHA token is not valid</value>
+	</data>
+	<data name="auth_signInUserInteractionFailure" xml:space="preserve">
+		<value>A general failure during a web sign-in flow</value>
+	</data>
+	<data name="auth_rejectedCredential" xml:space="preserve">
+		<value>The credential is rejected because it's misformed or mismatching</value>
+	</data>
+	<data name="auth_keychainError" xml:space="preserve">
+		<value>An error occurred while attempting to access the keychain</value>
+	</data>
+	<data name="auth_internalError" xml:space="preserve">
+		<value>An internal error occurred</value>
+	</data>
+	<data name="auth_malformedJWT" xml:space="preserve">
+		<value>A JWT fails to parse correctly</value>
+	</data>
+	<data name="bad_response_error_message_format" xml:space="preserve">
+		<value>Request failed with code: {0}</value>
+	</data>
+	<data name="no_token_for_the_user_error" xml:space="preserve">
+		<value>Something went wrong and the token identifier was not returned by the backend.
+Please, contact our developers team for support</value>
+	</data>
+	<data name="failed_to_open_db_model_error" xml:space="preserve">
+		<value>Failed to open database model</value>
+	</data>
+	<data name="auth_user_not_found_error" xml:space="preserve">
+		<value>Seems you are logged out</value>
+	</data>
+	<data name="failed_to_save_profile_to_db_error_format" xml:space="preserve">
+		<value>There was an error while trying to save current user profile to local database.
+This is a critical state. Please, try logging in again or contact our developers team for support.
+(Underlying database error: {0}</value>
+	</data>
+	<data name="failed_to_decode_data_error_format" xml:space="preserve">
+		<value>Received unexpected data from backend {0}, but please, try again later or contact out developers team for support.</value>
+	</data>
+	<data name="failed_to_register_customer_error" xml:space="preserve">
+		<value>Failed to register customer</value>
+	</data>
+	<data name="api_request_failed_error_format" xml:space="preserve">
+		<value>Network request failed with error: {0}</value>
+	</data>
+	<data name="failed_to_open_persistent_stack_error_format" xml:space="preserve">
+		<value>There was an error while trying to open local database. Please contact our developers team for support. (Error: {0})</value>
+	</data>
+	<data name="app_version_string_format" xml:space="preserve">
+		<value>Version {0}.{1}</value>
+	</data>
+	<data name="get_estimate_button_title" xml:space="preserve">
+		<value>Get an estimate</value>
+	</data>
+	<data name="welcome_message" xml:space="preserve">
+		<value>Welcome to Skandia X, We just need your phone number to get started</value>
+	</data>
+	<data name="next_button_title" xml:space="preserve">
+		<value>Next</value>
+	</data>
+	<data name="verify_your_number_title" xml:space="preserve">
+		<value>Verify your phone number</value>
+	</data>
+	<data name="enter_phone_number_description" xml:space="preserve">
+		<value>Info – You can use it to log in to the app, but we won't call</value>
+	</data>
+	<data name="first_name" xml:space="preserve">
+		<value>First name</value>
+	</data>
+	<data name="last_name" xml:space="preserve">
+		<value>Surname</value>
+	</data>
+	<data name="address" xml:space="preserve">
+		<value>Address</value>
+	</data>
+	<data name="meter_number_hint" xml:space="preserve">
+		<value>Hint: It can be found on your invoice or bill</value>
+	</data>
+	<data name="personal_details_title" xml:space="preserve">
+		<value>Please enter your details so we can set you up:</value>
+	</data>
+	<data name="personal_number_input_title" xml:space="preserve">
+		<value>Looks like you’re a new customer. We just need to search your address:</value>
+	</data>
+	<data name="terms_and_conditions_title_format" xml:space="preserve">
+		<value>Thanks, {0}. We just need you to read a few things before switching to us:</value>
+	</data>
+	<data name="confirm_details_title" xml:space="preserve">
+		<value>Confirm your details:</value>
+	</data>
+	<data name="confirm_found_details_title" xml:space="preserve">
+		<value>Change the address if you have another meter you would like to add instead</value>
+	</data>
+	<data name="meter_input_title_format" xml:space="preserve">
+		<value>Meter number</value>
+	</data>
+	<data name="house_number" xml:space="preserve">
+		<value>First line of address</value>
+	</data>
+	<data name="city" xml:space="preserve">
+		<value>City</value>
+	</data>
+	<data name="postcode" xml:space="preserve">
+		<value>Postcode</value>
+	</data>
+	<data name="confirm" xml:space="preserve">
+		<value>Confirm</value>
+	</data>
+	<data name="agree" xml:space="preserve">
+		<value>Agree</value>
+	</data>
+	<data name="unsuccessful_meter_number_overview_title" xml:space="preserve">
+		<value>Oh no! We couldn't seem to find your meter number</value>
+	</data>
+	<data name="verify_your_number_did_not_receive_sms_code" xml:space="preserve">
+		<value>Didn’t receive a code?</value>
+	</data>
+	<data name="verify_your_number_resend" xml:space="preserve">
+		<value>Resend</value>
+	</data>
+	<data name="retry" xml:space="preserve">
+		<value>Retry</value>
+	</data>
+	<data name="sign_out" xml:space="preserve">
+		<value>Sign out</value>
+	</data>
+	<data name="login" xml:space="preserve">
+		<value>Login</value>
+	</data>
+	<data name="waiting_title" xml:space="preserve">
+		<value>Please wait while we retrieve your details</value>
+	</data>
+	<data name="waiting_subtitle" xml:space="preserve">
+		<value>This will only take a moment</value>
+	</data>
+	<data name="n_digit_SSN" xml:space="preserve">
+		<value>11-digits SSN</value>
+	</data>
+	<data name="ssn_description" xml:space="preserve">
+		<value>Your SSN is safe with us. Read our Privacy Agreement</value>
+	</data>
+	<data name="edit_your_details" xml:space="preserve">
+		<value>Edit your details</value>
+	</data>
+	<data name="personal_number" xml:space="preserve">
+		<value>Norwegian national identity number</value>
+	</data>
+	<data name="no_meter_number_error_message_title" xml:space="preserve">
+		<value>Oh no, we were still unable to find your meter number</value>
+	</data>
+	<data name="edit_your_address_title" xml:space="preserve">
+		<value>Edit details</value>
+	</data>
+	<data name="someone_else_meter_subtitle" xml:space="preserve">
+		<value>Please enter the details of the person the power meter is registered under</value>
+	</data>
+	<data name="birthdate" xml:space="preserve">
+		<value>Birth date</value>
+	</data>
+	<data name="look_for_meter_number" xml:space="preserve">
+		<value>Look for meter number</value>
+	</data>
+	<data name="enter_meter_number_tip_1" xml:space="preserve">
+		<value>The actual meter should have the number on it.</value>
+	</data>
+	<data name="enter_meter_number_tip_2" xml:space="preserve">
+		<value>Find the number on your meter or on any former electricity invoice, marked  as “Målepunkt ID”.  </value>
+	</data>
+	<data name="additional_information_title" xml:space="preserve">
+		<value>Add contact information</value>
+	</data>
+	<data name="additional_information_phone_number_title" xml:space="preserve">
+		<value>Phone number</value>
+	</data>
+	<data name="additional_information_phone_number_subtitle" xml:space="preserve">
+		<value>This will be your way of logging into the service, we won't call you</value>
+	</data>
+	<data name="additional_information_email_address_title" xml:space="preserve">
+		<value>E-mail address</value>
+	</data>
+	<data name="email_address_subtitle" xml:space="preserve">
+		<value>We’ll use this to send you important information</value>
+	</data>
+	<data name="verify_your_number_subtitle_format" xml:space="preserve">
+		<value>A SMS with a 6-digit verification code was just sent to {0}</value>
+	</data>
+	<data name="read_full_contract" xml:space="preserve">
+		<value>Read full agreement</value>
+	</data>
+	<data name="have_read_contract" xml:space="preserve">
+		<value>You have read and understood the agreement</value>
+	</data>
+	<data name="contract_accept_receiving_information" xml:space="preserve">
+		<value>You accept receiving important information (invoices, reports) on your e-mail address</value>
+	</data>
+	<data name="contract_accept_receiving_news" xml:space="preserve">
+		<value>You accept receiving product news and additional information on your e-mail address</value>
+	</data>
+	<data name="all_good_found_meter_title" xml:space="preserve">
+		<value>All good! 
+We found your details and meter number</value>
+	</data>
+	<data name="registered_under_someone_else_button_title" xml:space="preserve">
+		<value>It’s registered under someone else</value>
+	</data>
+	<data name="enter_meter_number_placeholder" xml:space="preserve">
+		<value>Enter meter manually</value>
+	</data>
+	<data name="update_details" xml:space="preserve">
+		<value>Update details</value>
+	</data>
+	<data name="country" xml:space="preserve">
+		<value>Country</value>
+	</data>
+	<data name="first_name_with_placeholder" xml:space="preserve">
+		<value>First name e.g. &quot;Annabel&quot;</value>
+	</data>
+	<data name="last_name_required" xml:space="preserve">
+		<value>Last name is required</value>
+	</data>
+	<data name="ssn_invalid" xml:space="preserve">
+		<value>Your 11 digit personal number format is invalid.</value>
+	</data>
+	<data name="sms_code_invalid" xml:space="preserve">
+		<value>Enter your 6 digit SMS code</value>
+	</data>
+	<data name="address_invalid" xml:space="preserve">
+		<value>Address is required</value>
+	</data>
+	<data name="postcode_invalid" xml:space="preserve">
+		<value>Postcode is required</value>
+	</data>
+	<data name="city_invalid" xml:space="preserve">
+		<value>City is required</value>
+	</data>
+	<data name="country_invalid" xml:space="preserve">
+		<value>Country is required.</value>
+	</data>
+	<data name="phone_invalid" xml:space="preserve">
+		<value>Your phone number is invalid</value>
+	</data>
+	<data name="meter_number_invalid" xml:space="preserve">
+		<value>Enter your 16 digit meter number</value>
+	</data>
+	<data name="nope_start_from_the_beginning" xml:space="preserve">
+		<value>Start from the beginning</value>
+	</data>
+	<data name="yes_restart" xml:space="preserve">
+		<value>Start over</value>
+	</data>
+	<data name="restore_fail_title" xml:space="preserve">
+		<value>Failed to delete previously entered details.
+Please, try again.</value>
+	</data>
+	<data name="customer_details_not_found_error_message" xml:space="preserve">
+		<value>We could not find your details.
+Please, make sure entered details are correct and there are no typos.</value>
+	</data>
+	<data name="user_not_found_error_message" xml:space="preserve">
+		<value>Could not find the user. If you don't have an account yet, please go through the onboarding.</value>
+	</data>
+	<data name="existing_customer_collision" xml:space="preserve">
+		<value>Seems like there is a registered customer with the given phone number.
+If you have registered before, please sign in.</value>
+	</data>
+	<data name="invalid_email_address_error_message" xml:space="preserve">
+		<value>Entered email seems to be invalid. Please, return and put your valid email address.</value>
+	</data>
+	<data name="invalid_address_error_message" xml:space="preserve">
+		<value>Entered address seems to be invalid. Please, go back and check if there are no mistakes in the entered address.</value>
+	</data>
+	<data name="unsupported_country_error_message" xml:space="preserve">
+		<value>Unfortunately we don't support the country which was entered yet.</value>
+	</data>
+	<data name="welcome_name_format" xml:space="preserve">
+		<value>Welcome, {0}</value>
+	</data>
+	<data name="invoice_setup_title" xml:space="preserve">
+		<value>Your invoices will be here when your setup is complete</value>
+	</data>
+	<data name="complete_profile_setup" xml:space="preserve">
+		<value>Complete profile setup</value>
+	</data>
+	<data name="settings" xml:space="preserve">
+		<value>Settings</value>
+	</data>
+	<data name="past_invoices" xml:space="preserve">
+		<value>Past invoices</value>
+	</data>
+	<data name="faq" xml:space="preserve">
+		<value>FAQ</value>
+	</data>
+	<data name="invite_friends" xml:space="preserve">
+		<value>Invite friends</value>
+	</data>
+	<data name="tap_to_continue" xml:space="preserve">
+		<value>Tap to continue</value>
+	</data>
+	<data name="hey_format" xml:space="preserve">
+		<value>Hey, {0}</value>
+	</data>
+	<data name="payment_setup_description_page1" xml:space="preserve">
+		<value>elKompis is here to help you, to simply manage your energy consumption and your bills</value>
+	</data>
+	<data name="payment_setup_description_page2" xml:space="preserve">
+		<value>Always stay in control. We will help you manage your spending and advise you on how to stay on track.</value>
+	</data>
+	<data name="payment_setup_description_page3" xml:space="preserve">
+		<value>We have a range of flexible options to help you keep on top of your bills</value>
+	</data>
+	<data name="your_budget" xml:space="preserve">
+		<value>Your budget</value>
+	</data>
+	<data name="your_payment_method" xml:space="preserve">
+		<value>2. Your payment method</value>
+	</data>
+	<data name="setup_budget_title_1" xml:space="preserve">
+		<value>1. Your budget</value>
+	</data>
+	<data name="setup_budget_subtitle" xml:space="preserve">
+		<value>We help you manage your spending as well as your carbon footprint by giving you a good overview.</value>
+	</data>
+	<data name="estimated_cost_per_month_format" xml:space="preserve">
+		<value>Estimated costs per month: {0}</value>
+	</data>
+	<data name="per_month" xml:space="preserve">
+		<value>per month</value>
+	</data>
+	<data name="setup_payment_method_title" xml:space="preserve">
+		<value>Set up your payment method</value>
+	</data>
+	<data name="setup_payment_method_subtitle" xml:space="preserve">
+		<value>You will get an electricity bill once a month. You can choose how you want to pay. Choose the payment solution that suits you best.</value>
+	</data>
+	<data name="recurring_payments" xml:space="preserve">
+		<value>Recurring payments</value>
+	</data>
+	<data name="recurring_payments_subtitle" xml:space="preserve">
+		<value>Your payment is withdrawn when it's due every month</value>
+	</data>
+	<data name="connecting_vipps_account" xml:space="preserve">
+		<value>Connecting your Vipps account</value>
+	</data>
+	<data name="add_card_option_subtitle" xml:space="preserve">
+		<value>Add your debit or credit card</value>
+	</data>
+	<data name="pay_as_you_go" xml:space="preserve">
+		<value>Pay as you go</value>
+	</data>
+	<data name="pay_as_you_go_selection_subtitle" xml:space="preserve">
+		<value>Flexibility and control over paying preliminary costs</value>
+	</data>
+	<data name="pay_invoice_manually" xml:space="preserve">
+		<value>Pay invoice manually</value>
+	</data>
+	<data name="pay_manually_subtitle" xml:space="preserve">
+		<value>View and pay your invoice once it's ready</value>
+	</data>
+	<data name="payment_provider_title" xml:space="preserve">
+		<value>What payment provider do you use?</value>
+	</data>
+	<data name="methods_of_payments_title" xml:space="preserve">
+		<value>Choose method of payment</value>
+	</data>
+	<data name="payment_provider_subtitle" xml:space="preserve">
+		<value>Choose a preferred method of payment. You can change this setting at any time.</value>
+	</data>
+	<data name="selected_payment_method_format" xml:space="preserve">
+		<value>Selected: {0}</value>
+	</data>
+	<data name="vipps_subtitle" xml:space="preserve">
+		<value>Quick and easy payments</value>
+	</data>
+	<data name="recommended" xml:space="preserve">
+		<value>Recommended</value>
+	</data>
+	<data name="vipps_title" xml:space="preserve">
+		<value>Vipps</value>
+	</data>
+	<data name="add_card" xml:space="preserve">
+		<value>Add a card</value>
+	</data>
+	<data name="card_subtitle" xml:space="preserve">
+		<value>Please fill in your payment details. We will only bill your invoice once it’s ready.</value>
+	</data>
+	<data name="enter_payments_details" xml:space="preserve">
+		<value>Enter your payment details</value>
+	</data>
+	<data name="card_number" xml:space="preserve">
+		<value>Card number</value>
+	</data>
+	<data name="cardholder_name" xml:space="preserve">
+		<value>Cardholder name</value>
+	</data>
+	<data name="expiry_date" xml:space="preserve">
+		<value>Expiry date</value>
+	</data>
+	<data name="security_code" xml:space="preserve">
+		<value>Security code</value>
+	</data>
+	<data name="review_payment_details_title" xml:space="preserve">
+		<value>Please review your details</value>
+	</data>
+	<data name="monthly_budget_subtitle" xml:space="preserve">
+		<value>Monthly budget</value>
+	</data>
+	<data name="change" xml:space="preserve">
+		<value>Change</value>
+	</data>
+	<data name="payment" xml:space="preserve">
+		<value>Payment</value>
+	</data>
+	<data name="payment_type" xml:space="preserve">
+		<value>Payment Type</value>
+	</data>
+	<data name="when_will_I_receive_invoice" xml:space="preserve">
+		<value>Date to receive invoice</value>
+	</data>
+	<data name="payment_setup_success_message_format" xml:space="preserve">
+		<value>You’ve just set up {0} with {1}!</value>
+	</data>
+	<data name="payment_setup_success_subtitle_format" xml:space="preserve">
+		<value>You should expect to see your invoice ready on {0}.</value>
+	</data>
+	<data name="finally_" xml:space="preserve">
+		<value>Finally,</value>
+	</data>
+	<data name="dont_miss_anything" xml:space="preserve">
+		<value>Get reminders</value>
+	</data>
+	<data name="notifications_tab_subtitle_1" xml:space="preserve">
+		<value>Get full control of your energy consumption and reminders on your monthly invoices. Get push notifications on tips to reduce costs.</value>
+	</data>
+	<data name="yes_please" xml:space="preserve">
+		<value>Yes please</value>
+	</data>
+	<data name="not_now" xml:space="preserve">
+		<value>Postpone</value>
+	</data>
+	<data name="going_to_set_up" xml:space="preserve">
+		<value>Home is where the heart and the heat is</value>
+	</data>
+	<data name="setup_budget_title" xml:space="preserve">
+		<value>Set up your monthly spending budgets</value>
+	</data>
+	<data name="setup_budget_comparison_format" xml:space="preserve">
+		<value>Similar houses to you typically range between {0} - {1} around this time of the year</value>
+	</data>
+	<data name="setup_energy_target_title" xml:space="preserve">
+		<value>Set up your monthly budget</value>
+	</data>
+	<data name="will_do_later" xml:space="preserve">
+		<value>Do this later</value>
+	</data>
+	<data name="done" xml:space="preserve">
+		<value>Done</value>
+	</data>
+	<data name="card_checkout_fee_format" xml:space="preserve">
+		<value>Please note that you will be charged a small one time processing fee of {0}. Shall we proceed?</value>
+	</data>
+	<data name="monthly_energy_target" xml:space="preserve">
+		<value>Monthly Budget</value>
+	</data>
+	<data name="card" xml:space="preserve">
+		<value>Card</value>
+	</data>
+	<data name="none_title" xml:space="preserve">
+		<value>None</value>
+	</data>
+	<data name="add" xml:space="preserve">
+		<value>Add</value>
+	</data>
+	<data name="unpaid" xml:space="preserve">
+		<value>Unpaid</value>
+	</data>
+	<data name="due_date_format" xml:space="preserve">
+		<value>Due {0}</value>
+	</data>
+	<data name="current_invoice" xml:space="preserve">
+		<value>Current invoice</value>
+	</data>
+	<data name="you_are_billed_format" xml:space="preserve">
+		<value>You are billed {0}</value>
+	</data>
+	<data name="make_quick_payment" xml:space="preserve">
+		<value>Make a quick payment</value>
+	</data>
+	<data name="manually" xml:space="preserve">
+		<value>Manually</value>
+	</data>
+	<data name="monthly" xml:space="preserve">
+		<value>monthly</value>
+	</data>
+	<data name="pay_now" xml:space="preserve">
+		<value>Pay now</value>
+	</data>
+	<data name="pay_amount_format" xml:space="preserve">
+		<value>Pay {0}</value>
+	</data>
+	<data name="confirm_payment_method" xml:space="preserve">
+		<value>Please confirm your payment method</value>
+	</data>
+	<data name="debit_card" xml:space="preserve">
+		<value>Debit card</value>
+	</data>
+	<data name="make_a_payment" xml:space="preserve">
+		<value>Make a payment</value>
+	</data>
+	<data name="select_payment_method_subtitle_format" xml:space="preserve">
+		<value>Select your chosen payment method and pay up to your full invoice of {0}</value>
+	</data>
+	<data name="debit_or_credit_card" xml:space="preserve">
+		<value>Debit or credit card</value>
+	</data>
+	<data name="thank_you_for_payment_title" xml:space="preserve">
+		<value>Thank you for your payment of {0}</value>
+	</data>
+	<data name="successful_payment_details" xml:space="preserve">
+		<value>Your invoice is fully paid and we will update your account as soon as this payment is fully processed. A receipt will be sent to your email.</value>
+	</data>
+	<data name="all_good" xml:space="preserve">
+		<value>Complete</value>
+	</data>
+	<data name="view_details" xml:space="preserve">
+		<value>View details</value>
+	</data>
+	<data name="paid" xml:space="preserve">
+		<value>Paid</value>
+	</data>
+	<data name="tx_failed_with_status_format" xml:space="preserve">
+		<value>Transaction failed with status: {0}</value>
+	</data>
+	<data name="waiting_for_payment_result" xml:space="preserve">
+		<value>Waiting for payment result</value>
+	</data>
+	<data name="waiting_for_agreement_result" xml:space="preserve">
+		<value>Waiting for agreement result</value>
+	</data>
+	<data name="insights" xml:space="preserve">
+		<value>Insights</value>
+	</data>
+	<data name="breakdown" xml:space="preserve">
+		<value>Breakdown</value>
+	</data>
+	<data name="tips" xml:space="preserve">
+		<value>Tips</value>
+	</data>
+	<data name="forecast" xml:space="preserve">
+		<value>Forecast</value>
+	</data>
+	<data name="day_total_usage_format" xml:space="preserve">
+		<value>{0} you used {1}</value>
+	</data>
+	<data name="day_average_usage_format" xml:space="preserve">
+		<value>On average you use {0} per hour</value>
+	</data>
+	<data name="week_total_usage_format" xml:space="preserve">
+		<value>So far you’ve used {0}</value>
+	</data>
+	<data name="week_average_usage_format" xml:space="preserve">
+		<value>On average you use {0} per day</value>
+	</data>
+	<data name="month_total_usage_format" xml:space="preserve">
+		<value>So far you’ve used {0}</value>
+	</data>
+	<data name="month_average_usage_format" xml:space="preserve">
+		<value>On average you use {0} a week</value>
+	</data>
+	<data name="year_total_usage_format" xml:space="preserve">
+		<value>So far this year you’ve used {0}</value>
+	</data>
+	<data name="year_average_usage_format" xml:space="preserve">
+		<value>On average you use {0} per month</value>
+	</data>
+	<data name="day" xml:space="preserve">
+		<value>Day</value>
+	</data>
+	<data name="week" xml:space="preserve">
+		<value>Week</value>
+	</data>
+	<data name="month" xml:space="preserve">
+		<value>Month</value>
+	</data>
+	<data name="year" xml:space="preserve">
+		<value>Year</value>
+	</data>
+	<data name="similar_household_graph_explanation" xml:space="preserve">
+		<value>Similar homes</value>
+	</data>
+	<data name="distribution_tab" xml:space="preserve">
+		<value>Fordeling</value>
+	</data>
+	<data name="whoops_no_data_to_show" xml:space="preserve">
+		<value>Whoops, no data to show</value>
+	</data>
+	<data name="need_more_data_for_forecast" xml:space="preserve">
+		<value>We need at least one month of data. Check back then!</value>
+	</data>
+	<data name="no_sufficient_data_for_distribution" xml:space="preserve">
+		<value>Vi har dessverre ikke nok informasjon til å analyse fordeling av strømforbruket ditt enda. Sjekk igjen snart.</value>
+	</data>
+	<data name="no_enough_data_for_similar_homes" xml:space="preserve">
+		<value>We haven't collected enough data to compare you to similar homes in your area. Check back next month!</value>
+	</data>
+	<data name="this_month_format" xml:space="preserve">
+		<value>Expected in {0}</value>
+	</data>
+	<data name="distribution_description_format" xml:space="preserve">
+		<value>Mesteparten av strømmen du bruker går til {0}. Vanligvis bruker du rundt {1} på {0} i måneden.</value>
+	</data>
+	<data name="you" xml:space="preserve">
+		<value>Your home</value>
+	</data>
+	<data name="similar_household_tab" xml:space="preserve">
+		<value>Comparison</value>
+	</data>
+	<data name="unknown_forecast" xml:space="preserve">
+		<value>At this point there is no enough data about your and similar houses usage</value>
+	</data>
+	<data name="cooking" xml:space="preserve">
+		<value>cooking</value>
+	</data>
+	<data name="washing" xml:space="preserve">
+		<value>washing clothes</value>
+	</data>
+	<data name="always_on" xml:space="preserve">
+		<value>what's always on</value>
+	</data>
+	<data name="lighting" xml:space="preserve">
+		<value>lights</value>
+	</data>
+	<data name="consumer_electronics" xml:space="preserve">
+		<value>consumer electronics</value>
+	</data>
+	<data name="heating" xml:space="preserve">
+		<value>Oppvarming</value>
+	</data>
+	<data name="solar" xml:space="preserve">
+		<value>solar panels</value>
+	</data>
+	<data name="total" xml:space="preserve">
+		<value>Total</value>
+	</data>
+	<data name="average_usage_tab" xml:space="preserve">
+		<value>Average</value>
+	</data>
+	<data name="usage_forecast" xml:space="preserve">
+		<value>Usage forecast</value>
+	</data>
+	<data name="not_enough_data_for_forecast" xml:space="preserve">
+		<value>We need at least 1 year
+worth of data to forecast
+your consumption</value>
+	</data>
+	<data name="average_temperature" xml:space="preserve">
+		<value>Average temperature</value>
+	</data>
+	<data name="usage" xml:space="preserve">
+		<value>Usage</value>
+	</data>
+	<data name="price" xml:space="preserve">
+		<value>What it costs</value>
+	</data>
+	<data name="forecast_this_month_title" xml:space="preserve">
+		<value>Forecast this month</value>
+	</data>
+	<data name="thank_you_for_payment_body" xml:space="preserve">
+		<value>You've paid the preliminary amount for this month. The amount will be reflected in your profile and a receipt will be sent to your email.</value>
+	</data>
+	<data name="make_payment_hello_name" xml:space="preserve">
+		<value>Hello {0}</value>
+	</data>
+	<data name="make_payment_latest_invoice" xml:space="preserve">
+		<value>Latest invoice</value>
+	</data>
+	<data name="make_payment_savings_footprint" xml:space="preserve">
+		<value>Your impact</value>
+	</data>
+	<data name="make_payment_invoice_summary" xml:space="preserve">
+		<value>Invoice Summary</value>
+	</data>
+	<data name="make_payment_statement_amount" xml:space="preserve">
+		<value>Total to pay</value>
+	</data>
+	<data name="make_payment_spot_price" xml:space="preserve">
+		<value>Spot price ({0} øre/kWh)</value>
+	</data>
+	<data name="make_payment_total_consumption" xml:space="preserve">
+		<value>Total consumption</value>
+	</data>
+	<data name="make_payment_total_to_pay" xml:space="preserve">
+		<value>Total to pay</value>
+	</data>
+	<data name="make_payment_total_charges_date" xml:space="preserve">
+		<value>Total charges due by {0}</value>
+	</data>
+	<data name="make_payment_view_full_invoice" xml:space="preserve">
+		<value>View full invoice</value>
+	</data>
+	<data name="make_payment_invoice" xml:space="preserve">
+		<value>Invoice</value>
+	</data>
+	<data name="make_payment_invoices" xml:space="preserve">
+		<value>Invoices</value>
+	</data>
+	<data name="make_payment_fixed_fee" xml:space="preserve">
+		<value>Monthly fee</value>
+	</data>
+	<data name="make_payment_moms" xml:space="preserve">
+		<value>Value Added Tax</value>
+	</data>
+	<data name="breakdown_source_cleaning" xml:space="preserve">
+		<value>Cleaning</value>
+	</data>
+	<data name="breakdown_source_consumer_electronics" xml:space="preserve">
+		<value>Elektroniske apparater</value>
+	</data>
+	<data name="breakdown_source_cooking" xml:space="preserve">
+		<value>Matlaging</value>
+	</data>
+	<data name="data_insights_this_time_last_year" xml:space="preserve">
+		<value>This time last year</value>
+	</data>
+	<data name="data_insights_your_total_impact" xml:space="preserve">
+		<value>My savings</value>
+	</data>
+	<data name="data_insights_energy_source" xml:space="preserve">
+		<value>Energy source</value>
+	</data>
+	<data name="type_of_house_title" xml:space="preserve">
+		<value>Your household profile</value>
+	</data>
+	<data name="type_of_house_body" xml:space="preserve">
+		<value>Tell us about your home to get customised insight to what you use power on, and tailored tips to where you can spend less</value>
+	</data>
+	<data name="type_of_home_title" xml:space="preserve">
+		<value>What type of home do you live in?</value>
+	</data>
+	<data name="type_of_home_apartment" xml:space="preserve">
+		<value>Apartment</value>
+	</data>
+	<data name="type_of_home_house" xml:space="preserve">
+		<value>House</value>
+	</data>
+	<data name="type_of_home_townhouse" xml:space="preserve">
+		<value>Townhouse</value>
+	</data>
+	<data name="type_of_home_holiday_home" xml:space="preserve">
+		<value>Cabin</value>
+	</data>
+	<data name="type_of_home_semidetached" xml:space="preserve">
+		<value>Semi-detached</value>
+	</data>
+	<data name="other" xml:space="preserve">
+		<value>Other</value>
+	</data>
+	<data name="size_of_home_title" xml:space="preserve">
+		<value>What size is your house?</value>
+	</data>
+	<data name="home_occupants_title" xml:space="preserve">
+		<value>How many people live there?</value>
+	</data>
+	<data name="home_occupants_adults" xml:space="preserve">
+		<value>Adults</value>
+	</data>
+	<data name="home_occupants_children" xml:space="preserve">
+		<value>Children (0-18 yrs)</value>
+	</data>
+	<data name="primary_heating_title" xml:space="preserve">
+		<value>What type of heating does your home have?</value>
+	</data>
+	<data name="primary_heating_body" xml:space="preserve">
+		<value>First tap your primary heating source, then your secondary heating source</value>
+	</data>
+	<data name="primary_heating_floor" xml:space="preserve">
+		<value>Electric floor heating</value>
+	</data>
+	<data name="primary_heating_space_heaters" xml:space="preserve">
+		<value>Electric space heaters</value>
+	</data>
+	<data name="primary_heating_heatpump" xml:space="preserve">
+		<value>Heatpump</value>
+	</data>
+	<data name="primary_heating_wood" xml:space="preserve">
+		<value>Woodstove</value>
+	</data>
+	<data name="primary_heating_district" xml:space="preserve">
+		<value>Sentralvarme</value>
+	</data>
+	<data name="primary_heating_hydro" xml:space="preserve">
+		<value>Hydronics</value>
+	</data>
+	<data name="primary_heating_heatpump_body" xml:space="preserve">
+		<value>Hvilken type varmepumpe bruker du?</value>
+	</data>
+	<data name="primary_heating_extra_selected" xml:space="preserve">
+		<value>Category selected: {0}</value>
+	</data>
+	<data name="primary_heating_extra_airtoair" xml:space="preserve">
+		<value>Ordinær luftvarmepumpe</value>
+	</data>
+	<data name="primary_heating_extra_exhaust" xml:space="preserve">
+		<value>Avtrekksvarmepumpe</value>
+	</data>
+	<data name="primary_heating_extra_geothermal" xml:space="preserve">
+		<value>Jordvarmepumpe</value>
+	</data>
+	<data name="primary_heating_extra_airtowater" xml:space="preserve">
+		<value>Luft-til-vann varmepumpe</value>
+	</data>
+	<data name="kitchen_appliances_title" xml:space="preserve">
+		<value>Which kitchen appliances do you have?</value>
+	</data>
+	<data name="kitchen_appliances_stove" xml:space="preserve">
+		<value>Electric stove</value>
+	</data>
+	<data name="kitchen_appliances_oven" xml:space="preserve">
+		<value>Electric oven</value>
+	</data>
+	<data name="kitchen_appliances_oven_gas" xml:space="preserve">
+		<value>Gas oven</value>
+	</data>
+	<data name="kitchen_appliances_stove_gas" xml:space="preserve">
+		<value>Gas stove</value>
+	</data>
+	<data name="kitchen_appliances_microwave" xml:space="preserve">
+		<value>Microwave</value>
+	</data>
+	<data name="kitchen_appliances_dishwasher" xml:space="preserve">
+		<value>Dishwasher</value>
+	</data>
+	<data name="kitchen_appliances_washing_machine" xml:space="preserve">
+		<value>Washing machine</value>
+	</data>
+	<data name="kitchen_appliances_dryer" xml:space="preserve">
+		<value>Dryer</value>
+	</data>
+	<data name="kitchen_appliances_freezer" xml:space="preserve">
+		<value>Freezer</value>
+	</data>
+	<data name="kitchen_appliances_fridge" xml:space="preserve">
+		<value>Fridge</value>
+	</data>
+	<data name="kitchen_appliances_kombi" xml:space="preserve">
+		<value>Fridge/freezer combination</value>
+	</data>
+	<data name="electronic_appliances_title" xml:space="preserve">
+		<value>Select any entertainment electronics you have:</value>
+	</data>
+	<data name="electronic_appliances_laptop" xml:space="preserve">
+		<value>Laptops</value>
+	</data>
+	<data name="electronic_appliances_game" xml:space="preserve">
+		<value>Game consoles</value>
+	</data>
+	<data name="electronic_appliances_desktop" xml:space="preserve">
+		<value>Desktop PC</value>
+	</data>
+	<data name="additional_items_title" xml:space="preserve">
+		<value>Do you have any of these?</value>
+	</data>
+	<data name="additional_items_solar_panel" xml:space="preserve">
+		<value>Solar panels</value>
+	</data>
+	<data name="additional_items_solar_power" xml:space="preserve">
+		<value>Power (kWp) e.g. “123”</value>
+	</data>
+	<data name="additional_items_solar_power_short" xml:space="preserve">
+		<value>Power (kWp)</value>
+	</data>
+	<data name="additional_items_electric_car" xml:space="preserve">
+		<value>Elbil</value>
+	</data>
+	<data name="additional_items_swimming" xml:space="preserve">
+		<value>Swimming pool</value>
+	</data>
+	<data name="household_profile_fetch_details_body" xml:space="preserve">
+		<value>This will allow us to personalise your experience of consumption</value>
+	</data>
+	<data name="household_profile_fetch_details_title" xml:space="preserve">
+		<value>We are gathering your household details</value>
+	</data>
+	<data name="household_profile_success_title" xml:space="preserve">
+		<value>Shining, shimmering, splendid!</value>
+	</data>
+	<data name="household_profile_success_body" xml:space="preserve">
+		<value>You will now get more accurate data analysis and personalised insights</value>
+	</data>
+	<data name="methods_of_payment_subtitle" xml:space="preserve">
+		<value>This will be your default method of payment. You can change this at any time</value>
+	</data>
+	<data name="Welcome_sales_pitch" xml:space="preserve">
+		<value>SIMPLY
+INSIGHTFUL
+ENERGY</value>
+	</data>
+	<data name="Welcome_get_started_button" xml:space="preserve">
+		<value>Get started</value>
+	</data>
+	<data name="price_concept_1_title" xml:space="preserve">
+		<value>Be in total control of your electricity prices and consumption</value>
+	</data>
+	<data name="price_concept_1_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="skip_topright" xml:space="preserve">
+		<value>Skip</value>
+	</data>
+	<data name="price_concept_2_title" xml:space="preserve">
+		<value>We profit 0% on your electricity consumption</value>
+	</data>
+	<data name="price_concept_2_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="price_concept_3_title" xml:space="preserve">
+		<value>One agreement, no binding period</value>
+	</data>
+	<data name="price_concept_3_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="price_concept_3_button" xml:space="preserve">
+		<value>Switch to elKompis</value>
+	</data>
+	<data name="join_the_community_title" xml:space="preserve">
+		<value>Join the community</value>
+	</data>
+	<data name="join_the_community_body" xml:space="preserve">
+		<value>Fill in personal details and SSN so that we can fetch your energy meter for you</value>
+	</data>
+	<data name="join_the_community_info" xml:space="preserve">
+		<value>It will only take a couple of minutes</value>
+	</data>
+	<data name="join_the_community_1_title" xml:space="preserve">
+		<value>Personal information</value>
+	</data>
+	<data name="join_the_community_1_body" xml:space="preserve">
+		<value>Look up your information via your SSN</value>
+	</data>
+	<data name="join_the_community_2_title" xml:space="preserve">
+		<value>Meter number</value>
+	</data>
+	<data name="join_the_community_2_body" xml:space="preserve">
+		<value>Approve the meter number or add a different one</value>
+	</data>
+	<data name="join_the_community_3_title" xml:space="preserve">
+		<value>Contact information</value>
+	</data>
+	<data name="join_the_community_3_body" xml:space="preserve">
+		<value>Phone number and e-mail</value>
+	</data>
+	<data name="join_the_community_4_title" xml:space="preserve">
+		<value>Agreement</value>
+	</data>
+	<data name="join_the_community_4_body" xml:space="preserve">
+		<value>Read and sign the agreement</value>
+	</data>
+	<data name="last_name_with_placeholder" xml:space="preserve">
+		<value>Last name e.g. &quot;Lake&quot;</value>
+	</data>
+	<data name="SSN_with_placeholder" xml:space="preserve">
+		<value>11-digit SSN</value>
+	</data>
+	<data name="error_message_closed_app_before_signup" xml:space="preserve">
+		<value>Did something happen?  No problem! </value>
+	</data>
+	<data name="error_message_closed_app_before_signup_subtitle" xml:space="preserve">
+		<value>You might have closed the app before your registration was finished. Please continue from where you left off, or start from scratch.</value>
+	</data>
+	<data name="error_message_closed_app_before_signup_invisible_button" xml:space="preserve">
+		<value>Start from the beginning</value>
+	</data>
+	<data name="continue_button_title" xml:space="preserve">
+		<value>Continue</value>
+	</data>
+	<data name="successful_meter_number_overview_field" xml:space="preserve">
+		<value>Meter ID number</value>
+	</data>
+	<data name="successful_meter_number_overview_title" xml:space="preserve">
+		<value>Check that the address is right</value>
+	</data>
+	<data name="successful_meter_number_overview_button" xml:space="preserve">
+		<value>Edit address</value>
+	</data>
+	<data name="successful_meter_number_button" xml:space="preserve">
+		<value>Confirm</value>
+	</data>
+	<data name="additional_information_body" xml:space="preserve">
+		<value>We will need this to make sure you receive important documents like your invoice</value>
+	</data>
+	<data name="verification_code" xml:space="preserve">
+		<value>Your verification code is:</value>
+	</data>
+	<data name="unsuccessful_meter_number_overview_field" xml:space="preserve">
+		<value>Is the address below correct?</value>
+	</data>
+	<data name="no_meter_number_error_message_body" xml:space="preserve">
+		<value>One of us in he team, completes your order for you. We collect the necessary information and get in touch if we need some help from you.</value>
+	</data>
+	<data name="no_meter_number_error_message_button" xml:space="preserve">
+		<value>Get in touch</value>
+	</data>
+	<data name="enter_meter_number_title" xml:space="preserve">
+		<value>Enter your meter number</value>
+	</data>
+	<data name="contract_title" xml:space="preserve">
+		<value>Our agreement</value>
+	</data>
+	<data name="contract_body" xml:space="preserve">
+		<value>When you sign, you acknowledge that you have read and agree with the terms below.</value>
+	</data>
+	<data name="contract_accept_button" xml:space="preserve">
+		<value>Sign</value>
+	</data>
+	<data name="sign_contract_confirmation_screen_title" xml:space="preserve">
+		<value>Nice to be elKompis with you</value>
+	</data>
+	<data name="sign_contract_confirmation_screen_body" xml:space="preserve">
+		<value>We're setting everything up to make the switch! It takes about two working days.</value>
+	</data>
+	<data name="sign_contract_confirmation_screen_accept_button" xml:space="preserve">
+		<value>Sign the agreement</value>
+	</data>
+	<data name="confirmation_screen_notifications_title" xml:space="preserve">
+		<value>We will let you know when your account is ready</value>
+	</data>
+	<data name="confirmation_screen_notifications_body" xml:space="preserve">
+		<value>It might take a while until the account is ready. We will let you know when that is unless you turn off all notifications.</value>
+	</data>
+	<data name="confirmation_screen_notifications_accept_button" xml:space="preserve">
+		<value>Get notified</value>
+	</data>
+	<data name="decline_button" xml:space="preserve">
+		<value>Turn off notifications</value>
+	</data>
+	<data name="confirmation_screen_payment_method_title" xml:space="preserve">
+		<value>Set up your payment method</value>
+	</data>
+	<data name="confirmation_screen_payment_method_body" xml:space="preserve">
+		<value>Keep on top of your bills with a tap of the button. Don’t worry, you can change this at any time in your settings.</value>
+	</data>
+	<data name="confirmation_screen_payment_method_accept_button" xml:space="preserve">
+		<value>Choose payment method</value>
+	</data>
+	<data name="successful_payment_setup_title" xml:space="preserve">
+		<value>You’ve got the power!</value>
+	</data>
+	<data name="successful_payment_setup_body" xml:space="preserve">
+		<value>Now that you've set up your payment method, let's start exploring inside the app</value>
+	</data>
+	<data name="successful_payment_setup_button" xml:space="preserve">
+		<value>Complete</value>
+	</data>
+	<data name="home_screen_setup_household_header" xml:space="preserve">
+		<value>{0}’s house</value>
+	</data>
+	<data name="home_screen_address_field" xml:space="preserve">
+		<value>{0}</value>
+	</data>
+	<data name="home_screen_personalise_title" xml:space="preserve">
+		<value>Hello, {0}! Let’s personalise your account.</value>
+	</data>
+	<data name="home_screen_household_menu_title" xml:space="preserve">
+		<value>Set up your household profile</value>
+	</data>
+	<data name="home_screen_household_menu_body" xml:space="preserve">
+		<value>Size, number of people, appliances</value>
+	</data>
+	<data name="home_screen_household_bottom_text" xml:space="preserve">
+		<value>Your usage information will be analysed soon</value>
+	</data>
+	<data name="notification_welcome_message_title" xml:space="preserve">
+		<value>Welcome to elKompis, {0}!</value>
+	</data>
+	<data name="notification_welcome_message" xml:space="preserve">
+		<value>Take a look around the app and complete your household profile for more personalised data.</value>
+	</data>
+	<data name="notification_contract_processing_title" xml:space="preserve">
+		<value>Your account is ready soon</value>
+	</data>
+	<data name="notification_contract_processing" xml:space="preserve">
+		<value>Hang tight! We will notify you within 2 working days once it’s complete.</value>
+	</data>
+	<data name="notifications_tab_subtitle_2" xml:space="preserve">
+		<value>Past</value>
+	</data>
+	<data name="notifications_tab_subtitle_2_body" xml:space="preserve">
+		<value>You have no past notifications yet!</value>
+	</data>
+	<data name="home_screen_payment_menu_title" xml:space="preserve">
+		<value>Select your payment method</value>
+	</data>
+	<data name="home_screen_payment_menu_body" xml:space="preserve">
+		<value>How do you prefer to pay your invoices?</value>
+	</data>
+	<data name="home_screen_processing_documents_title" xml:space="preserve">
+		<value>Hello, {0}! We are just preparing your account</value>
+	</data>
+	<data name="home_screen_popup_documents_processed_title" xml:space="preserve">
+		<value>Your account is ready soon</value>
+	</data>
+	<data name="home_screen_popup_documents_processed_body" xml:space="preserve">
+		<value>It will take around 2 working days to get your account ready. Please contact us if you have any questions.</value>
+	</data>
+	<data name="home_screen_popup_documents_processed_invisible_button" xml:space="preserve">
+		<value>Contact elKompis</value>
+	</data>
+	<data name="notification_contract_approved_module_title" xml:space="preserve">
+		<value>Your account is fully connected!</value>
+	</data>
+	<data name="notification_contract_approved_module_body" xml:space="preserve">
+		<value>You now have full access to the app. Check it out!</value>
+	</data>
+	<data name="got_it" xml:space="preserve">
+		<value>Explore</value>
+	</data>
+	<data name="homescreen_usage_this_week" xml:space="preserve">
+		<value>Energy usage this week</value>
+	</data>
+	<data name="homescreen_outdoor_temperature_format" xml:space="preserve">
+		<value>Outside temp</value>
+	</data>
+	<data name="homescreen_price_per_hour_format" xml:space="preserve">
+		<value>{0} øre this hour</value>
+	</data>
+	<data name="home_screen_your_data_button" xml:space="preserve">
+		<value>Usage analysis</value>
+	</data>
+	<data name="homescreen_yesterday_format" xml:space="preserve">
+		<value>Yesterday's usage</value>
+	</data>
+	<data name="notification_contract_approved_setup_module_body" xml:space="preserve">
+		<value>You will have full access to the app once you’ve completed the full set up.</value>
+	</data>
+	<data name="home_screen_post_onboarding_body" xml:space="preserve">
+		<value>Hey! Please complete your profile before we get started</value>
+	</data>
+	<data name="profile_percentage_complete" xml:space="preserve">
+		<value>Your profile is {0} %% complete</value>
+	</data>
+	<data name="vipps_tx_cancelled" xml:space="preserve">
+		<value>Vipps payment was rejected</value>
+	</data>
+	<data name="water_heating" xml:space="preserve">
+		<value>water heating</value>
+	</data>
+	<data name="ev" xml:space="preserve">
+		<value>EV charging</value>
+	</data>
+	<data name="cooling" xml:space="preserve">
+		<value>cooling your home</value>
+	</data>
+	<data name="cleaning" xml:space="preserve">
+		<value>cleaning</value>
+	</data>
+	<data name="fridge_and_freezer" xml:space="preserve">
+		<value>fridge and freezer</value>
+	</data>
+	<data name="current_energy_producer_tab" xml:space="preserve">
+		<value>Where the power comes from</value>
+	</data>
+	<data name="current_price_drop" xml:space="preserve">
+		<value>There will be low prices, sinking to {0} øre around {1} to {2} today</value>
+	</data>
+	<data name="please_enter_your_details" xml:space="preserve">
+		<value>Let's locate your meter</value>
+	</data>
+	<data name="vipps_agreement_rejected" xml:space="preserve">
+		<value>Vipps agreement was rejected</value>
+	</data>
+	<data name="no_meter_number_title" xml:space="preserve">
+		<value>Oh no, we couldn’t seem to find your meter number</value>
+	</data>
+	<data name="no_meter_number_subtitle" xml:space="preserve">
+		<value>It might be that the meter is registered on someone else in your household, or that your personal details needs adjusting.</value>
+	</data>
+	<data name="your_impact_footprint_tab" xml:space="preserve">
+		<value>Footprint</value>
+	</data>
+	<data name="your_impact_savings_tab" xml:space="preserve">
+		<value>Savings</value>
+	</data>
+	<data name="your_impact_total_savings" xml:space="preserve">
+		<value>Total savings this year</value>
+	</data>
+	<data name="your_impact_ice_cream" xml:space="preserve">
+		<value>Saved in ice cream cones</value>
+	</data>
+	<data name="your_impact_graph_explanation" xml:space="preserve">
+		<value>This is based on yearly consumption data of {0} electricity from Strømpris.no</value>
+	</data>
+	<data name="your_impact_CO2" xml:space="preserve">
+		<value>CO2 saved by using only 100 % renewable energy</value>
+	</data>
+	<data name="your_impact_trees_planted" xml:space="preserve">
+		<value>Spruce trees saving CO2</value>
+	</data>
+	<data name="your_impact_where_does_my_energy_come_from" xml:space="preserve">
+		<value>The origin of your electricity</value>
+	</data>
+	<data name="your_impact_graph_title" xml:space="preserve">
+		<value>elKompis is cheaper than most energy companies</value>
+	</data>
+	<data name="completely_green" xml:space="preserve">
+		<value>100 %% renewable</value>
+	</data>
+	<data name="home_screen_with_monthly_data_title" xml:space="preserve">
+		<value>You’ve used {0} so far in {1}</value>
+	</data>
+	<data name="where_does_my_energy_come_from_body" xml:space="preserve">
+		<value>Your energy comes from 100 %% renewable resources. elKompis sources its energy from hydropower.</value>
+	</data>
+	<data name="enig_customers" xml:space="preserve">
+		<value>elKompis customers</value>
+	</data>
+	<data name="other_providers" xml:space="preserve">
+		<value>Other providers</value>
+	</data>
+	<data name="less" xml:space="preserve">
+		<value>less</value>
+	</data>
+	<data name="more" xml:space="preserve">
+		<value>more</value>
+	</data>
+	<data name="forecast_descripiton_format" xml:space="preserve">
+		<value>You're predicted to spend {0} this month and consume {1}.</value>
+	</data>
+	<data name="forecast_description_format_with_comparison" xml:space="preserve">
+		<value>Your power consumption is predicted to be {0} and {1} this month. That is {2}%% {3} energy and {4}%% {5} than last month.</value>
+	</data>
+	<data name="the_6_you_use_most" xml:space="preserve">
+		<value>The 6 you use most</value>
+	</data>
+	<data name="complete_household_profile" xml:space="preserve">
+		<value>Describe your household</value>
+	</data>
+	<data name="mid_week_no_forecast" xml:space="preserve">
+		<value>Whoops, we don’t have enough data to forecast your consumption</value>
+	</data>
+	<data name="invoice_details" xml:space="preserve">
+		<value>Details</value>
+	</data>
+	<data name="source_graph_renewables" xml:space="preserve">
+		<value>Renewables</value>
+	</data>
+	<data name="source_graph_non_renewables" xml:space="preserve">
+		<value>Non-renewables</value>
+	</data>
+	<data name="add_card_button" xml:space="preserve">
+		<value>Add card</value>
+	</data>
+	<data name="your_monthly_budget" xml:space="preserve">
+		<value>Your {0} budget</value>
+	</data>
+	<data name="set_up_your_budget" xml:space="preserve">
+		<value>Set up your budget</value>
+	</data>
+	<data name="no_bills_to_show_here_yet" xml:space="preserve">
+		<value>No invoices in sight, yet!</value>
+	</data>
+	<data name="no_bills_to_show_here_setup_profile" xml:space="preserve">
+		<value>You need to complete your profile setup before you can see your invoices</value>
+	</data>
+	<data name="profile_page_budget_tab" xml:space="preserve">
+		<value>Budget</value>
+	</data>
+	<data name="profile_page_your_bill_tab" xml:space="preserve">
+		<value>Your bill</value>
+	</data>
+	<data name="profile_set_up_budget_body" xml:space="preserve">
+		<value>Stay in control of your consumption and keep track of how much you’re spending</value>
+	</data>
+	<data name="profile_budget_under_info" xml:space="preserve">
+		<value>{0} under budget</value>
+	</data>
+	<data name="profile_budget_over_info" xml:space="preserve">
+		<value>{0} over budget</value>
+	</data>
+	<data name="profile_left_to_pay_this_month" xml:space="preserve">
+		<value>left to pay this month</value>
+	</data>
+	<data name="profile_paid_so_far" xml:space="preserve">
+		<value>paid so far this month</value>
+	</data>
+	<data name="payment_setup_selection_title" xml:space="preserve">
+		<value>How would you like to pay your bills?</value>
+	</data>
+	<data name="payment_setup_selection_subtitle" xml:space="preserve">
+		<value>Choose between the methods below, to pay via the app. You can change these settings at any time.</value>
+	</data>
+	<data name="enter_payment_details_subtitle" xml:space="preserve">
+		<value>Please fill in your payment details. We will only bill your invoice once it’s ready</value>
+	</data>
+	<data name="bambora" xml:space="preserve">
+		<value>Secure payments provided by Worldline</value>
+	</data>
+	<data name="what_appliances_title" xml:space="preserve">
+		<value>What appliances do you have at home?</value>
+	</data>
+	<data name="How_are_savings_calculated" xml:space="preserve">
+		<value>How are my savings calculated?</value>
+	</data>
+	<data name="how_are_savings_calulated_body" xml:space="preserve">
+		<value>Our formula compares your consumption with how much you would have spent with other providers</value>
+	</data>
+	<data name="so_far" xml:space="preserve">
+		<value>So far</value>
+	</data>
+	<data name="amount_paid" xml:space="preserve">
+		<value>Amount paid</value>
+	</data>
+	<data name="download_invoice" xml:space="preserve">
+		<value>Download invoice</value>
+	</data>
+	<data name="download_invoice_subtitle" xml:space="preserve">
+		<value>Your invoice will be exported as a PDF under the “Documents” part of your phone</value>
+	</data>
+	<data name="download_invoice_button" xml:space="preserve">
+		<value>Download as a PDF • {0} KB</value>
+	</data>
+	<data name="add_new_card" xml:space="preserve">
+		<value>Add a new card</value>
+	</data>
+	<data name="review_payment" xml:space="preserve">
+		<value>Review payment</value>
+	</data>
+	<data name="please_select_payment_option" xml:space="preserve">
+		<value>Please select your payment option</value>
+	</data>
+	<data name="review_payment_info_user_agreement" xml:space="preserve">
+		<value>By pressing Pay, I authorise this scheduled payment in accordance with the elKompis user agreement.</value>
+	</data>
+	<data name="view_most_recent_statement" xml:space="preserve">
+		<value>View most recent statement</value>
+	</data>
+	<data name="pay_button" xml:space="preserve">
+		<value>Pay</value>
+	</data>
+	<data name="remaining" xml:space="preserve">
+		<value>{0} remaining</value>
+	</data>
+	<data name="view_monthly_statement" xml:space="preserve">
+		<value>View {0} statement</value>
+	</data>
+	<data name="payment_automatically_taken_countdown" xml:space="preserve">
+		<value>The invoice is automatically paid in:</value>
+	</data>
+	<data name="automatic_payment_countdown" xml:space="preserve">
+		<value>{0} more {1}</value>
+	</data>
+	<data name="winter_consumption_budget" xml:space="preserve">
+		<value>This is your monthly consumption budget</value>
+	</data>
+	<data name="jan_to_april" xml:space="preserve">
+		<value>Jan to April</value>
+	</data>
+	<data name="within_budget" xml:space="preserve">
+		<value>{0} within your budget</value>
+	</data>
+	<data name="your_home" xml:space="preserve">
+		<value>Your home</value>
+	</data>
+	<data name="your_car" xml:space="preserve">
+		<value>Your car</value>
+	</data>
+	<data name="billing_information" xml:space="preserve">
+		<value>Billing information</value>
+	</data>
+	<data name="push_nofications" xml:space="preserve">
+		<value>Push notifications</value>
+	</data>
+	<data name="chat_to_us" xml:space="preserve">
+		<value>Contact us</value>
+	</data>
+	<data name="bill_issued" xml:space="preserve">
+		<value>Bill issued {0}</value>
+	</data>
+	<data name="set_up_budget_button" xml:space="preserve">
+		<value>Make budget</value>
+	</data>
+	<data name="lets_set_up_budget" xml:space="preserve">
+		<value>Set up your monthly budget</value>
+	</data>
+	<data name="budget_aim" xml:space="preserve">
+		<value>How much do you aim to spend per month?</value>
+	</data>
+	<data name="between_months_format" xml:space="preserve">
+		<value>Between the {0} of {1} - {2}</value>
+	</data>
+	<data name="successful_budget" xml:space="preserve">
+		<value>Many a little makes a mickle</value>
+	</data>
+	<data name="successful_budget_body" xml:space="preserve">
+		<value>With your new monthly budget, you'll be able to keep track of your consumption and manage ways to always hit that target</value>
+	</data>
+	<data name="more_data_similar_households" xml:space="preserve">
+		<value>We need more information on your household profile to compare you to similar households</value>
+	</data>
+	<data name="jan" xml:space="preserve">
+		<value>Jan</value>
+	</data>
+	<data name="feb" xml:space="preserve">
+		<value>Februar</value>
+	</data>
+	<data name="mar" xml:space="preserve">
+		<value>Mar</value>
+	</data>
+	<data name="apr" xml:space="preserve">
+		<value>Apr</value>
+	</data>
+	<data name="may" xml:space="preserve">
+		<value>May</value>
+	</data>
+	<data name="jun" xml:space="preserve">
+		<value>Jun</value>
+	</data>
+	<data name="jul" xml:space="preserve">
+		<value>Jul</value>
+	</data>
+	<data name="aug" xml:space="preserve">
+		<value>Aug</value>
+	</data>
+	<data name="sep" xml:space="preserve">
+		<value>Sep</value>
+	</data>
+	<data name="oct" xml:space="preserve">
+		<value>Oct</value>
+	</data>
+	<data name="nov" xml:space="preserve">
+		<value>Nov</value>
+	</data>
+	<data name="dec" xml:space="preserve">
+		<value>Dec</value>
+	</data>
+	<data name="mon" xml:space="preserve">
+		<value>Mon</value>
+	</data>
+	<data name="tues" xml:space="preserve">
+		<value>Tues</value>
+	</data>
+	<data name="wed" xml:space="preserve">
+		<value>Wed</value>
+	</data>
+	<data name="thurs" xml:space="preserve">
+		<value>Thurs</value>
+	</data>
+	<data name="fri" xml:space="preserve">
+		<value>Fri</value>
+	</data>
+	<data name="sat" xml:space="preserve">
+		<value>Sat</value>
+	</data>
+	<data name="sun" xml:space="preserve">
+		<value>Sun</value>
+	</data>
+	<data name="better_than" xml:space="preserve">
+		<value>That’s {0} %% better than houses similar to you</value>
+	</data>
+	<data name="avg_temp" xml:space="preserve">
+		<value>Average temperature</value>
+	</data>
+	<data name="avg_usage" xml:space="preserve">
+		<value>Average usage</value>
+	</data>
+	<data name="consumption_nok" xml:space="preserve">
+		<value>Spending ({0})</value>
+	</data>
+	<data name="view_invoice_breakdown" xml:space="preserve">
+		<value>View Invoice Breakdown</value>
+	</data>
+	<data name="strompris" xml:space="preserve">
+		<value>Spotpris</value>
+	</data>
+	<data name="qty_format" xml:space="preserve">
+		<value>Qty: {0}</value>
+	</data>
+	<data name="completely_renewable" xml:space="preserve">
+		<value>elKompis has 100 % renewable energy</value>
+	</data>
+	<data name="home_complete_profile" xml:space="preserve">
+		<value>Hello, {0}! Please complete your profile below to get full access</value>
+	</data>
+	<data name="about" xml:space="preserve">
+		<value>About</value>
+	</data>
+	<data name="about_body" xml:space="preserve">
+		<value>FAQ, terms &amp; conditions and data policy</value>
+	</data>
+	<data name="notifications" xml:space="preserve">
+		<value>Notifications</value>
+	</data>
+	<data name="notifications_body" xml:space="preserve">
+		<value>Tailor your push notifications</value>
+	</data>
+	<data name="payments" xml:space="preserve">
+		<value>Payments</value>
+	</data>
+	<data name="payments_body" xml:space="preserve">
+		<value>View and edit your billing details here</value>
+	</data>
+	<data name="past_invoices_body" xml:space="preserve">
+		<value>View your invoice history</value>
+	</data>
+	<data name="account" xml:space="preserve">
+		<value>Account</value>
+	</data>
+	<data name="account_body" xml:space="preserve">
+		<value>Everything regarding your login and house details</value>
+	</data>
+	<data name="personal_details" xml:space="preserve">
+		<value>Your information</value>
+	</data>
+	<data name="email" xml:space="preserve">
+		<value>E-mail</value>
+	</data>
+	<data name="telephone" xml:space="preserve">
+		<value>Telephone</value>
+	</data>
+	<data name="edit" xml:space="preserve">
+		<value>Edit</value>
+	</data>
+	<data name="edit_first_name" xml:space="preserve">
+		<value>Update first name</value>
+	</data>
+	<data name="house_details" xml:space="preserve">
+		<value>House details</value>
+	</data>
+	<data name="house_type" xml:space="preserve">
+		<value>Your residence</value>
+	</data>
+	<data name="overdue" xml:space="preserve">
+		<value>Overdue</value>
+	</data>
+	<data name="payment_error" xml:space="preserve">
+		<value>Payment error</value>
+	</data>
+	<data name="type" xml:space="preserve">
+		<value>Type</value>
+	</data>
+	<data name="size" xml:space="preserve">
+		<value>Size</value>
+	</data>
+	<data name="people" xml:space="preserve">
+		<value>People</value>
+	</data>
+	<data name="appliances" xml:space="preserve">
+		<value>Appliances</value>
+	</data>
+	<data name="emai_and_SMS" xml:space="preserve">
+		<value>Email and SMS</value>
+	</data>
+	<data name="other_notification_types" xml:space="preserve">
+		<value>Other notification types</value>
+	</data>
+	<data name="marketing" xml:space="preserve">
+		<value>Marketing</value>
+	</data>
+	<data name="data_and_insights" xml:space="preserve">
+		<value>Data &amp; Insights</value>
+	</data>
+	<data name="anomalies" xml:space="preserve">
+		<value>Anomalies</value>
+	</data>
+	<data name="invoice_alerts" xml:space="preserve">
+		<value>Invoice alerts</value>
+	</data>
+	<data name="pause_all_switch" xml:space="preserve">
+		<value>Pause all</value>
+	</data>
+	<data name="pause_all_notifications_message" xml:space="preserve">
+		<value>Pause all notifications</value>
+	</data>
+	<data name="pause_all_notifications_body" xml:space="preserve">
+		<value>You won’t receive push notifications, but you’ll be able to see new notifications when you open elKompis.</value>
+	</data>
+	<data name="pause_all_button" xml:space="preserve">
+		<value>Pause all</value>
+	</data>
+	<data name="invoice_alerts_settings" xml:space="preserve">
+		<value>Get notification alerts when you’ve got an upcoming invoice – that way you will never miss one!</value>
+	</data>
+	<data name="notification" xml:space="preserve">
+		<value>Notification</value>
+	</data>
+	<data name="notification_track_consumption" xml:space="preserve">
+		<value>Keep track of your consumption</value>
+	</data>
+	<data name="notification_track_consumption_message" xml:space="preserve">
+		<value>For features like this one, you’ll need to turn on your notifications (we will do our best to only show what’s relevant for you)</value>
+	</data>
+	<data name="turn_on_notifications_button" xml:space="preserve">
+		<value>Turn on notifications</value>
+	</data>
+	<data name="anomalies_notification_message" xml:space="preserve">
+		<value>Keep notified when something seems out of the ordinary with your consumption or bills so you can stay on top of your savings.</value>
+	</data>
+	<data name="data_and_insights_message" xml:space="preserve">
+		<value>Get trend reports and tips on how you’re doing on average weekly or monthly.</value>
+	</data>
+	<data name="marketing_notification_message" xml:space="preserve">
+		<value>Receive up to date information on the latest offers and deals.</value>
+	</data>
+	<data name="latest" xml:space="preserve">
+		<value>Latest</value>
+	</data>
+	<data name="notification_invoice_ready" xml:space="preserve">
+		<value>View the invoice in your profile</value>
+	</data>
+	<data name="upcoming_invoice" xml:space="preserve">
+		<value>Upcoming invoice</value>
+	</data>
+	<data name="upcoming_invoice_notification" xml:space="preserve">
+		<value>Your {0} invoice is due in {1}. Make a payment soon to avoid extra fees.</value>
+	</data>
+	<data name="notification_consumption_surge_title" xml:space="preserve">
+		<value>Consumption surge</value>
+	</data>
+	<data name="weekly_gas_report" xml:space="preserve">
+		<value>Weekly Gas Report</value>
+	</data>
+	<data name="weekly_gas_report_message" xml:space="preserve">
+		<value>You used {0} of energy and spent {1} between {2} and {3}</value>
+	</data>
+	<data name="notification_high_forecast_title" xml:space="preserve">
+		<value>High monthly forecast predicted</value>
+	</data>
+	<data name="monthly_usage_report" xml:space="preserve">
+		<value>Monthly usage Report</value>
+	</data>
+	<data name="on_track" xml:space="preserve">
+		<value>You’re on track!</value>
+	</data>
+	<data name="on_track_notification" xml:space="preserve">
+		<value>You’re on track to go {0} %% under your budget this month. Great stuff!</value>
+	</data>
+	<data name="time_now" xml:space="preserve">
+		<value>Energy price per hour</value>
+	</data>
+	<data name="on_day" xml:space="preserve">
+		<value>On {0}</value>
+	</data>
+	<data name="enter_amount_to_pay" xml:space="preserve">
+		<value>Please enter the amount you’d like to pay</value>
+	</data>
+	<data name="enter_amount_to_pay_body" xml:space="preserve">
+		<value>Pay the total amount of {0} or less today. Pay the remainder of your bill at the end of the month.</value>
+	</data>
+	<data name="paying_with" xml:space="preserve">
+		<value>Paying with</value>
+	</data>
+	<data name="sorry_payment_error" xml:space="preserve">
+		<value>Sorry, something went wrong!</value>
+	</data>
+	<data name="sorry_payment_error_body" xml:space="preserve">
+		<value>Sorry, this payment method was declined by your payment provider and cannot be used with elKompis. Please contact your payment provider for further assistance or try again.</value>
+	</data>
+	<data name="try_again" xml:space="preserve">
+		<value>Try again</value>
+	</data>
+	<data name="back_to_profile" xml:space="preserve">
+		<value>Back to profile</value>
+	</data>
+	<data name="efficient_compared_to_similar_homes_format" xml:space="preserve">
+		<value>Denne måneden er strømforbruket ditt {0} %% {1} effektivt enn i tilsvarende hjem.</value>
+	</data>
+	<data name="payment_issue" xml:space="preserve">
+		<value>There’s a payment issue</value>
+	</data>
+	<data name="payment_issue_body" xml:space="preserve">
+		<value>Your default payment method was invalid. Please update your billing settings or contact your payment provider.</value>
+	</data>
+	<data name="review_payment_method" xml:space="preserve">
+		<value>Review payment method</value>
+	</data>
+	<data name="card_expired" xml:space="preserve">
+		<value>Your card has expired</value>
+	</data>
+	<data name="card_expired_body" xml:space="preserve">
+		<value>Your default payment method is expired. Please update your billing settings or change your method.</value>
+	</data>
+	<data name="payment_details" xml:space="preserve">
+		<value>Payment Details</value>
+	</data>
+	<data name="subscription_type" xml:space="preserve">
+		<value>Subscription type</value>
+	</data>
+	<data name="payment_method" xml:space="preserve">
+		<value>Payment method</value>
+	</data>
+	<data name="add_payment_method" xml:space="preserve">
+		<value>Add payment method</value>
+	</data>
+	<data name="payment_issue_banner" xml:space="preserve">
+		<value>There was an issue with your payment. Please update your payment info.</value>
+	</data>
+	<data name="payment_expired_banner" xml:space="preserve">
+		<value>Your payment method is expired. Please update your payment info.</value>
+	</data>
+	<data name="total_impact_and_savings_kr" xml:space="preserve">
+		<value>I have saved {0}</value>
+	</data>
+	<data name="total_impact_and_savings_trees" xml:space="preserve">
+		<value>My impact equals {0} reduced CO2 emission</value>
+	</data>
+	<data name="total_impact_and_savings_CO2" xml:space="preserve">
+		<value>I have reduced emmission of {0} of CO2</value>
+	</data>
+	<data name="change_address_question" xml:space="preserve">
+		<value>Trying to register under another address?</value>
+	</data>
+	<data name="change_address" xml:space="preserve">
+		<value>Change address</value>
+	</data>
+	<data name="update_address_button" xml:space="preserve">
+		<value>Save changes</value>
+	</data>
+	<data name="meter_number_placeholder" xml:space="preserve">
+		<value>e.g. 900900</value>
+	</data>
+	<data name="auth_generic_error" xml:space="preserve">
+		<value>An authentication error has occurred, please try again or contact our developers team for support</value>
+	</data>
+	<data name="locating_your_meter_number" xml:space="preserve">
+		<value>Locating your meter number</value>
+	</data>
+	<data name="amount_kwh_day_format" xml:space="preserve">
+		<value>{0} / day</value>
+	</data>
+	<data name="invoice_pay_amount_now_button" xml:space="preserve">
+		<value>Pay {0} now</value>
+	</data>
+	<data name="invoice_energy_source_enig_title" xml:space="preserve">
+		<value>Enig</value>
+	</data>
+	<data name="select_payment_method_subtitle_full_format" xml:space="preserve">
+		<value>Select your chosen payment method and pay your full invoice of {0}.</value>
+	</data>
+	<data name="required_field_invalid" xml:space="preserve">
+		<value>This field is required</value>
+	</data>
+	<data name="sms_resent_message" xml:space="preserve">
+		<value>Another SMS with a 6-digit verification code was just sent to you.</value>
+	</data>
+	<data name="general_error" xml:space="preserve">
+		<value>An error has occurred, please try again later.</value>
+	</data>
+	<data name="network_error" xml:space="preserve">
+		<value>We could not complete your request, please make sure you are connected to the internet and try again.</value>
+	</data>
+	<data name="ssn_not_found_error" xml:space="preserve">
+		<value>The SSN you entered is invalid or does not match the entered name.</value>
+	</data>
+	<data name="invalid_address_error" xml:space="preserve">
+		<value>The address you entered is invalid.</value>
+	</data>
+	<data name="existing_customer_collision_error" xml:space="preserve">
+		<value>The phone number you entered is currently assigned to a different customer.</value>
+	</data>
+	<data name="must_accept_terms_error" xml:space="preserve">
+		<value>Please confirm that you have read and understood the agreement.</value>
+	</data>
+	<data name="must_accept_important_emails_error" xml:space="preserve">
+		<value>Please confirm that you agree to receive important information by email.</value>
+	</data>
+	<data name="invalid_sms_code_error" xml:space="preserve">
+		<value>The code you entered is invalid.</value>
+	</data>
+	<data name="wrong_sms_code_error" xml:space="preserve">
+		<value>The code you entered is wrong.</value>
+	</data>
+	<data name="vipps_agreement_failed" xml:space="preserve">
+		<value>We could not setup your Vipps subscription, please try again.</value>
+	</data>
+	<data name="vipps_transaction_failed" xml:space="preserve">
+		<value>We could not complete your Vipps transaction, please try again.</value>
+	</data>
+	<data name="first_name_required" xml:space="preserve">
+		<value>First name is required.</value>
+	</data>
+	<data name="spruce_trees_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} spruce tree&quot;,&quot;other&quot;:&quot;{0} spruce trees&quot;}</value>
+	</data>
+	<data name="breakdown_source_heating" xml:space="preserve">
+		<value>Heating</value>
+	</data>
+	<data name="breakdown_source_always_on" xml:space="preserve">
+		<value>Always on</value>
+	</data>
+	<data name="breakdown_source_solar" xml:space="preserve">
+		<value>Solenergi</value>
+	</data>
+	<data name="breakdown_source_lighting" xml:space="preserve">
+		<value>Belysning</value>
+	</data>
+	<data name="breakdown_source_washing" xml:space="preserve">
+		<value>Klesvask</value>
+	</data>
+	<data name="tons_format" xml:space="preserve">
+		<value>{0} tons</value>
+	</data>
+	<data name="homescreen_price_ore" xml:space="preserve">
+		<value>{0} øre</value>
+	</data>
+	<data name="primary_heating_hydronics" xml:space="preserve">
+		<value>Hvilken type vannbåren varme bruker du mest?</value>
+	</data>
+	<data name="current_price_forecast" xml:space="preserve">
+		<value>It looks like the cheapest time to consume energy will be between {0} - {1} ({2} øre)</value>
+	</data>
+	<data name="no_sufficient_data_for_forecast" xml:space="preserve">
+		<value>We need at least 1 year worth of data to forecast your consumption</value>
+	</data>
+	<data name="no_sufficient_data_for_similar_homes" xml:space="preserve">
+		<value>We haven’t collected enough data to compare you to similar homes in your area. Check back next month!</value>
+	</data>
+	<data name="breakdown_source_water_heating" xml:space="preserve">
+		<value>Varmtvannsbereder</value>
+	</data>
+	<data name="breakdown_source_ev" xml:space="preserve">
+		<value>Electric Vehicle</value>
+	</data>
+	<data name="other_6" xml:space="preserve">
+		<value>other stuff</value>
+	</data>
+	<data name="breakdown_source_other" xml:space="preserve">
+		<value>Annet</value>
+	</data>
+	<data name="breakdown_source_cooling" xml:space="preserve">
+		<value>Cooling</value>
+	</data>
+	<data name="breakdown_source_fridge_freezer" xml:space="preserve">
+		<value>Fridge and freezer</value>
+	</data>
+	<data name="update_address_body" xml:space="preserve">
+		<value>By changing your address details we will do another search for the meter number associated with the details and SSN</value>
+	</data>
+	<data name="per_hour" xml:space="preserve">
+		<value>per kilowattime</value>
+	</data>
+	<data name="good" xml:space="preserve">
+		<value>LOWER</value>
+	</data>
+	<data name="mid" xml:space="preserve">
+		<value>MID</value>
+	</data>
+	<data name="high" xml:space="preserve">
+		<value>HIGHER</value>
+	</data>
+	<data name="this_month" xml:space="preserve">
+		<value>This month</value>
+	</data>
+	<data name="renewable_energy" xml:space="preserve">
+		<value>No lock-in period</value>
+	</data>
+	<data name="nuclear_energy" xml:space="preserve">
+		<value>Nuclear energy</value>
+	</data>
+	<data name="coal_and_gas" xml:space="preserve">
+		<value>Coal and gas</value>
+	</data>
+	<data name="fossil_fuels" xml:space="preserve">
+		<value>Fossil fuels</value>
+	</data>
+	<data name="coal" xml:space="preserve">
+		<value>Coal</value>
+	</data>
+	<data name="hydropower" xml:space="preserve">
+		<value>Hydropower</value>
+	</data>
+	<data name="other_sources" xml:space="preserve">
+		<value>Other</value>
+	</data>
+	<data name="unsuccessful_meter_number_address" xml:space="preserve">
+		<value>This is the address we found from your SSN:</value>
+	</data>
+	<data name="full_contract_sub" xml:space="preserve">
+		<value>By pressing accept, you acknowledge that you have read and agree with the terms.</value>
+	</data>
+	<data name="agreement_checkmark_start_title" xml:space="preserve">
+		<value>Start and stop</value>
+	</data>
+	<data name="agreement_checkmark_price_title" xml:space="preserve">
+		<value>One simple price</value>
+	</data>
+	<data name="agreement_checkmark_price_body" xml:space="preserve">
+		<value>We have only one completely transparent power deal, for private customers with a elKompis-membership of 34 kr a month. What you pay for is the Nord Pool's spot price per hour, the exactly the same as we pay. 1 øre per kWh is added in certificates that are obligatory by law. Your certificate of 100 % renewable energy is included.</value>
+	</data>
+	<data name="agreement_checkmark_start_body" xml:space="preserve">
+		<value>It normally takes 2 weeks from the day you order until you get power delivered from us. The agreement between us holds unless you resign from it, either in the elKompis app or by email. Both parties have the right to resign.</value>
+	</data>
+	<data name="agreement_checkmark_payment_body" xml:space="preserve">
+		<value>We charge arrears for the previous month's consumption. The bill is issued digitally one of the first days of the month. If you have added a card or another form of electronic solution, we can withdraw your payment automatically.</value>
+	</data>
+	<data name="contract_preview" xml:space="preserve">
+		<value>We use the Consumer ombudsman's standard terms of power which can be found on their website. In addition, these Terms of Use for elKompis apply:
+
+• We may collect information from the online company you use to register elKompis as a supplier at the new address you are moving to and to retrieve data from previous consumption.
+• We can do credit assessment.
+• We can manage and collect information from smart home equipment you connect to save even more.</value>
+	</data>
+	<data name="welcome_sales_pitch_simply" xml:space="preserve">
+		<value>SIMPLY</value>
+	</data>
+	<data name="welcome_sales_pitch_insightful" xml:space="preserve">
+		<value>LOW PRICE</value>
+	</data>
+	<data name="welcome_sales_pitch_energy" xml:space="preserve">
+		<value>YOU UNDERSTAND</value>
+	</data>
+	<data name="welcome_back" xml:space="preserve">
+		<value>Welcome back</value>
+	</data>
+	<data name="your_phone_number" xml:space="preserve">
+		<value>Phone number</value>
+	</data>
+	<data name="notification_consumption_surge" xml:space="preserve">
+		<value>Your usage seems to be higher, compared to last week. Try using high consuming appliances like your washing machine during low peak hours.</value>
+	</data>
+	<data name="monthly_statement_amount" xml:space="preserve">
+		<value>{0} Statement amount</value>
+	</data>
+	<data name="notification_high_forecast" xml:space="preserve">
+		<value>According to your forecast, you’re set to spend {0} this month. That’s {1} %% higher than last month.</value>
+	</data>
+	<data name="lets_select_payment_method" xml:space="preserve">
+		<value>Choose your payment method</value>
+	</data>
+	<data name="no_meter_number_error_message_2" xml:space="preserve">
+		<value>We weren’t able to find a meter number from the details you provided. Try entering your meter number again or get in touch with a member of the elKompis team.</value>
+	</data>
+	<data name="thank_you_for_payment" xml:space="preserve">
+		<value>Thank you for your payment of {0}</value>
+	</data>
+	<data name="tv" xml:space="preserve">
+		<value>TV</value>
+	</data>
+	<data name="successful_preliminary_payment_message" xml:space="preserve">
+		<value>You’ve paid the preliminary amount for this month. The amount will be reflected in your profile and a receipt will be sent to your email.</value>
+	</data>
+	<data name="recurring_monthly" xml:space="preserve">
+		<value>Recurring monthly</value>
+	</data>
+	<data name="invoice_ready" xml:space="preserve">
+		<value>{0} Invoice ready</value>
+	</data>
+	<data name="casual_preferred_name" xml:space="preserve">
+		<value>Casual or preferred name</value>
+	</data>
+	<data name="household" xml:space="preserve">
+		<value>Household</value>
+	</data>
+	<data name="hot_water_tank" xml:space="preserve">
+		<value>Hot water tank</value>
+	</data>
+	<data name="edit_house_type" xml:space="preserve">
+		<value>Edit your house type</value>
+	</data>
+	<data name="update_house_type_button" xml:space="preserve">
+		<value>Update house type</value>
+	</data>
+	<data name="update_house_size_button" xml:space="preserve">
+		<value>Update size</value>
+	</data>
+	<data name="edit_house_size" xml:space="preserve">
+		<value>Edit your house size</value>
+	</data>
+	<data name="edit_household" xml:space="preserve">
+		<value>How many people live there?</value>
+	</data>
+	<data name="edit_household_button" xml:space="preserve">
+		<value>Update household</value>
+	</data>
+	<data name="edit_heating_type" xml:space="preserve">
+		<value>Edit your heating type</value>
+	</data>
+	<data name="edit_heating_subtitle" xml:space="preserve">
+		<value>You can select an optional secondary heating source by tapping the relevant category</value>
+	</data>
+	<data name="update_heating_button" xml:space="preserve">
+		<value>Update heating type</value>
+	</data>
+	<data name="edit_appliances" xml:space="preserve">
+		<value>Edit your appliances</value>
+	</data>
+	<data name="kitchen" xml:space="preserve">
+		<value>Kitchen appliances</value>
+	</data>
+	<data name="other_appliances" xml:space="preserve">
+		<value>Other</value>
+	</data>
+	<data name="power" xml:space="preserve">
+		<value>Power</value>
+	</data>
+	<data name="update_appliances" xml:space="preserve">
+		<value>Update appliances</value>
+	</data>
+	<data name="kwp" xml:space="preserve">
+		<value>kWp</value>
+	</data>
+	<data name="manage_payments" xml:space="preserve">
+		<value>Manage payments</value>
+	</data>
+	<data name="method_of_payment" xml:space="preserve">
+		<value>Method of payment</value>
+	</data>
+	<data name="current_subscription_plan" xml:space="preserve">
+		<value>Your current subscription plan</value>
+	</data>
+	<data name="manage_payments_subtitle" xml:space="preserve">
+		<value>You can switch to these options below. You can always switch back if you change your mind.</value>
+	</data>
+	<data name="successful_payment_change_popup" xml:space="preserve">
+		<value>You’ve successfully changed your subscription type to {0}.</value>
+	</data>
+	<data name="payment_card" xml:space="preserve">
+		<value>Payment card</value>
+	</data>
+	<data name="remove" xml:space="preserve">
+		<value>Remove</value>
+	</data>
+	<data name="delete_payment_method_punt" xml:space="preserve">
+		<value>Are you sure you want to delete this payment method?</value>
+	</data>
+	<data name="delete" xml:space="preserve">
+		<value>Delete</value>
+	</data>
+	<data name="add_payment_method_button" xml:space="preserve">
+		<value>Save card</value>
+	</data>
+	<data name="invoice_permission_not_granted_error" xml:space="preserve">
+		<value>elKompis needs storage permission in order to download your invoice. Please grant it to proceed.</value>
+	</data>
+	<data name="terms_and_conditions" xml:space="preserve">
+		<value>Terms &amp; Conditions</value>
+	</data>
+	<data name="data_policy" xml:space="preserve">
+		<value>Privacy Policy</value>
+	</data>
+	<data name="calculate_carbon_offset_button" xml:space="preserve">
+		<value>How we calculate carbon offset</value>
+	</data>
+	<data name="downloading_invoice" xml:space="preserve">
+		<value>Downloading invoice</value>
+	</data>
+	<data name="invoice_downloaded" xml:space="preserve">
+		<value>Invoice downloaded</value>
+	</data>
+	<data name="pending" xml:space="preserve">
+		<value>Pending</value>
+	</data>
+	<data name="days_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} day&quot;,&quot;other&quot;:&quot;{0} days&quot;}</value>
+	</data>
+	<data name="out_of_budget_format" xml:space="preserve">
+		<value>out of {0}</value>
+	</data>
+	<data name="season_consumption_budget_format" xml:space="preserve">
+		<value>This is your {0} consumption budget per month.</value>
+	</data>
+	<data name="season_winter" xml:space="preserve">
+		<value>winter</value>
+	</data>
+	<data name="season_spring" xml:space="preserve">
+		<value>spring</value>
+	</data>
+	<data name="season_summer" xml:space="preserve">
+		<value>summer</value>
+	</data>
+	<data name="season_fall" xml:space="preserve">
+		<value>autumn</value>
+	</data>
+	<data name="month_to_month_format" xml:space="preserve">
+		<value>{0} to {1}</value>
+	</data>
+	<data name="your_impact_footprint_title" xml:space="preserve">
+		<value>Your environmental savings so far</value>
+	</data>
+	<data name="your_impact_savings_title" xml:space="preserve">
+		<value>My price savings</value>
+	</data>
+	<data name="tons_co2_format" xml:space="preserve">
+		<value>{0} t CO2</value>
+	</data>
+	<data name="profile_header_upcoming_invoice_format" xml:space="preserve">
+		<value>Your next invoice will be ready in {0}</value>
+	</data>
+	<data name="winter_months" xml:space="preserve">
+		<value>winter months</value>
+	</data>
+	<data name="spring_months" xml:space="preserve">
+		<value>spring months</value>
+	</data>
+	<data name="summer_months" xml:space="preserve">
+		<value>summer months</value>
+	</data>
+	<data name="autumn_months" xml:space="preserve">
+		<value>autumn months</value>
+	</data>
+	<data name="sign_out_popup_title" xml:space="preserve">
+		<value>Sign out</value>
+	</data>
+	<data name="sign_out_popup_subtitle" xml:space="preserve">
+		<value>Are you sure you want to sign out?</value>
+	</data>
+	<data name="adults_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} adult&quot;,&quot;other&quot;:&quot;{0} adults&quot;}</value>
+	</data>
+	<data name="children_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} child&quot;,&quot;other&quot;:&quot;{0} children&quot;}</value>
+	</data>
+	<data name="update_button" xml:space="preserve">
+		<value>Oppdater</value>
+	</data>
+	<data name="entertainment" xml:space="preserve">
+		<value>Entertainment</value>
+	</data>
+	<data name="notification_contract_notifications_on" xml:space="preserve">
+		<value>You now have full access and insights in the app, so check it out.</value>
+	</data>
+	<data name="nav_about_us" xml:space="preserve">
+		<value>About</value>
+	</data>
+	<data name="nav_our_tech" xml:space="preserve">
+		<value>Our tech</value>
+	</data>
+	<data name="nav_blogg" xml:space="preserve">
+		<value>Blog</value>
+	</data>
+	<data name="label_get_started" xml:space="preserve">
+		<value>Get started</value>
+	</data>
+	<data name="hero_heading_quite_simply" xml:space="preserve">
+		<value>SIMPLY</value>
+	</data>
+	<data name="hero_heading_cheap_electricity" xml:space="preserve">
+		<value>INSIGHTFUL</value>
+	</data>
+	<data name="hero_heading_easily_understood" xml:space="preserve">
+		<value>ENERGY</value>
+	</data>
+	<data name="hero_heading" xml:space="preserve">
+		<value>Welcome elKompis.</value>
+	</data>
+	<data name="hero_content" xml:space="preserve">
+		<value>We gathered renewable energy in an amazingly powerful app. The deal is easy and understandable, developed on your terms.</value>
+	</data>
+	<data name="download_apps" xml:space="preserve">
+		<value>Download the app for iOS and Android</value>
+	</data>
+	<data name="features_heading" xml:space="preserve">
+		<value>HIT THE SWITCH ON ELKOMPIS - THIS IS IT</value>
+	</data>
+	<data name="feature_insights_heading" xml:space="preserve">
+		<value>Complete insight to your consumption</value>
+	</data>
+	<data name="feature_insights_content" xml:space="preserve">
+		<value>See for yourself what you spend electricity on, and when, with an easy overview. Instead of looking in the fuse box, elKompis gives you the power and insight to using energy in a better way.</value>
+	</data>
+	<data name="feature_price_heading" xml:space="preserve">
+		<value>Predict the price</value>
+	</data>
+	<data name="feature_price_content" xml:space="preserve">
+		<value>Know what you use and spend at any given time. Make yourself a budget and we can notify you when the power is cheap.</value>
+	</data>
+	<data name="feature_tips_heading" xml:space="preserve">
+		<value>Tailored tips</value>
+	</data>
+	<data name="feature_tips_content" xml:space="preserve">
+		<value>Learn how to save money and follow your consumption.</value>
+	</data>
+	<data name="feature_invoice_heading" xml:space="preserve">
+		<value>Simple invoice</value>
+	</data>
+	<data name="feature_invoice_content" xml:space="preserve">
+		<value>Find the payment method that suits you, in Vipps, by card or with eFaktura.</value>
+	</data>
+	<data name="environmental_considerations_heading" xml:space="preserve">
+		<value>Environmentally aware</value>
+	</data>
+	<data name="environmental_considerations_content" xml:space="preserve">
+		<value>Our electricity comes from renewable sources only. elKompis empowers you and give you insight to a simpler renewable future, so that your home can save money and the climate at the same time. 
+You get a certificate of the renewable energy.</value>
+	</data>
+	<data name="graph_price_heading" xml:space="preserve">
+		<value>Water and sun in the price</value>
+	</data>
+	<data name="graph_price_content" xml:space="preserve">
+		<value>At elKompis you have a cheap electricity deal you can trust. Nothing in small print.</value>
+	</data>
+	<data name="graph_description" xml:space="preserve">
+		<value>One of the cheapest power providers</value>
+	</data>
+	<data name="graph_enig_label" xml:space="preserve">
+		<value>agreed</value>
+	</data>
+	<data name="graph_other_label" xml:space="preserve">
+		<value>Other providers</value>
+	</data>
+	<data name="graph_data_explanation" xml:space="preserve">
+		<value>Gathered from Strømpris.no and based on average yearly consumption data.</value>
+	</data>
+	<data name="switch_heading" xml:space="preserve">
+		<value>Joining is as easy as that</value>
+	</data>
+	<data name="switch_step_1" xml:space="preserve">
+		<value>Download apps</value>
+	</data>
+	<data name="switch_step_2" xml:space="preserve">
+		<value>Join us</value>
+	</data>
+	<data name="switch_step_3" xml:space="preserve">
+		<value>We'll take care of the rest</value>
+	</data>
+	<data name="switch_content" xml:space="preserve">
+		<value>You do not have to install anything, call around or wait for deliveries. We tell your old electricity company and you will know when everything is ready.</value>
+	</data>
+	<data name="join_enig" xml:space="preserve">
+		<value>Join us</value>
+	</data>
+	<data name="download_apps_and_join_us" xml:space="preserve">
+		<value>Download apps for iOS and Android</value>
+	</data>
+	<data name="contact_enig" xml:space="preserve">
+		<value>Contact us</value>
+	</data>
+	<data name="user_terms" xml:space="preserve">
+		<value>Terms of use and agreement</value>
+	</data>
+	<data name="copyright" xml:space="preserve">
+		<value>Copyright {{year}} elKompis. All rights reserved</value>
+	</data>
+	<data name="pn_contract_ready_title" xml:space="preserve">
+		<value>Our agreement is ready</value>
+	</data>
+	<data name="pn_contract_ready" xml:space="preserve">
+		<value>Now that everything is ready, we're elKompis!</value>
+	</data>
+	<data name="pn_invoice_ready_title" xml:space="preserve">
+		<value>Your latest invoice is ready</value>
+	</data>
+	<data name="pn_invoice_ready" xml:space="preserve">
+		<value>See more details in your profile page</value>
+	</data>
+	<data name="pn_invoice_reminder_title" xml:space="preserve">
+		<value>Invoice reminder</value>
+	</data>
+	<data name="pn_invoice_reminder" xml:space="preserve">
+		<value>Your invoice is still waiting for payment</value>
+	</data>
+	<data name="pn_invoice_due_date_alert_title" xml:space="preserve">
+		<value>Your current invoice is due soon</value>
+	</data>
+	<data name="pn_invoice_due_date_alert" xml:space="preserve">
+		<value>Your current invoice is due in {0} days. Pay now to avoid any late fees.</value>
+	</data>
+	<data name="pn_consumption_surge_title" xml:space="preserve">
+		<value>Consumption surge</value>
+	</data>
+	<data name="pn_consumption_surge" xml:space="preserve">
+		<value>Your consumption this week is much higher than last week</value>
+	</data>
+	<data name="pn_high_forecast_title" xml:space="preserve">
+		<value>High monthly forecast predicted</value>
+	</data>
+	<data name="pn_high_forecast" xml:space="preserve">
+		<value>According to your forecast, you will use {0} kWh. That is {1} %% higher than last month.</value>
+	</data>
+	<data name="pn_over_budget_title" xml:space="preserve">
+		<value>You’re over budget!</value>
+	</data>
+	<data name="pn_over_budget" xml:space="preserve">
+		<value>You’ve gone over your budget of {0} NOK this month. Your estimated cost this month is {1} NOK</value>
+	</data>
+	<data name="notification_budget_on_track_title" xml:space="preserve">
+		<value>You’re on track!</value>
+	</data>
+	<data name="notification_budget_on_track" xml:space="preserve">
+		<value>You’re on track to go {0} %% under your budget this month. Great stuff!</value>
+	</data>
+	<data name="notification_weekly_usage_report_title" xml:space="preserve">
+		<value>Weekly Usage Report</value>
+	</data>
+	<data name="notification_weekly_usage_report" xml:space="preserve">
+		<value>You used {0} and spent {1} between {2} and {3}</value>
+	</data>
+	<data name="notification_monthly_usage_report_title" xml:space="preserve">
+		<value>Monthly Usage Report</value>
+	</data>
+	<data name="notification_monthly_usage_report" xml:space="preserve">
+		<value>You used {0} and spent {1} in {2}</value>
+	</data>
+	<data name="general" xml:space="preserve">
+		<value>General</value>
+	</data>
+	<data name="notification_invoice_due_date_alert_title" xml:space="preserve">
+		<value>Your current invoice is due soon</value>
+	</data>
+	<data name="notification_invoice_due_date_alert" xml:space="preserve">
+		<value>Your {0} invoice is due in {1}. Pay now to avoid any late fees</value>
+	</data>
+	<data name="notification_over_budget_title" xml:space="preserve">
+		<value>You're over budget!</value>
+	</data>
+	<data name="notification_over_budget" xml:space="preserve">
+		<value>You’ve gone over your budget of {0} this month. Your estimated cost this month is {1}</value>
+	</data>
+	<data name="notification_invoice_reminder" xml:space="preserve">
+		<value>Your {0} invoice is still waiting for payment</value>
+	</data>
+	<data name="payment_about_to_expire_banner" xml:space="preserve">
+		<value>Your payment method is about to expire. Please update your payment info.</value>
+	</data>
+	<data name="notification_contract_ready" xml:space="preserve">
+		<value>Now that everything is ready, we're elKompis!</value>
+	</data>
+	<data name="notification_contract_ready_title" xml:space="preserve">
+		<value>Our agreement is now ready</value>
+	</data>
+	<data name="notification_invoice_ready_title" xml:space="preserve">
+		<value>{0} invoice</value>
+	</data>
+	<data name="notification_invoice_reminder_title" xml:space="preserve">
+		<value>Invoice reminder</value>
+	</data>
+	<data name="calculate_carbon_offset" xml:space="preserve">
+		<value>One spruce tree binds 2000 kg CO2 in its 50 year lifespan. Every year of the tree's life, it binds 40 kg, which is 3,3 kg a month. Non-renewable KwH equals 0,509 kg CO2.
+
+We calculate your monthly power consumption in the spruce trees' binding of carbon because your  energy is renewable.</value>
+	</data>
+	<data name="legend_enig" xml:space="preserve">
+		<value>elKompis</value>
+	</data>
+	<data name="legend_others" xml:space="preserve">
+		<value>Customers without renewable energy</value>
+	</data>
+	<data name="kwh" xml:space="preserve">
+		<value>Usage (kWh)</value>
+	</data>
+	<data name="cheaper" xml:space="preserve">
+		<value>cheaper</value>
+	</data>
+	<data name="expensive" xml:space="preserve">
+		<value>more expensive</value>
+	</data>
+	<data name="dialog_title" xml:space="preserve">
+		<value>Existing agreement found</value>
+	</data>
+	<data name="dialog_body" xml:space="preserve">
+		<value>It seems like you already have an active elKompis account. Please try to log in with the existing one or contact support for assistance.</value>
+	</data>
+	<data name="cancel_subscription_plan" xml:space="preserve">
+		<value>Remove subscription</value>
+	</data>
+	<data name="edit_billing_address" xml:space="preserve">
+		<value>Billing address</value>
+	</data>
+	<data name="cancel_recurring_payments_confirmation_message" xml:space="preserve">
+		<value>Are you sure you don't want to subscribe to recurring payments?</value>
+	</data>
+	<data name="your_power" xml:space="preserve">
+		<value>Your power</value>
+	</data>
+	<data name="price_tip_rise_low_to_medium" xml:space="preserve">
+		<value>Strømprisen er lav nå, men går opp fra {0} til {1}. Du bør derfor {2} nå eller vente til prisen er lav igjen.</value>
+	</data>
+	<data name="price_tip_rise_medium_to_high" xml:space="preserve">
+		<value>The power is moderate now, but prices are rising between {0} and {1}. It’s best to wait to {2}, to save money.</value>
+	</data>
+	<data name="price_tip_rise_low_to_high" xml:space="preserve">
+		<value>The power is cheap, but it will spike between {0} and {1}. If you need to {2}, save money on doing it now or wait until later.</value>
+	</data>
+	<data name="price_tip_drop_high_to_medium" xml:space="preserve">
+		<value>The energy price is high now, but from {0} to {1} it will drop slightly. It’s smart to {2} then, instead of now.</value>
+	</data>
+	<data name="price_tip_drop_medium_to_low" xml:space="preserve">
+		<value>Energy prices are moderately low and will drop to be cheaper at {0} and {1}. You can save money if you cant wait to {2} around then.</value>
+	</data>
+	<data name="price_tip_drop_high_to_low" xml:space="preserve">
+		<value>Energy price is high now, but it will be lower from {0} and {1}. If you can wait to {2} until then, you're saving money!</value>
+	</data>
+	<data name="price_tip_action_shower" xml:space="preserve">
+		<value>take a long shower</value>
+	</data>
+	<data name="price_tip_action_baking" xml:space="preserve">
+		<value>put on the dishwasher</value>
+	</data>
+	<data name="price_tip_action_vacuum" xml:space="preserve">
+		<value>take a warm bath</value>
+	</data>
+	<data name="price_tip_action_laundry" xml:space="preserve">
+		<value>do the laundry</value>
+	</data>
+	<data name="price_tip_action_waffles" xml:space="preserve">
+		<value>put on a lot of heating</value>
+	</data>
+	<data name="price_tip_stable_low" xml:space="preserve">
+		<value>The price will stay low all day. You should not use energy you don't need to, although you can {0} whenever you want today.</value>
+	</data>
+	<data name="price_tip_stable_medium" xml:space="preserve">
+		<value>The energy price stays moderate today. You should not use energy you don't need to, although you can {0} whenever you want today.</value>
+	</data>
+	<data name="price_tip_stable_high" xml:space="preserve">
+		<value>The energy price will stay expensive for the rest of the day. To save money you should be careful to {0} all day.</value>
+	</data>
+	<data name="change_meter_number_title" xml:space="preserve">
+		<value>Change to another meter</value>
+	</data>
+	<data name="change_meter_number_subtitle" xml:space="preserve">
+		<value>There are multiple meter numbers associated with your details and SSN. Please select which one would you like to use.</value>
+	</data>
+	<data name="dismiss_confirmation" xml:space="preserve">
+		<value>Discard changes</value>
+	</data>
+	<data name="notification_impact_and_savings_trees" xml:space="preserve">
+		<value>My renewable energy equals the effect of {0}</value>
+	</data>
+	<data name="missing_chart_data" xml:space="preserve">
+		<value>My price</value>
+	</data>
+	<data name="feature_insights_image_alt" xml:space="preserve">
+		<value>A line that shows the total consumption goes up and down on a graph. The text says: “Yesterday, you spent 150 kWh” and next to it: -50 % arrow down, indicating that you normally spend more.</value>
+	</data>
+	<data name="feature_price_image_alt" xml:space="preserve">
+		<value>There is a timeline, showing the current time, at the bottom of the screen with a pink line on it. A text box says “The price will drop by 6 øre between 10 and 12 a clock today.” It also says that the forecasted consumption is 12 øre for the next hour.</value>
+	</data>
+	<data name="feature_invoice_image_alt" xml:space="preserve">
+		<value>A digital invoice that says “April 2020, Due May 27th”. In the right corner, a label saying “Unpaid” on it, and in the middle of the screen is the total sum 209,75 NOK and an explanation field with 50,23 under budget”. Above the “Pay now” button is a breakdown of the invoice to click on. Next to it is the Vipps logo.</value>
+	</data>
+	<data name="feature_tips_image_alt" xml:space="preserve">
+		<value>A text box above a venn diagram says: “Your usage seems to be 15 % higher compared to last week. Try using high consuming appliances like your washing machine during low peak hours.” It has the time and date, and on the diagram the headline is “March”. At the bottom is an icon and the words “Washing machine” with how much power it uses and the cost.</value>
+	</data>
+	<data name="notification_impact_and_savings_trees_title" xml:space="preserve">
+		<value>Nice environmental effort</value>
+	</data>
+	<data name="notification_price_concept_title" xml:space="preserve">
+		<value>Every øre counts</value>
+	</data>
+	<data name="notification_price_concept" xml:space="preserve">
+		<value>You save {0} on using elKompis as your provider compared to the others</value>
+	</data>
+	<data name="forecast_tab" xml:space="preserve">
+		<value>Budget</value>
+	</data>
+	<data name="yesterday" xml:space="preserve">
+		<value>Yesterday</value>
+	</data>
+	<data name="notification_credit_card_expiry_warning" xml:space="preserve">
+		<value>Please change your method or update the information</value>
+	</data>
+	<data name="notification_credit_card_expiry_warning_title" xml:space="preserve">
+		<value>Your payment method is expiring</value>
+	</data>
+	<data name="pn_credit_card_expiry_warning_title" xml:space="preserve">
+		<value>Your payment method is expiring</value>
+	</data>
+	<data name="pn_credit_card_expiry_warning" xml:space="preserve">
+		<value>Please change your method or update the information</value>
+	</data>
+	<data name="tabbar_home" xml:space="preserve">
+		<value>Hjem</value>
+	</data>
+	<data name="tabbar_ev" xml:space="preserve">
+		<value>EV</value>
+	</data>
+	<data name="tabbar_insights" xml:space="preserve">
+		<value>Insights</value>
+	</data>
+	<data name="tabbar_account" xml:space="preserve">
+		<value>Min konto</value>
+	</data>
+	<data name="tabbar_referal" xml:space="preserve">
+		<value>Få 250</value>
+	</data>
+	<data name="minstrom_strompris_header" xml:space="preserve">
+		<value>Strømprisen min</value>
+	</data>
+	<data name="minstrom_strompris_level_high" xml:space="preserve">
+		<value>The price is high at the moment</value>
+	</data>
+	<data name="minstrom_strompris_level_medium" xml:space="preserve">
+		<value>The price is medium high at the moment</value>
+	</data>
+	<data name="minstrom_strompris_level_low" xml:space="preserve">
+		<value>The price is low at the moment</value>
+	</data>
+	<data name="minstrom_prisbevis_header" xml:space="preserve">
+		<value>Prisbeviset ditt</value>
+	</data>
+	<data name="minstrom_prisbevis_pricelevel" xml:space="preserve">
+		<value>Prisen din i dag er {0} billigst</value>
+	</data>
+	<data name="minstrom_miljobesparelsen_header" xml:space="preserve">
+		<value>Miljøbesparelsen</value>
+	</data>
+	<data name="minstrom_miljobesparelse_trees_saved" xml:space="preserve">
+		<value>Your CO2 saving equals {0} trees</value>
+	</data>
+	<data name="minstrom_strompris_status_now" xml:space="preserve">
+		<value>Akkurat nå:</value>
+	</data>
+	<data name="profile_header_upcoming_invoice_format_copy" xml:space="preserve">
+		<value>Your next invoice will be ready in {0}</value>
+	</data>
+	<data name="account_main_page_header_profile" xml:space="preserve">
+		<value>My profile</value>
+	</data>
+	<data name="account_main_page_header_homes" xml:space="preserve">
+		<value>My homes</value>
+	</data>
+	<data name="account_main_page_header_cars" xml:space="preserve">
+		<value>My car</value>
+	</data>
+	<data name="account_main_page_header_invoice" xml:space="preserve">
+		<value>My invoices</value>
+	</data>
+	<data name="account_main_page_header_payment_methode" xml:space="preserve">
+		<value>My Payment method</value>
+	</data>
+	<data name="account_main_page_header_budget" xml:space="preserve">
+		<value>My Budget</value>
+	</data>
+	<data name="account_main_page_header_notifications" xml:space="preserve">
+		<value>My notifications</value>
+	</data>
+	<data name="account_main_page_header_support" xml:space="preserve">
+		<value>My Support</value>
+	</data>
+	<data name="account_main_page_intro" xml:space="preserve">
+		<value>View your account with elKompis.</value>
+	</data>
+	<data name="account_my_profile_personal_information_username_update_button" xml:space="preserve">
+		<value>Update username</value>
+	</data>
+	<data name="account_homes_header" xml:space="preserve">
+		<value>My homes</value>
+	</data>
+	<data name="account_cars_header" xml:space="preserve">
+		<value>My registered electric cars</value>
+	</data>
+	<data name="account_forecast_update_button" xml:space="preserve">
+		<value>See your new analysis</value>
+	</data>
+	<data name="account_support_intro" xml:space="preserve">
+		<value>We are here to help you when you need it</value>
+	</data>
+	<data name="referral_header" xml:space="preserve">
+		<value>elKompis</value>
+	</data>
+	<data name="referral_modal_header" xml:space="preserve">
+		<value>Download elKompis and get started</value>
+	</data>
+	<data name="referral_modal_header_download" xml:space="preserve">
+		<value>It only takes a few minutes to sign up and we'll take care of the rest</value>
+	</data>
+	<data name="referral_modal_link_app_store_download" xml:space="preserve">
+		<value>Download on the App Store</value>
+	</data>
+	<data name="referral_modal_link_google_play_download" xml:space="preserve">
+		<value>Available on Google Play</value>
+	</data>
+	<data name="referral_modal_scan_qr_code" xml:space="preserve">
+		<value>Scan with the camera or a QR app on your phone</value>
+	</data>
+	<data name="product_name" xml:space="preserve">
+		<value>elKompis</value>
+	</data>
+	<data name="priceconcept_graph_description" xml:space="preserve">
+		<value>We are comparing our prices at elKompis with other agreements with timespot. 
+Short term offers and offers with a negative margin are not included.</value>
+	</data>
+	<data name="account_support_header" xml:space="preserve">
+		<value>Hi kompis!</value>
+	</data>
+	<data name="My_invoices_main_view_details" xml:space="preserve">
+		<value>View details</value>
+	</data>
+	<data name="greenconcept_main_header" xml:space="preserve">
+		<value>100 % renewable energy</value>
+	</data>
+	<data name="greenconcept_description" xml:space="preserve">
+		<value>We recommend 100 % renewable energy, and consequently, a reduced climate footprint. As a gift, you will get the first month free of charge. After, you can order renewable energy in the app if you prefer renewable energy.</value>
+	</data>
+	<data name="minstrom_analysis_header" xml:space="preserve">
+		<value>My analysis</value>
+	</data>
+	<data name="minstrom_status_budget_not_reached" xml:space="preserve">
+		<value>Your budget has not been reached</value>
+	</data>
+	<data name="minstrom_status_budget_exceeded" xml:space="preserve">
+		<value>Your budget has been exceeded</value>
+	</data>
+	<data name="referral_advantages_header" xml:space="preserve">
+		<value>Simple smart and cheap</value>
+	</data>
+	<data name="referral_advantages_text" xml:space="preserve">
+		<value>{0}  is a customer of elKompis, the digital power company. If you sign up, you both get {2} deducted from your bill.</value>
+	</data>
+	<data name="referral_graph_header" xml:space="preserve">
+		<value>Always one of the cheapest</value>
+	</data>
+	<data name="referral_graph_body" xml:space="preserve">
+		<value>{0} is a customer of elKompis, the digital power company. If you sign up, you both get {1}  deducted from your bill. You'll receive the bonus once you've downloaded the elKompis app and become a customer.</value>
+	</data>
+	<data name="referral_header_header" xml:space="preserve">
+		<value>{0}  invited you to join elKompis</value>
+	</data>
+	<data name="referral_header_promo_text" xml:space="preserve">
+		<value>{0}  is a customer of elKompis, the digital power company. If you sign up, you both get {1}  deducted from your bill.</value>
+	</data>
+	<data name="referral_get_started_button" xml:space="preserve">
+		<value>Get your cash</value>
+	</data>
+	<data name="referral_get_started_header" xml:space="preserve">
+		<value>Your referral code</value>
+	</data>
+	<data name="referral_mainpage_header_get_started" xml:space="preserve">
+		<value>Verv en venn!</value>
+	</data>
+	<data name="referral_mainpage_description_get_started" xml:space="preserve">
+		<value>Verv nye elKompiser! Verver du en venn, får dere begge {0} kroner som &lt;u&gt;trekkes av på fakturaen&lt;/u&gt;</value>
+	</data>
+	<data name="referral_mainpage_cta_get_started" xml:space="preserve">
+		<value>Verv en venn!</value>
+	</data>
+	<data name="referral_mainpage_earn_cta_get_started" xml:space="preserve">
+		<value>Tjen {0} kroner</value>
+	</data>
+	<data name="referral_mainpage_button_share_link" xml:space="preserve">
+		<value>Del lenke for å verve</value>
+	</data>
+	<data name="referral_mainpage_header_reffered" xml:space="preserve">
+		<value>Thanks for joining! Refer to earn more!</value>
+	</data>
+	<data name="referral_mainpage_description_reffered" xml:space="preserve">
+		<value>Refer your friends to elKompis! Both you and your friends are earning &lt;u&gt; electricity&lt;/u&gt; to a value of NOK {0}.</value>
+	</data>
+	<data name="referral_mainpage_number_of_buddies_referred" xml:space="preserve">
+		<value>My elKompises</value>
+	</data>
+	<data name="referral_mainpage_cash_earned_reffered" xml:space="preserve">
+		<value>Mine opptjente cash</value>
+	</data>
+	<data name="referral_mainpage_header_have_reffered" xml:space="preserve">
+		<value>Godt jobba! Fortsett å verve nye elKompiser!</value>
+	</data>
+	<data name="referral_mainpage_description_have_reffered" xml:space="preserve">
+		<value>Verv flere nye elKompiser! Både du og dine venner får &lt;u&gt; strøm&lt;/u&gt; til en verdi a kr {0} ,-. </value>
+	</data>
+	<data name="referral_infobox_about_refferal_header" xml:space="preserve">
+		<value>Verv venner – få gratis strøm!</value>
+	</data>
+	<data name="referral_infobox_about_refferal_body" xml:space="preserve">
+		<value>Tips vennene dine om det gode tilbudet til elKompis! Verver du en venn, får dere begge strøm til en verdi av {0} kroner. 
+
+Du kan verve så mange du vil, og jo flere du verver, desto mer strøm tjener du. Beløpet blir trukket fra på strømregningen din ;)</value>
+	</data>
+	<data name="priceconcept_comparison_average" xml:space="preserve">
+		<value>{0} %% against the average</value>
+	</data>
+	<data name="priceconcept_comparison_5_most_expensive" xml:space="preserve">
+		<value>{0} %% against the top five</value>
+	</data>
+	<data name="priceconcept_infobox_header" xml:space="preserve">
+		<value>Priceproof. For your safety.</value>
+	</data>
+	<data name="priceconcept_infobox_body" xml:space="preserve">
+		<value>We want you feel safe that your price with elKompis are cheaper than most. No fuzz. Guaranteed no small writing. That is why you can see and your price and control how your price is compared to the market. Maybe not the cheapest. But guaranteed cheap. No bullshit, no cheating. The prices we are comparing with is collected from the public site, strømpris.no. Something unclear? Pleas ask us! We want you to feel safe!</value>
+	</data>
+	<data name="greenconcept_infobox_header" xml:space="preserve">
+		<value>Your CO2 savings with 100 % renewable energy</value>
+	</data>
+	<data name="greenconcept_info" xml:space="preserve">
+		<value>elKompis provides you with only 100 % renewable energy which reduces your carbon footprint significantly and saves the environment. Our goal is to accelerate demand for sustainable solutions. We want both you and us to take  responsible choices. Your most sustainable energy, is the energy you don't use. By reducing your consumption, you will make the best choice for the planet. But the second best, is renewable energy, guaranteed by energy certificates of origin. This guarantees that your consumption comes from renewable energy sources. The environmental effect can be explained through trees. We calculate your power consumption in the spruce trees' binding of carbon. One spruce tree binds 2000 kg CO2 in its 50 year lifespan. Every year of the tree's life, it binds 40 kg, which is 3,3 kg a month. Non-renewable kWh equals 0,509 kg CO2.  We hope this calculation will engage you and motivate you, to keep on making the best choices. Together we can make a difference. &lt;3 </value>
+	</data>
+	<data name="setup_payment_method_efaktura_desciption" xml:space="preserve">
+		<value>Pay manually via eFaktura in your online bank.</value>
+	</data>
+	<data name="setup_payment_method_efaktura_avtalegiro_desciption" xml:space="preserve">
+		<value>Recurring payment and eFaktura.</value>
+	</data>
+	<data name="setup_payment_method_vipps_desciption" xml:space="preserve">
+		<value>Recurring payment via Vipps.</value>
+	</data>
+	<data name="setup_payment_method_card_desciption" xml:space="preserve">
+		<value>Reccurring payment via your payment card.</value>
+	</data>
+	<data name="setup_payment_method_button" xml:space="preserve">
+		<value>Next</value>
+	</data>
+	<data name="greenconcept_trees" xml:space="preserve">
+		<value>trees</value>
+	</data>
+	<data name="greenconcept_tons" xml:space="preserve">
+		<value>tons</value>
+	</data>
+	<data name="greenconcept_hundred_percent" xml:space="preserve">
+		<value>100 %</value>
+	</data>
+	<data name="payment_method_title" xml:space="preserve">
+		<value>Your method of payment</value>
+	</data>
+	<data name="payment_method_subtitle" xml:space="preserve">
+		<value>From next month, you will get an electricity bill once a month from elKompis.  We will send the electricity bill directly to your online bank, if you have signed up for automatic eFaktura in your online bank.</value>
+	</data>
+	<data name="payment_method_my_account_efaktura" xml:space="preserve">
+		<value>Pay your invoice via eFaktura. Administration of this payment setup is done in your online bank.</value>
+	</data>
+	<data name="payment_method_my_account_efaktura_avtalegiro" xml:space="preserve">
+		<value>Recurring payment and eFaktura in your online bank. Administration of this setup is done in your online bank.</value>
+	</data>
+	<data name="setup_payment_external_vipps_header" xml:space="preserve">
+		<value>Electricity bill from elKompis</value>
+	</data>
+	<data name="setup_payment_external_vipps_subtitle" xml:space="preserve">
+		<value>Your monthly invoice from elKompis will be paid automatic. The total amount will vary, based on both price and your comcumption.</value>
+	</data>
+	<data name="referral_link_title" xml:space="preserve">
+		<value>Referral link</value>
+	</data>
+	<data name="price_concept_graph_subtitle" xml:space="preserve">
+		<value>Prices in this graph are calculated at strømpris.no</value>
+	</data>
+	<data name="payment_method_change_button" xml:space="preserve">
+		<value>Change payment method</value>
+	</data>
+	<data name="referral_page_title" xml:space="preserve">
+		<value>Get started with elKompis</value>
+	</data>
+	<data name="homescreen_hi_customer" xml:space="preserve">
+		<value>God kveld, {0}!</value>
+	</data>
+	<data name="homescreen_greeting_alt1" xml:space="preserve">
+		<value>You have saved the environment as the effect of 14 spruce trees!</value>
+	</data>
+	<data name="homescreen_header" xml:space="preserve">
+		<value>Your overview for  {0}</value>
+	</data>
+	<data name="homescreen_cost_so_far" xml:space="preserve">
+		<value>Forbruket ditt</value>
+	</data>
+	<data name="homescreen_cost_estimated" xml:space="preserve">
+		<value>{0} forventet denne måneden.</value>
+	</data>
+	<data name="homescreen_budget" xml:space="preserve">
+		<value>My budget</value>
+	</data>
+	<data name="homescreen_budget_status_well" xml:space="preserve">
+		<value>You are doing well</value>
+	</data>
+	<data name="homescreen_thief" xml:space="preserve">
+		<value>I use the most energy on</value>
+	</data>
+	<data name="homescreen_thief_status" xml:space="preserve">
+		<value>{0} %% of your usage</value>
+	</data>
+	<data name="payment_error_alert" xml:space="preserve">
+		<value>Error. Details</value>
+	</data>
+	<data name="payment_button_pay_now" xml:space="preserve">
+		<value>Pay now</value>
+	</data>
+	<data name="payment_error_desciption_header" xml:space="preserve">
+		<value>Payment error</value>
+	</data>
+	<data name="payment_error_description_body" xml:space="preserve">
+		<value>Your payment was unfortunately not completed. Review or change your payment method, or try to pay manually by clicking &quot;Pay Now&quot;.</value>
+	</data>
+	<data name="payment_error_description_cta" xml:space="preserve">
+		<value>Review or change payment method</value>
+	</data>
+	<data name="payment_error_card_expired" xml:space="preserve">
+		<value>Card expired</value>
+	</data>
+	<data name="payment_error_card_header" xml:space="preserve">
+		<value>Payment error</value>
+	</data>
+	<data name="payment_error_card_body" xml:space="preserve">
+		<value>Oooops! Something went wrong with your payment ..</value>
+	</data>
+	<data name="household_profile_setup_card_header" xml:space="preserve">
+		<value>Let`s set up your household profile</value>
+	</data>
+	<data name="household_profile_setup_card_body" xml:space="preserve">
+		<value>Information about size and heating, will you give you the full benefit of the app.</value>
+	</data>
+	<data name="payment_setup_changed_confirmation" xml:space="preserve">
+		<value>Your payment method have been changed!</value>
+	</data>
+	<data name="payment_setup_changed_cta" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="payment_setup_changed_error" xml:space="preserve">
+		<value>Your payment method could not be changed.</value>
+	</data>
+	<data name="home_message_price" xml:space="preserve">
+		<value>Your price is always cheap compared to other electricity providers.</value>
+	</data>
+	<data name="home_message_trees" xml:space="preserve">
+		<value>elKompis gives you 100 % renewable energy</value>
+	</data>
+	<data name="home_message_price_level" xml:space="preserve">
+		<value>The electricity price is now {0}.</value>
+	</data>
+	<data name="home_message_invoices" xml:space="preserve">
+		<value>You have {0} unpaid invoice(s).</value>
+	</data>
+	<data name="home_message_buddies" xml:space="preserve">
+		<value>You've got {0} this month.</value>
+	</data>
+	<data name="home_message_usage" xml:space="preserve">
+		<value>This week, your power consumption has gone {0}.</value>
+	</data>
+	<data name="home_message_budget" xml:space="preserve">
+		<value>{0} is on its way! Do you want to adjust your budget?</value>
+	</data>
+	<data name="home_message_price_alert" xml:space="preserve">
+		<value>Strømprisen kommer til å være uvanlig høy mellom kl {0} og {1} i dag!</value>
+	</data>
+	<data name="homescreen_price_savings" xml:space="preserve">
+		<value>My price savings</value>
+	</data>
+	<data name="homescreen_price_description" xml:space="preserve">
+		<value>Savings compared with the price average.</value>
+	</data>
+	<data name="homescreen_price_now" xml:space="preserve">
+		<value>Price now</value>
+	</data>
+	<data name="homescreen_price_kwh" xml:space="preserve">
+		<value>per kWh</value>
+	</data>
+	<data name="homescreen_price_level_high" xml:space="preserve">
+		<value>high</value>
+	</data>
+	<data name="homescreen_price_level_medium" xml:space="preserve">
+		<value>medium</value>
+	</data>
+	<data name="homescreen_price_level_low" xml:space="preserve">
+		<value>low</value>
+	</data>
+	<data name="homescreen_good_morning" xml:space="preserve">
+		<value>Good morning, {0}!</value>
+	</data>
+	<data name="homescreen_good_morning_later" xml:space="preserve">
+		<value>Hello, {0}!</value>
+	</data>
+	<data name="homescreen_good_afternoon" xml:space="preserve">
+		<value>Hello, {0}!</value>
+	</data>
+	<data name="homescreen_good_evening" xml:space="preserve">
+		<value>Hello, {0}!</value>
+	</data>
+	<data name="buddies_format_plural" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} new elKompis&quot;,&quot;other&quot;:&quot;{0} new elKompis&quot;}</value>
+	</data>
+	<data name="up" xml:space="preserve">
+		<value>up</value>
+	</data>
+	<data name="down" xml:space="preserve">
+		<value>down</value>
+	</data>
+	<data name="home_message_usage_same" xml:space="preserve">
+		<value>This week, your power consumption is the same as last week.</value>
+	</data>
+	<data name="homescreen_budget_status_bad" xml:space="preserve">
+		<value>You are not doing too good</value>
+	</data>
+	<data name="priceconcept_infobox_body" xml:space="preserve">
+		<value>elKompis offers just one electricity agreement with one price! Spot price, which is the agreement offered by elKompis, is the recommended type of agreement by consumer authorities. With Spot price, you get the same price as us on the power exchange. The price comparison shows all spot prices offered in the marked which is puplished by strømpris.no.  Strømpris.no is Forbrukertilsynets (Consumer authority) list of all offered electricity agreements in the Norwegian electricity market. Your saving compared to «the average price in the market» and compared to the «five most expensive suppliers» in the market is downloaded directly from strømpris.no. The savings is shown in percentages.</value>
+	</data>
+	<data name="greenconcept_infobox_body" xml:space="preserve">
+		<value>elKompis gives you 100 % renewable energy. This reduces your carbon footprint. Your CO2 saving illustrates how much you have reduced the carbon footprint by purchasing electricity from elKompis. </value>
+	</data>
+	<data name="unpaid_invoices_plural" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;%d unpaid&quot;,&quot;other&quot;:&quot;%d unpaid&quot;}</value>
+	</data>
+	<data name="home_message_invoice" xml:space="preserve">
+		<value>You have 1 unpaid invoice.</value>
+	</data>
+	<data name="read_more" xml:space="preserve">
+		<value>Read more</value>
+	</data>
+	<data name="minstrom_budget_line" xml:space="preserve">
+		<value>Budget</value>
+	</data>
+	<data name="estimated" xml:space="preserve">
+		<value>Estimated</value>
+	</data>
+	<data name="new_meter" xml:space="preserve">
+		<value>Add new meter</value>
+	</data>
+	<data name="payment_setup_card_header" xml:space="preserve">
+		<value>bla bla</value>
+	</data>
+	<data name="home_message_not_ready" xml:space="preserve">
+		<value>Welcome to elKompis! It will take around 2 working days to get your account ready. You can then use all functions in the app.</value>
+	</data>
+	<data name="so_far_month" xml:space="preserve">
+		<value>So far in {0}</value>
+	</data>
+	<data name="minstrom_level_you" xml:space="preserve">
+		<value>You</value>
+	</data>
+	<data name="minstrom_level_similar_household" xml:space="preserve">
+		<value>Similar homes</value>
+	</data>
+	<data name="evcharge_card_price" xml:space="preserve">
+		<value>Smart lading til lavest pris, time for time</value>
+	</data>
+	<data name="evcharge_card_insight" xml:space="preserve">
+		<value>Du har ladet for {0} kroner de siste 30 dagene.</value>
+	</data>
+	<data name="evcharge_tab_insight" xml:space="preserve">
+		<value>My smart EV charging</value>
+	</data>
+	<data name="evcharge_status_charging" xml:space="preserve">
+		<value>Lader</value>
+	</data>
+	<data name="evcharge_status_not_charging" xml:space="preserve">
+		<value>Ikke tilkoblet lader</value>
+	</data>
+	<data name="evcharge_status_hours" xml:space="preserve">
+		<value>{0} timer, {1} minutter til ferdig ladet</value>
+	</data>
+	<data name="evcharge_status_time" xml:space="preserve">
+		<value>Finished at {0}</value>
+	</data>
+	<data name="evcharge_status_completed" xml:space="preserve">
+		<value>Ferdig</value>
+	</data>
+	<data name="evcharge_on_off" xml:space="preserve">
+		<value>Smart elbillading</value>
+	</data>
+	<data name="evcharge_settings" xml:space="preserve">
+		<value>My car will be ready at</value>
+	</data>
+	<data name="evcharge_km" xml:space="preserve">
+		<value>{0} km</value>
+	</data>
+	<data name="evcharge_percent" xml:space="preserve">
+		<value>{0} %</value>
+	</data>
+	<data name="evcharge_insight_price_graph" xml:space="preserve">
+		<value>Bilen din smartlades til laveste strømpris, time for time</value>
+	</data>
+	<data name="evcharge_insight_30_days" xml:space="preserve">
+		<value>Du har brukt {0} kWh og {1} kroner på smart lading siste 30 dager.</value>
+	</data>
+	<data name="evcharge_insight_month" xml:space="preserve">
+		<value>Du har brukt {0} kWh og {1} kroner på smart lading i {2}</value>
+	</data>
+	<data name="evcharge_tab_last_charge" xml:space="preserve">
+		<value>Siste døgn</value>
+	</data>
+	<data name="evcharge_tab_30_days" xml:space="preserve">
+		<value>Siste 30 dager</value>
+	</data>
+	<data name="evcharge_tab_month" xml:space="preserve">
+		<value>Month</value>
+	</data>
+	<data name="eccharge_status_not_enough_time" xml:space="preserve">
+		<value>Charging time longer than the stated deadline</value>
+	</data>
+	<data name="evcharge_status_not_ready_info" xml:space="preserve">
+		<value>The car needs more time to be optimally charged than the deadline you have specified</value>
+	</data>
+	<data name="on" xml:space="preserve">
+		<value>PÅ</value>
+	</data>
+	<data name="off" xml:space="preserve">
+		<value>AV</value>
+	</data>
+	<data name="evcharge_price_graph_header" xml:space="preserve">
+		<value>Se din siste smartlading</value>
+	</data>
+	<data name="evcharge_30_days_graph_header" xml:space="preserve">
+		<value>Lading og pris</value>
+	</data>
+	<data name="evcharge_month_graph_header" xml:space="preserve">
+		<value>Lading og pris hittil i måneden</value>
+	</data>
+	<data name="evharge_not_ready_info_cta" xml:space="preserve">
+		<value>Turn off smart charging now</value>
+	</data>
+	<data name="evcharge_confirmation_off" xml:space="preserve">
+		<value>Smart lading er av. Bilen lades så fort som mulig. Skru på smart lading igjen når du ønsker å smartlade billigst mulig.</value>
+	</data>
+	<data name="evcharge_confirmation_on" xml:space="preserve">
+		<value>Smart lading er på. Bilen lades så billig som mulig.</value>
+	</data>
+	<data name="evcharge_confirmation_not_ready" xml:space="preserve">
+		<value>Charging time is longer than the deadline. The car is charged as much as possible until kl {0}</value>
+	</data>
+	<data name="evcharge_settings_header" xml:space="preserve">
+		<value>Smart charging settings</value>
+	</data>
+	<data name="evcharge_settings_body" xml:space="preserve">
+		<value>Optimal charging at the lowest possible price, hour by hour. Decide when the car must be fully charged and select &quot;Smart charging on&quot;.</value>
+	</data>
+	<data name="evcharge_setting_limit" xml:space="preserve">
+		<value>Ferdig innen</value>
+	</data>
+	<data name="evcharge_settings_save" xml:space="preserve">
+		<value>Save settings</value>
+	</data>
+	<data name="evcharge_confirmation_time_updated" xml:space="preserve">
+		<value>Tidsfristen er oppdatert. Bilen din lades smart og billig.</value>
+	</data>
+	<data name="evcharge_status_last_updated" xml:space="preserve">
+		<value>Sist oppdatert {0}</value>
+	</data>
+	<data name="evcharge_settings_more_info_header" xml:space="preserve">
+		<value>This is smart electric car charging</value>
+	</data>
+	<data name="evcharge_settings_more_info_body" xml:space="preserve">
+		<value>The car is charged as cheaply as possible for optimal battery status. We choose the cheapest times in the period up to the deadline you have set. The longer the deadline, the greater the possibility of the lowest price. See an overview of your smart charging here.</value>
+	</data>
+	<data name="evcharge_settings_add_car" xml:space="preserve">
+		<value>ADD ELECTRIC CAR</value>
+	</data>
+	<data name="evcharge_cta_adjust_deadline" xml:space="preserve">
+		<value>Change deadline</value>
+	</data>
+	<data name="details_description" xml:space="preserve">
+		<value>Please enter the phone number of the person in your household tha holds the contract with your current electricity supplier. </value>
+	</data>
+	<data name="about_meter_details" xml:space="preserve">
+		<value>The information is used to locate your electricity meter. </value>
+	</data>
+	<data name="next_button" xml:space="preserve">
+		<value>Next</value>
+	</data>
+	<data name="agreement_header" xml:space="preserve">
+		<value>The smart energy deal</value>
+	</data>
+	<data name="agreement_body" xml:space="preserve">
+		<value>elKompis provides smart, cheap and renewable energy for only 0.299 NOK/kWh (tax included) and a monthly cost of 29 NOK.</value>
+	</data>
+	<data name="agreement_sales_pitch_one" xml:space="preserve">
+		<value>Low cost    </value>
+	</data>
+	<data name="agreement_sales_pitch_two" xml:space="preserve">
+		<value>Ingen bindingstid </value>
+	</data>
+	<data name="agreement_sales_pitch_three" xml:space="preserve">
+		<value>Full transparency</value>
+	</data>
+	<data name="agreement_sales_pitch_four" xml:space="preserve">
+		<value>Customized energy saving tips</value>
+	</data>
+	<data name="join_button" xml:space="preserve">
+		<value>Switch to Elkompis</value>
+	</data>
+	<data name="name_buddy" xml:space="preserve">
+		<value>Siri Byddyson</value>
+	</data>
+	<data name="agreements_terms_accept" xml:space="preserve">
+		<value>By clicking “Switch to elKompis” you accept the terms of the agreement and confirm that you are familiar with the right of cancellation. </value>
+	</data>
+	<data name="find_me_button" xml:space="preserve">
+		<value>Find my meter</value>
+	</data>
+	<data name="confirm_button" xml:space="preserve">
+		<value>Confirm</value>
+	</data>
+	<data name="confirm_phone_number_heading" xml:space="preserve">
+		<value>Verify the phone number</value>
+	</data>
+	<data name="confirm_phone_number_body" xml:space="preserve">
+		<value>We’ve sent a four-digit verification code to the telephone number you provided. Please enter the code.</value>
+	</data>
+	<data name="confirm_phone_number_code" xml:space="preserve">
+		<value>Verification code</value>
+	</data>
+	<data name="confirm_phone_number_not_recieved" xml:space="preserve">
+		<value>Not received a code?</value>
+	</data>
+	<data name="onboarding_wait" xml:space="preserve">
+		<value>Hang on while we locate your electricity meter. </value>
+	</data>
+	<data name="meter_found_header" xml:space="preserve">
+		<value>We found your meter</value>
+	</data>
+	<data name="meter_found_not_right" xml:space="preserve">
+		<value>Not the correct address and meter? Change address, and we will search again for another electricity meter.</value>
+	</data>
+	<data name="address_search_again_cta" xml:space="preserve">
+		<value>Change meter</value>
+	</data>
+	<data name="meter_found_confirm_button" xml:space="preserve">
+		<value>This is correct</value>
+	</data>
+	<data name="meter_found_control_information" xml:space="preserve">
+		<value>Please control that this information is correct</value>
+	</data>
+	<data name="account_my_registered_meters" xml:space="preserve">
+		<value>My meters</value>
+	</data>
+	<data name="welcome_header" xml:space="preserve">
+		<value>Welcome to elKompis! </value>
+	</data>
+	<data name="your_producer" xml:space="preserve">
+		<value>Your producer of renewable energy</value>
+	</data>
+	<data name="your_price_today" xml:space="preserve">
+		<value>Your price today</value>
+	</data>
+	<data name="ore_kwh" xml:space="preserve">
+		<value>øre per kWh</value>
+	</data>
+	<data name="welcome_body" xml:space="preserve">
+		<value>Now you’re one of us. We strive to make electricity cheaper, easier and smarter!</value>
+	</data>
+	<data name="set_up_profile_button" xml:space="preserve">
+		<value>Complete my profile</value>
+	</data>
+	<data name="description_household" xml:space="preserve">
+		<value>What kind of housing you have?</value>
+	</data>
+	<data name="housing_type" xml:space="preserve">
+		<value>Housing type</value>
+	</data>
+	<data name="confirm_address" xml:space="preserve">
+		<value>Is the meter at this address?</value>
+	</data>
+	<data name="new_address" xml:space="preserve">
+		<value>The meter is registered at another address.</value>
+	</data>
+	<data name="owner_address" xml:space="preserve">
+		<value>Are you the owner of this address today?</value>
+	</data>
+	<data name="yes_owner_address" xml:space="preserve">
+		<value>Yes, I'm the owner</value>
+	</data>
+	<data name="not_owner_address" xml:space="preserve">
+		<value>No, I'll take over as owner</value>
+	</data>
+	<data name="change_address_search" xml:space="preserve">
+		<value>Enter the address of the home where the electricity meter is, and we will find the correct meter number.</value>
+	</data>
+	<data name="not_right_meter" xml:space="preserve">
+		<value>Not the right meter?</value>
+	</data>
+	<data name="change_address_several_meters" xml:space="preserve">
+		<value>Change and search again</value>
+	</data>
+	<data name="accept_terms_several_meters" xml:space="preserve">
+		<value>You accept our terms and conditions of use by clicking &quot;Confirm&quot;. Read all details.</value>
+	</data>
+	<data name="search_button" xml:space="preserve">
+		<value>Search</value>
+	</data>
+	<data name="add_address_new_meter" xml:space="preserve">
+		<value>Enter the address of the new meter</value>
+	</data>
+	<data name="size_home" xml:space="preserve">
+		<value>What size is your residence?</value>
+	</data>
+	<data name="number_of_people" xml:space="preserve">
+		<value>How many are you in the household?</value>
+	</data>
+	<data name="more_info" xml:space="preserve">
+		<value>What appliances and other electrical items do you have?</value>
+	</data>
+	<data name="date_new_owner" xml:space="preserve">
+		<value>The date I become the owner</value>
+	</data>
+	<data name="moving_house_address" xml:space="preserve">
+		<value>Enter the address of the home where the electricity meter is, and we will find the correct meter number.</value>
+	</data>
+	<data name="confirmation_header_new_meter" xml:space="preserve">
+		<value>All good!</value>
+	</data>
+	<data name="confirmation_body_new_meter" xml:space="preserve">
+		<value>Your new meter is now registered! To give you good analyzes, we would like to know a little about you and your home.</value>
+	</data>
+	<data name="meter_registered_card_header" xml:space="preserve">
+		<value>That's great!</value>
+	</data>
+	<data name="meter_registered_card_body" xml:space="preserve">
+		<value>Now we have everything we need to give you good analyzes and the best experience! ;)</value>
+	</data>
+	<data name="set_up_payment_new_meter_header" xml:space="preserve">
+		<value>Set up your payment solution</value>
+	</data>
+	<data name="paymentsetup_new_meter_efaktura" xml:space="preserve">
+		<value>A new agreement on eFaktura on this meter must be set up.</value>
+	</data>
+	<data name="paymentsetup_new_meter_efaktura_avtalegiro" xml:space="preserve">
+		<value>A new agreement on eFaktura og AvtaleGiro on this meter must be set up.</value>
+	</data>
+	<data name="paymentsetup_new_meter_avtalegiro" xml:space="preserve">
+		<value>A new agreement on AvtaleGiro on this meter must be set up.</value>
+	</data>
+	<data name="found_several_meters_header" xml:space="preserve">
+		<value>We found several of your meters!</value>
+	</data>
+	<data name="found_several_meters_body" xml:space="preserve">
+		<value>Please control that this information is correct and select the meter you want to register. If you want to add several meters, take one at a time.</value>
+	</data>
+	<data name="evcharge_settings_remove_car" xml:space="preserve">
+		<value>Remove electric car</value>
+	</data>
+	<data name="remove_car_header" xml:space="preserve">
+		<value>Remove electric car from smart charging</value>
+	</data>
+	<data name="remove_car_body" xml:space="preserve">
+		<value>The set up between elKompis and your electric car will be removed so that smart charging cannot be carried out.Note that the deletion is done for all your electric cars in the same car brand (connected to the same electric car app). You can add this or any other electric car at any time.</value>
+	</data>
+	<data name="remove_car_button" xml:space="preserve">
+		<value>Remove</value>
+	</data>
+	<data name="not_remove_car" xml:space="preserve">
+		<value>No, I do not want to remove the car.</value>
+	</data>
+	<data name="one_moment" xml:space="preserve">
+		<value>Hang on...</value>
+	</data>
+	<data name="more_info_onboarding" xml:space="preserve">
+		<value>Please provide us with some more information in order for us to find your meter. </value>
+	</data>
+	<data name="payment_vipps_product_name" xml:space="preserve">
+		<value>Power bill from elKompis</value>
+	</data>
+	<data name="payment_vipps_product_description" xml:space="preserve">
+		<value>Amount varies from month to month, based on price and consumption. Automatically paid on due date.</value>
+	</data>
+	<data name="description_address_ssn" xml:space="preserve">
+		<value>Enter either your social security number or address to find your meter.</value>
+	</data>
+	<data name="address_check_header" xml:space="preserve">
+		<value>Is the information we found correct?</value>
+	</data>
+	<data name="address_check_body" xml:space="preserve">
+		<value>Confirm the information or change the address if it is incorrect.</value>
+	</data>
+	<data name="help_us_find_meter" xml:space="preserve">
+		<value>Help us find your meter</value>
+	</data>
+	<data name="help_meter_number" xml:space="preserve">
+		<value>Do you have the meter ID number available?</value>
+	</data>
+	<data name="enter_meter_number" xml:space="preserve">
+		<value>Enter your meter ID number</value>
+	</data>
+	<data name="help_partner" xml:space="preserve">
+		<value>Is the current electricity agreement registered on someone else in your household? </value>
+	</data>
+	<data name="register_on_partner" xml:space="preserve">
+		<value>Is the electricity meter registered on someone you live with?</value>
+	</data>
+	<data name="help_moving" xml:space="preserve">
+		<value>Are you moving house?</value>
+	</data>
+	<data name="moving_register" xml:space="preserve">
+		<value>Enter the date and other information about the home you are taking over.</value>
+	</data>
+	<data name="meter_on_partner" xml:space="preserve">
+		<value>The meter registered on someone else in the household </value>
+	</data>
+	<data name="meter_partner_description" xml:space="preserve">
+		<value>Ok, go back and start over. Provide us with the information to the person that holds your current electricity agreement. </value>
+	</data>
+	<data name="taking_over_cta" xml:space="preserve">
+		<value>No, I'm moving house</value>
+	</data>
+	<data name="taking_over_meter" xml:space="preserve">
+		<value>You are moving house </value>
+	</data>
+	<data name="taking_over_description" xml:space="preserve">
+		<value>Make sure the address is correct. Enter the new meter ID number (if available) and occupancy date.  </value>
+	</data>
+	<data name="date_takeover" xml:space="preserve">
+		<value>Occupancy date</value>
+	</data>
+	<data name="meternumber_takeover" xml:space="preserve">
+		<value>Meter ID number (can be specified later)</value>
+	</data>
+	<data name="send_confirmation" xml:space="preserve">
+		<value>You confirm the takeover by clicking send.</value>
+	</data>
+	<data name="send_info" xml:space="preserve">
+		<value>By clicking send, you confirm that you will take over the home and are setting up an agreement with elKompis. We will contact you if we are missing any information.</value>
+	</data>
+	<data name="confirmation_takeover" xml:space="preserve">
+		<value>Thanks! We make sure that you take over this home and get a smart electricity agreement from elKompis!</value>
+	</data>
+	<data name="info_takeover_missing_info" xml:space="preserve">
+		<value>We will contact you if we are missing any information.</value>
+	</data>
+	<data name="thank_you_contact" xml:space="preserve">
+		<value>Thank you for wanting to join elKompis!</value>
+	</data>
+	<data name="existing_address" xml:space="preserve">
+		<value>Is the meter at an existing address?</value>
+	</data>
+	<data name="manual_process_header" xml:space="preserve">
+		<value>We’re unable to complete your order, but we will make sure to resolve this manually.</value>
+	</data>
+	<data name="agreement_manual_process" xml:space="preserve">
+		<value>This is the smart power deal you get from elKompis.</value>
+	</data>
+	<data name="terms_confirm_manual_process" xml:space="preserve">
+		<value>You accept our agreement and terms of use, and that we collect information to complete the order, by clicking Confirm.</value>
+	</data>
+	<data name="all_details" xml:space="preserve">
+		<value>Read the agreement</value>
+	</data>
+	<data name="more_info_order" xml:space="preserve">
+		<value>It looks like we need even more information.</value>
+	</data>
+	<data name="confirm_moving" xml:space="preserve">
+		<value>Thank you for wanting to join elKompis!</value>
+	</data>
+	<data name="intercom_elbuddy_info_external_id_missing" xml:space="preserve">
+		<value>elKompis ID is missing from the information provided by Intercom</value>
+	</data>
+	<data name="intercom_elbuddy_info_user_not_found" xml:space="preserve">
+		<value>Unable to find a user with the provided ID</value>
+	</data>
+	<data name="intercom_elbuddy_info_full_name" xml:space="preserve">
+		<value>Name</value>
+	</data>
+	<data name="intercom_elbuddy_info_phone_number" xml:space="preserve">
+		<value>Phone</value>
+	</data>
+	<data name="intercom_elbuddy_info_email" xml:space="preserve">
+		<value>Email</value>
+	</data>
+	<data name="intercom_elbuddy_info_yes" xml:space="preserve">
+		<value>Yes</value>
+	</data>
+	<data name="intercom_elbuddy_info_no" xml:space="preserve">
+		<value>No</value>
+	</data>
+	<data name="review" xml:space="preserve">
+		<value>Review details</value>
+	</data>
+	<data name="intercom_cancel_metering_point_which_meter_header" xml:space="preserve">
+		<value>Which meter do you want to cancel?</value>
+	</data>
+	<data name="intercom_cancel_metering_point_thank_you_message" xml:space="preserve">
+		<value>**Thank you!** We will process your request shortly.</value>
+	</data>
+	<data name="previous_invoices" xml:space="preserve">
+		<value>Previous invoices</value>
+	</data>
+	<data name="payment_method_not_set_up" xml:space="preserve">
+		<value>Payment method was not set up</value>
+	</data>
+	<data name="payment_setup_several_meters" xml:space="preserve">
+		<value>Remember to choose the payment method for your new meter. It takes 1–2 days before the power agreement is active. Change meter view to see analyzes for Remember to choose the payment method for your new meter. It takes 1–2 days before the power agreement is active. Change meter view to see analyzes for {0}.</value>
+	</data>
+	<data name="payment_setup_now" xml:space="preserve">
+		<value>Set up payment method now</value>
+	</data>
+	<data name="termination_moving" xml:space="preserve">
+		<value>Termination / Moving</value>
+	</data>
+	<data name="add_car" xml:space="preserve">
+		<value>Add car</value>
+	</data>
+	<data name="cty_kwh" xml:space="preserve">
+		<value>Cty kWh: {0}</value>
+	</data>
+	<data name="cty_month" xml:space="preserve">
+		<value>Cty months: {0}</value>
+	</data>
+	<data name="cost" xml:space="preserve">
+		<value>Kostnad</value>
+	</data>
+	<data name="email_address" xml:space="preserve">
+		<value>Your email</value>
+	</data>
+	<data name="marketing_accept" xml:space="preserve">
+		<value>Yes, I want information about new products and services from Elkompis.</value>
+	</data>
+	<data name="evcharge_status_not_plugged_in" xml:space="preserve">
+		<value>Not plugged in</value>
+	</data>
+	<data name="evcharge_status_fully_charged" xml:space="preserve">
+		<value>Fully charged</value>
+	</data>
+	<data name="evcharge_status_manually_stopped" xml:space="preserve">
+		<value>Manually stopped</value>
+	</data>
+	<data name="evcharge_status_smart_charging_delay" xml:space="preserve">
+		<value>Smart charging delay</value>
+	</data>
+	<data name="evcharge_status_manually_started" xml:space="preserve">
+		<value>Manually started</value>
+	</data>
+	<data name="evcharge_status_smart_charging_active" xml:space="preserve">
+		<value>Smart charge active</value>
+	</data>
+	<data name="evcharge_status_smart_charging_deadline" xml:space="preserve">
+		<value>Smart charging deadline</value>
+	</data>
+	<data name="evcharge_current_range" xml:space="preserve">
+		<value>{0}km</value>
+	</data>
+	<data name="evcharge_battery_level" xml:space="preserve">
+		<value>{0} %%</value>
+	</data>
+	<data name="explanation_invoice" xml:space="preserve">
+		<value>This is a preview. Download pdf to see referral bonus and other invoice details.</value>
+	</data>
+	<data name="meternumber_mpid" xml:space="preserve">
+		<value>Meternumber/målepunkt ID</value>
+	</data>
+	<data name="help_onboarding" xml:space="preserve">
+		<value>Get help from Customer Service</value>
+	</data>
+	<data name="send_button" xml:space="preserve">
+		<value>Send</value>
+	</data>
+	<data name="save_button" xml:space="preserve">
+		<value>Lagre</value>
+	</data>
+	<data name="intercom_update_user_info_email_label" xml:space="preserve">
+		<value>Email</value>
+	</data>
+	<data name="intercom_update_user_info_phone_label" xml:space="preserve">
+		<value>Phone</value>
+	</data>
+	<data name="intercom_update_user_info_street_label" xml:space="preserve">
+		<value>Street</value>
+	</data>
+	<data name="intercom_update_user_info_post_code_label" xml:space="preserve">
+		<value>Postal code</value>
+	</data>
+	<data name="intercom_update_user_info_city_label" xml:space="preserve">
+		<value>City</value>
+	</data>
+	<data name="intercom_update_user_info_submit_label" xml:space="preserve">
+		<value>Submit</value>
+	</data>
+	<data name="referral_cta" xml:space="preserve">
+		<value>You can recruit as many friends as you want! ;)</value>
+	</data>
+	<data name="accrued" xml:space="preserve">
+		<value>Accrued</value>
+	</data>
+	<data name="greensavings_homepage" xml:space="preserve">
+		<value>Tilsvarer {0} CO2 og {1} trær.</value>
+	</data>
+	<data name="comparison_home" xml:space="preserve">
+		<value>Du er {0}% {1} effektiv.</value>
+	</data>
+	<data name="forecast_home" xml:space="preserve">
+		<value>Prognosen din</value>
+	</data>
+	<data name="distribution_home" xml:space="preserve">
+		<value>Du bruker {0}% på {1}.</value>
+	</data>
+	<data name="cost_so_far_home" xml:space="preserve">
+		<value>{0} så langt denne måneden.</value>
+	</data>
+	<data name="priceconcept_explanation" xml:space="preserve">
+		<value>Price guarantee</value>
+	</data>
+	<data name="priceconcept_elaboration" xml:space="preserve">
+		<value>elKompis offers just one electricity agreement with one price! Spot price, which is the agreement offered by elKompis, is the recommended type of agreement by consumer authorities. With Spot price, you get the same price as us on the power exchange. The price comparison shows all spot prices offered in the marked which is puplished by strømpris.no.  Strømpris.no is Forbrukertilsynets (Consumer authority) list of all offered electricity agreements in the Norwegian electricity market. Your saving compared to «the average price in the market» and compared to the «five most expensive suppliers» in the market is downloaded directly from strømpris.no. The savings is shown in percentages.</value>
+	</data>
+	<data name="consumption_monthly_header" xml:space="preserve">
+		<value>Your monthly energy consumption – day by day</value>
+	</data>
+	<data name="consumption_month" xml:space="preserve">
+		<value>So far have you spent {0} kWh and {1} kr, this month.</value>
+	</data>
+	<data name="consumption_yearly_header" xml:space="preserve">
+		<value>Your annual energy consumption - month by month</value>
+	</data>
+	<data name="consumption_year" xml:space="preserve">
+		<value>So far this year you have spent {0} kWh and {1} kr.</value>
+	</data>
+	<data name="consumption_daily_header" xml:space="preserve">
+		<value>Your daily energy consumption - hour by hour</value>
+	</data>
+	<data name="consumption_day" xml:space="preserve">
+		<value>You spent {0} kWh and {1} kr this day.</value>
+	</data>
+	<data name="distribution_header" xml:space="preserve">
+		<value>Fordeling av ditt strømforbruk</value>
+	</data>
+	<data name="forecast_header" xml:space="preserve">
+		<value>Forecast for your monthly energy</value>
+	</data>
+	<data name="kWh" xml:space="preserve">
+		<value>kWh</value>
+	</data>
+	<data name="comparison_header" xml:space="preserve">
+		<value>Sammenlikn deg med andre</value>
+	</data>
+	<data name="comparison_similarhome" xml:space="preserve">
+		<value>Se hvor effektivt du bruker strømmen.</value>
+	</data>
+	<data name="similar_homes_20" xml:space="preserve">
+		<value>20 %% most effective</value>
+	</data>
+	<data name="efaktura_changes" xml:space="preserve">
+		<value>Remove in your online bank first, in order to change in elKompis. </value>
+	</data>
+	<data name="add_paymentmethod_avtalegiro" xml:space="preserve">
+		<value>Add payment method on {0}.</value>
+	</data>
+	<data name="overview_header_home" xml:space="preserve">
+		<value>DAGENS STRØMOVERSIKT</value>
+	</data>
+	<data name="comparison_header_home" xml:space="preserve">
+		<value>Sammenligning</value>
+	</data>
+	<data name="ev_charging" xml:space="preserve">
+		<value>Lading</value>
+	</data>
+	<data name="ev_charging_kwh" xml:space="preserve">
+		<value>Lading (kWh)</value>
+	</data>
+	<data name="kl" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_no_data" xml:space="preserve">
+		<value>Vi mangler data om ditt forbruk. Så raskt vi mottar dette fra din netteier, oppdaterer vi oversikten.</value>
+	</data>
+	<data name="consumption_no_data_graph" xml:space="preserve">
+		<value>Mangler data</value>
+	</data>
+	<data name="moving_house_registered" xml:space="preserve">
+		<value>Information is registered</value>
+	</data>
+	<data name="terms_confirm_moving_new_house" xml:space="preserve">
+		<value>You accept our agreement and terms of use, and confirme that you will take over this home, by clicking Confirm.</value>
+	</data>
+	<data name="moving_information" xml:space="preserve">
+		<value>Information on your new address</value>
+	</data>
+	<data name="moving_new_address" xml:space="preserve">
+		<value>Where are you moving?</value>
+	</data>
+	<data name="moving_new_address_information" xml:space="preserve">
+		<value>Your new address</value>
+	</data>
+	<data name="moving_out_registered" xml:space="preserve">
+		<value>Information regarding moving is registered.</value>
+	</data>
+	<data name="moving_continues_elkompis" xml:space="preserve">
+		<value>Your agreement with elKompis continues on your new address.</value>
+	</data>
+	<data name="confirm_moving_out" xml:space="preserve">
+		<value>Confirm moving</value>
+	</data>
+	<data name="moving_date_address_confirmation" xml:space="preserve">
+		<value>Fill in the takeover date, and confirm the address you are moving from</value>
+	</data>
+	<data name="moving_current_address" xml:space="preserve">
+		<value>Here is your current address</value>
+	</data>
+	<data name="moving_pick_current_address" xml:space="preserve">
+		<value>Which address are you moving from?</value>
+	</data>
+	<data name="moving_list_current_addresses" xml:space="preserve">
+		<value>Your current addresses</value>
+	</data>
+	<data name="moving" xml:space="preserve">
+		<value>Are you moving?</value>
+	</data>
+	<data name="moving_information_old_new" xml:space="preserve">
+		<value>Stop delivery at your old home, and order elKompis for your new home. Please give us 3 days notice before moving out.</value>
+	</data>
+	<data name="intercom_elkompis_admin_transfer_cancel_body" xml:space="preserve">
+		<value>Cancellation:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}
+
+Metering number: {0}
+Transfer date: {0}</value>
+	</data>
+	<data name="postal_code_not_found" xml:space="preserve">
+		<value>No postal code has been found</value>
+	</data>
+	<data name="onboarding_street" xml:space="preserve">
+		<value>Street name</value>
+	</data>
+	<data name="onboarding_postal_place" xml:space="preserve">
+		<value>City</value>
+	</data>
+	<data name="name" xml:space="preserve">
+		<value>Name</value>
+	</data>
+	<data name="moving_house_information" xml:space="preserve">
+		<value>We will come back to you if we need more information.</value>
+	</data>
+	<data name="street_name" xml:space="preserve">
+		<value>Street name</value>
+	</data>
+	<data name="moving_information_date_confirmation" xml:space="preserve">
+		<value>Fill inn the take over date and the meter number, and confirm or make a change to your address.</value>
+	</data>
+	<data name="intercom_elkompis_admin_transfer_new_body" xml:space="preserve">
+		<value>New meter:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}
+
+Metering number: {0}
+Transfer date: {0}</value>
+	</data>
+	<data name="number" xml:space="preserve">
+		<value>Number</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_payment_method" xml:space="preserve">
+		<value>Payment type</value>
+	</data>
+	<data name="intercom_elbuddy_info_yearly_consumption" xml:space="preserve">
+		<value>Yearly consumption</value>
+	</data>
+	<data name="intercom_elbuddy_info_user_locations_not_loaded" xml:space="preserve">
+		<value>We were unable to load metering point information</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_address" xml:space="preserve">
+		<value>Address</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_city" xml:space="preserve">
+		<value>City</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_post_code" xml:space="preserve">
+		<value>Postal code</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_consumption" xml:space="preserve">
+		<value>Consumption this year</value>
+	</data>
+	<data name="smart_evcharge" xml:space="preserve">
+		<value>Smart lading</value>
+	</data>
+	<data name="error_payment_method" xml:space="preserve">
+		<value>The payment method is not longer valid.</value>
+	</data>
+	<data name="evcharge_heading" xml:space="preserve">
+		<value>Lad elbilen når strømmen er billigst</value>
+	</data>
+	<data name="evcharge_explanation_text" xml:space="preserve">
+		<value>Med smart lading fra elKompis lader du når strømmen er billigst. Du får også full oversikt i appen.</value>
+	</data>
+	<data name="evcharge_add_car_smartcharge" xml:space="preserve">
+		<value>Legg til elbil for å smartlade</value>
+	</data>
+	<data name="error_add_payment" xml:space="preserve">
+		<value>Add eFaktura/AvtaleGiro on your address</value>
+	</data>
+	<data name="error_add_efaktura" xml:space="preserve">
+		<value>Add eFaktura on our address</value>
+	</data>
+	<data name="welcome_to" xml:space="preserve">
+		<value>Welcome to elKompis</value>
+	</data>
+	<data name="add_household_profil" xml:space="preserve">
+		<value>Add your household profile</value>
+	</data>
+	<data name="data_soon_coming" xml:space="preserve">
+		<value>Your information will soon be available</value>
+	</data>
+	<data name="data_show" xml:space="preserve">
+		<value>Information coming soon</value>
+	</data>
+	<data name="share_link" xml:space="preserve">
+		<value>Share link to refer</value>
+	</data>
+	<data name="price_concept_home" xml:space="preserve">
+		<value>My price 
+proof</value>
+	</data>
+	<data name="my_consumption_home" xml:space="preserve">
+		<value>My 
+consumption</value>
+	</data>
+	<data name="my_environmental_savings_home" xml:space="preserve">
+		<value>My environmental 
+savings</value>
+	</data>
+	<data name="my_distribution_home" xml:space="preserve">
+		<value>My 
+distribution</value>
+	</data>
+	<data name="my_forecast_home" xml:space="preserve">
+		<value>My 
+forecast</value>
+	</data>
+	<data name="similar_homes_home" xml:space="preserve">
+		<value>Similar homes</value>
+	</data>
+	<data name="account_billing_address" xml:space="preserve">
+		<value>Fill in the right billing address</value>
+	</data>
+	<data name="account_profile_billing_address" xml:space="preserve">
+		<value>Please fill in the billing address if different from where the meter is</value>
+	</data>
+	<data name="confirm_billing_address" xml:space="preserve">
+		<value>Confirm your billing address</value>
+	</data>
+	<data name="intercom_elkompis_admin_onboarding_help_body" xml:space="preserve">
+		<value>Assistance with registering meter:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}
+
+Metering number: {0}</value>
+	</data>
+	<data name="consumption_receive" xml:space="preserve">
+		<value>Your consumption will be shown as soon as we receive it from your grid owner. We usually receive it around 10 AM. </value>
+	</data>
+	<data name="paymentcard_remove" xml:space="preserve">
+		<value>Remove payment card</value>
+	</data>
+	<data name="onboarding_explanation_heading" xml:space="preserve">
+		<value>How do we keep the costs low ?  </value>
+	</data>
+	<data name="onboarding_explanation" xml:space="preserve">
+		<value>We digitalize all the stages in the power supply process to be able to provide you with the most affordable electricity deal. </value>
+	</data>
+	<data name="onboarding_explanation_one_heading" xml:space="preserve">
+		<value>Power purchase</value>
+	</data>
+	<data name="onboarding_explanation_one_text" xml:space="preserve">
+		<value>The procurement process is digital from start to end – from Nordpool and to your household.</value>
+	</data>
+	<data name="onboarding_explanation_two_heading" xml:space="preserve">
+		<value>Data collection</value>
+	</data>
+	<data name="onboarding_explanation_two_text" xml:space="preserve">
+		<value>We continually pull data about your electricity consumption from the grid owner. </value>
+	</data>
+	<data name="onboarding_explanation_three_heading" xml:space="preserve">
+		<value>Cost calculation</value>
+	</data>
+	<data name="onboarding_explanation_three_text" xml:space="preserve">
+		<value>Meter values from Elhub + Nord Pool prices = your electricity invoice</value>
+	</data>
+	<data name="onboarding_explanation_four_heading" xml:space="preserve">
+		<value>Invoice distribution</value>
+	</data>
+	<data name="onboarding_explanation_four_text" xml:space="preserve">
+		<value>All invoicis are digital. Pay by Vipps or your bank.  </value>
+	</data>
+	<data name="payment_check" xml:space="preserve">
+		<value>Check your payment method</value>
+	</data>
+	<data name="payment_efaktura_heading" xml:space="preserve">
+		<value>Your payment method is eFaktura</value>
+	</data>
+	<data name="payment_efaktura_text" xml:space="preserve">
+		<value>You will receive your electricity bill directly in your mobil/online bank. You do not need to do anything further, as you have signed up for automatic eFaktura (Ja takk til alle). If you also want to have AvtaleGiro, please sign up for it in your online bank.</value>
+	</data>
+	<data name="more_information" xml:space="preserve">
+		<value>More information</value>
+	</data>
+	<data name="price_now" xml:space="preserve">
+		<value>Price right now</value>
+	</data>
+	<data name="payment_do_not_have_efaktura_heading" xml:space="preserve">
+		<value>eFaktura</value>
+	</data>
+	<data name="payment_do_not_have_efaktura_text" xml:space="preserve">
+		<value>Sign up for eFaktura in your online bank (Ja takk til alle) to receive eFaktura as a payment method in the app. You can then also choose to pay your bill directly in Vipps. We send our electricity bill once a month. </value>
+	</data>
+	<data name="shop_homescreen" xml:space="preserve">
+		<value>elKompis shop</value>
+	</data>
+	<data name="fixed_price_homescreen" xml:space="preserve">
+		<value>Order a fixed price</value>
+	</data>
+	<data name="agreement_homescreen" xml:space="preserve">
+		<value>Your electricity agreement</value>
+	</data>
+	<data name="fixed_price_confirmation_heading" xml:space="preserve">
+		<value>Fixed price confirmation</value>
+	</data>
+	<data name="fixed_price_confirmation_text" xml:space="preserve">
+		<value>You have ordered a fixed price on your electricity.  \&quot;Prisen nå \&quot; as you see on your homescreen, will still be &quot;spotpris&quot;, although you now have a fixed price. </value>
+	</data>
+	<data name="fixed_price_heading" xml:space="preserve">
+		<value>Order a fixed price on your electricity for a {0} months period</value>
+	</data>
+	<data name="fixed_price_text" xml:space="preserve">
+		<value>This electricity agreement gives you a fixed price on your electricity. It means that your price will be set for a certain period. In other words, the price in this periode will nor go up or down. You will pay fixed price per kWh. Cost for grid is billed separated from your grid owner. </value>
+	</data>
+	<data name="fixed_price_bulletspoints_one" xml:space="preserve">
+		<value>Fixed price {0} øre/kWh</value>
+	</data>
+	<data name="fixed_price_bulletspoints_two" xml:space="preserve">
+		<value>Monthly fee: {0} kr each month</value>
+	</data>
+	<data name="fixed_price_bulletspoints_three" xml:space="preserve">
+		<value>{0} months with a fixed price</value>
+	</data>
+	<data name="fixed_price_bulletspoints_four" xml:space="preserve">
+		<value>A fixed price during the whole period</value>
+	</data>
+	<data name="fixed_price_bulletspoints_five" xml:space="preserve">
+		<value>You avoid price changes</value>
+	</data>
+	<data name="fixed_price_confirmation_terms" xml:space="preserve">
+		<value>I confirm that I understand the terms and conditions with the agreement</value>
+	</data>
+	<data name="fixed_price_order" xml:space="preserve">
+		<value>Order</value>
+	</data>
+	<data name="fixed_price_offer_heading" xml:space="preserve">
+		<value>Do you want a fixed price on your electricity?</value>
+	</data>
+	<data name="fixed_price_offer_text" xml:space="preserve">
+		<value>Avoid changes in your electricity agreement. You pay simply one price each kWh, during the agreed period</value>
+	</data>
+	<data name="fixed_price_offer_one_period" xml:space="preserve">
+		<value>{0} month: {1}</value>
+	</data>
+	<data name="fixed_price_offer_two_period" xml:space="preserve">
+		<value>{0} months: {1}</value>
+	</data>
+	<data name="fixed_price_offer_two_price_area_one" xml:space="preserve">
+		<value>øre/kWh</value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_one" xml:space="preserve">
+		<value>øre/kWh</value>
+	</data>
+	<data name="fixed_price_read_more" xml:space="preserve">
+		<value>Read more and order</value>
+	</data>
+	<data name="fixed_price_top" xml:space="preserve">
+		<value>FIXED PRICE</value>
+	</data>
+	<data name="payment_top" xml:space="preserve">
+		<value>YOUR PAYMENT METHOD</value>
+	</data>
+	<data name="payment_method_card_heading" xml:space="preserve">
+		<value>Your payment method is Visa/payment card</value>
+	</data>
+	<data name="payment_method_card_text" xml:space="preserve">
+		<value>Your receive a montly electricity bill from us.</value>
+	</data>
+	<data name="payment_method_choose_other" xml:space="preserve">
+		<value>Choose another way to pay your electricity bill</value>
+	</data>
+	<data name="fixed_price_to_come_heading" xml:space="preserve">
+		<value>We will soon offer a fixed price on your electricity, in the app.</value>
+	</data>
+	<data name="fixed_price_to_come_text" xml:space="preserve">
+		<value>We will soon release the opportunity to order a fixed price in the app. Check again soon!</value>
+	</data>
+	<data name="homepage_price_now_ore" xml:space="preserve">
+		<value>øre</value>
+	</data>
+	<data name="agreement_top" xml:space="preserve">
+		<value>YOUR AGREEMENT</value>
+	</data>
+	<data name="agreement_heading" xml:space="preserve">
+		<value>Your smart electricity agreement</value>
+	</data>
+	<data name="agreement_text" xml:space="preserve">
+		<value>In elKompis you have smart, cheap and renewable energy for only 1 øre/kWh (tax included), and 34 kr per month, in addition to the electricity cost. </value>
+	</data>
+	<data name="agreement_text_bullets_three" xml:space="preserve">
+		<value>100 % renewable energy</value>
+	</data>
+	<data name="agreement_text_bullets_two" xml:space="preserve">
+		<value>Insight and advising</value>
+	</data>
+	<data name="agreement_text_bullets_four" xml:space="preserve">
+		<value>Smart EV charging</value>
+	</data>
+	<data name="agreement_text_bullets_one" xml:space="preserve">
+		<value>Low price on your electricity</value>
+	</data>
+	<data name="agreement_sales_pitch_five" xml:space="preserve">
+		<value>34,- per month</value>
+	</data>
+	<data name="homescreen_info_delivery" xml:space="preserve">
+		<value>Welcome to elKompis! It will take approximately {0} days before we start delivery to your home. Do you want us to start earlier? </value>
+	</data>
+	<data name="onboarding_start_delivery_heading" xml:space="preserve">
+		<value>Vil du at strømavtalen skal starte så fort som mulig?</value>
+	</data>
+	<data name="onboarding_start_delivery_text" xml:space="preserve">
+		<value>Velger du «Oppstart snarest mulig», overstyrer du angrefristen på 14 dager. Hvis du likevel vil benytte deg av angreretten, vil den ikke gjelde for strøm du allerede har brukt.</value>
+	</data>
+	<data name="onboarding_start_delivery_soon" xml:space="preserve">
+		<value>Start to deliver as soon as possible</value>
+	</data>
+	<data name="onboarding_start_delivery_ahead" xml:space="preserve">
+		<value>Start delivery in 14 days</value>
+	</data>
+	<data name="onboarding_start_delivery_confirmation" xml:space="preserve">
+		<value>I confirm that I want to receive electricity from elKompis as soon as possible</value>
+	</data>
+	<data name="onboarding_start_delivery_complete" xml:space="preserve">
+		<value>Complete my order</value>
+	</data>
+	<data name="homescreen_info_delivery_link" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="greenconcept_infobox_body_savings_in_trees" xml:space="preserve">
+		<value>The environmental impact of renewable energy can be compared to the environmental impact of trees. Just as you save carbon with renewable energy, spruce trees save the environment by sequestering carbon.</value>
+	</data>
+	<data name="greenconcept_infobox_header_savings_in_trees" xml:space="preserve">
+		<value>Your environmental saving measured in trees</value>
+	</data>
+	<data name="agreement_sales_pitch_six" xml:space="preserve">
+		<value>1 øre/kWh</value>
+	</data>
+	<data name="consumption_advice_see_all" xml:space="preserve">
+		<value>See all</value>
+	</data>
+	<data name="consumption_advice_see_few" xml:space="preserve">
+		<value>See fewer</value>
+	</data>
+	<data name="consumption_advice_tip_one" xml:space="preserve">
+		<value>Use price information in elKompis, and plan to use electricity when the prices are at the lowest</value>
+	</data>
+	<data name="consumption_advice_tip_two" xml:space="preserve">
+		<value>Charge your electric vehicle during the night</value>
+	</data>
+	<data name="consumption_advice_tip_three" xml:space="preserve">
+		<value>Use your thermostat to control the room temperature</value>
+	</data>
+	<data name="consumption_advice_tip_four" xml:space="preserve">
+		<value>Decrease the indoor temperature by one degree</value>
+	</data>
+	<data name="consumption_advice_tip_five" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_six" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_seven" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_eight" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_nine" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_ten" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_eleven" xml:space="preserve">
+		<value>Fill up the laundry and the dryer before turning them on</value>
+	</data>
+	<data name="consumption_advice_tip_twelve" xml:space="preserve">
+		<value>Do not do the dishwasher by hands</value>
+	</data>
+	<data name="consumption_advice_tip_thirteen" xml:space="preserve">
+		<value>Turn of light and the heating in rooms that are not in use</value>
+	</data>
+	<data name="consumption_advice_tip_fourteen" xml:space="preserve">
+		<value>Close the doors</value>
+	</data>
+	<data name="consumption_advice_tip_fifteen" xml:space="preserve">
+		<value>Reduce the use of underfloor heating and panel heaters</value>
+	</data>
+	<data name="consumption_advice_tip_sixteen" xml:space="preserve">
+		<value>Use energy-saving lightbulbs</value>
+	</data>
+	<data name="consumption_advice_tip_seventeen" xml:space="preserve">
+		<value>Consider whether you can use heating sources other than electricity, such as wood</value>
+	</data>
+	<data name="consumption_advice_tip_eighteen" xml:space="preserve">
+		<value>Draw the curtains during the nights</value>
+	</data>
+	<data name="consumption_advice_tip_nineteen" xml:space="preserve">
+		<value>Lower the temperature on your laundry</value>
+	</data>
+	<data name="consumption_advice_tip_twenty" xml:space="preserve">
+		<value>Be aware of the temperature in your freezer and your fridge</value>
+	</data>
+	<data name="consumption_tip_heading" xml:space="preserve">
+		<value>ENKLE TIPS FOR Å REDUSERE FORBRUKET DITT</value>
+	</data>
+	<data name="consumption_changes" xml:space="preserve">
+		<value>Your consumption {0} {1} %% compared to last week</value>
+	</data>
+	<data name="comparison_less_effective_home" xml:space="preserve">
+		<value>20 % minst effektive hjem</value>
+	</data>
+	<data name="consumption_most_effective_homes" xml:space="preserve">
+		<value>20 % mest effektive hjem</value>
+	</data>
+	<data name="green_concept_energy_mix_heading" xml:space="preserve">
+		<value>We recommend 100 % renewable energy</value>
+	</data>
+	<data name="green_concept_energy_mix_text" xml:space="preserve">
+		<value>elKompis buy 100 % renewable energy. For customer with non-renewable energy, NVE's electricity declaration applies, which consist of nuclear power and other fossil sources. </value>
+	</data>
+	<data name="price_concept_heading" xml:space="preserve">
+		<value>PRISBESPARELSE</value>
+	</data>
+	<data name="greenconcept_main_heading" xml:space="preserve">
+		<value>ENVIRONMENTAL SAVING</value>
+	</data>
+	<data name="close_button" xml:space="preserve">
+		<value>Close</value>
+	</data>
+	<data name="fixed_price_confirmation_terms_two" xml:space="preserve">
+		<value>Terms and conditions with the agreement</value>
+	</data>
+	<data name="intercom_elkompis_admin_expedited_import_request_body" xml:space="preserve">
+		<value>Customer {0} {0} (mobile: {0}) requests that we change the activation date for meter number {0} to nearest possible date.</value>
+	</data>
+	<data name="adress_unhappypath" xml:space="preserve">
+		<value>At what address do you want the electricity delivered? </value>
+	</data>
+	<data name="onboarding_elwin_failure" xml:space="preserve">
+		<value>Information about your meter is not available at the  moment. Meanwhile, please provide us with your contact information.</value>
+	</data>
+	<data name="demo" xml:space="preserve">
+		<value>DEMO</value>
+	</data>
+	<data name="ev_charge_possible" xml:space="preserve">
+		<value>Her kan du smartlade elbil</value>
+	</data>
+	<data name="increased" xml:space="preserve">
+		<value>has increased</value>
+	</data>
+	<data name="reduced" xml:space="preserve">
+		<value>is reduced</value>
+	</data>
+	<data name="fixed_price_monthfee" xml:space="preserve">
+		<value>34,-</value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_two" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_three" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_four" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_two_period_area_two" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_two_period_area_three" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_two_period_area_four" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_demo" xml:space="preserve">
+		<value>Demovisning</value>
+	</data>
+	<data name="consumption_demo_top_text" xml:space="preserve">
+		<value>Vi har ennå ikke nok informasjon til å analysere fordelingen av strømforbruket ditt. Din fordeling kommer snart!</value>
+	</data>
+	<data name="comparison__demo_text" xml:space="preserve">
+		<value>Denne måneden er strømforbruket ditt 25 % mer effektivt enn tilsvarende hjem</value>
+	</data>
+	<data name="comparison_demo_top_text" xml:space="preserve">
+		<value>Vi har ikke nok informasjon til å se hvor effektivt du bruker strøm, sammenlignet med hjem som ligner på ditt. Denne analysen får du snart.</value>
+	</data>
+	<data name="consumption_demo_explanation" xml:space="preserve">
+		<value>Mesteparten av strømmen du bruker går til oppvarming. Du har brukt 750 kroner på oppvarming denne måneden. </value>
+	</data>
+	<data name="onboarding_unhappy_path_meter_not_found_heading" xml:space="preserve">
+		<value>Confirm your new power supply agreement</value>
+	</data>
+	<data name="start_delivery_header" xml:space="preserve">
+		<value>START-UP</value>
+	</data>
+	<data name="intercom_elkompis_admin_manual_onboarding_body" xml:space="preserve">
+		<value>Manual registration required:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}</value>
+	</data>
+	<data name="fixed_price_already_ordered_heading" xml:space="preserve">
+		<value>You have already ordered a fixed price for {0} months</value>
+	</data>
+	<data name="fixed_price_already_ordered_text" xml:space="preserve">
+		<value>We have registered your fixed price agreement, and will confirm the first following working-day. Your ordinary electricity deal will still be shown in the folder &quot;Your agreement&quot;. </value>
+	</data>
+	<data name="fixed_price_offer_price" xml:space="preserve">
+		<value>{0} øre/kWh</value>
+	</data>
+	<data name="fixed_price_offer_period" xml:space="preserve">
+		<value>{0} months: {1}</value>
+	</data>
+	<data name="fixed_price_already_ordered_error" xml:space="preserve">
+		<value>You have already ordered a fixed price</value>
+	</data>
+	<data name="referral_mainpage_customer_not_ready_text" xml:space="preserve">
+		<value>Så fort strømmåleren din er aktiv, kan du begynne å verve nye elKompiser.</value>
+	</data>
+	<data name="referral_mainpage_earn_cta_get_started_not_ready" xml:space="preserve">
+		<value>Tjen gratis strøm</value>
+	</data>
+	<data name="consumption_advice_tip_one_heading" xml:space="preserve">
+		<value>Planlegg strømbruken ut fra når strømprisen er lavest</value>
+	</data>
+	<data name="consumption_advice_tip_one_body" xml:space="preserve">
+		<value>Bruk appen og planlegg strømbruken ut fra når strømprisen er lavest. Du kan spare masse på å redusere strømforbruket i de dyreste timene. Det anbefales ikke å bruke brannfarlige produkter om natten.</value>
+	</data>
+	<data name="consumption_advice_tip_two_heading" xml:space="preserve">
+		<value>Senk temperaturen inne med én grad.</value>
+	</data>
+	<data name="consumption_advice_tip_two_body" xml:space="preserve">
+		<value>In the average Norwegian household, heating makes for about 60-80 % of the total energy usage. By turning the indoor temperature down by just 1 degree you can reduce your energy usage by as much as 5 %. A general recommendation is to keep the indoor temperature at 18-21 °C. for a comfortable yet energy efficient living.</value>
+	</data>
+	<data name="consumption_advice_tip_three_heading" xml:space="preserve">
+		<value>Lad elbilen om natten.</value>
+	</data>
+	<data name="consumption_advice_tip_three_body" xml:space="preserve">
+		<value>The energy cost is usually lower during night-time. If you have a safe and smart home electrical vehicle charging station, you might want to consider charging your car overnight. Remember that with the smart charging from elKompis, your car will be automatically charged during the time when the price on energy is the lowest.</value>
+	</data>
+	<data name="consumption_advice_tip_four_heading" xml:space="preserve">
+		<value>Skru av elektriske apparater.</value>
+	</data>
+	<data name="consumption_advice_tip_four_body" xml:space="preserve">
+		<value>When your computer and TV is not in use, it is recommended to turn them off completely rather than having them on standby mode. Many electronics use the same amount of energy when they are in standby as when they are being used. Therefore, you should make it a habit to turn your electronics off then they are not in use.</value>
+	</data>
+	<data name="consumption_advice_tip_five_heading" xml:space="preserve">
+		<value>Ta korte dusjer.</value>
+	</data>
+	<data name="consumption_advice_tip_five_body" xml:space="preserve">
+		<value>Second to heating a household, warm water supply makes up for the most energy usage in Norwegian households. About 20 % of your energy usage is for powering your warm water supply. In times when energy prices are high, it might be smart to have quicker showers than usual.</value>
+	</data>
+	<data name="priceconcept_comparison_saving" xml:space="preserve">
+		<value>You save</value>
+	</data>
+	<data name="fixed_price_duration" xml:space="preserve">
+		<value>{0} months</value>
+	</data>
+	<data name="referral_notification" xml:space="preserve">
+		<value>Your elKompis has now confirmed the agreement. </value>
+	</data>
+	<data name="onboarding_telephonenumber_change" xml:space="preserve">
+		<value>Change telephonenumber</value>
+	</data>
+	<data name="legend_elkompis" xml:space="preserve">
+		<value>100 % renewable energy from elKomis</value>
+	</data>
+	<data name="onboarding_mobile_resend_body" xml:space="preserve">
+		<value>The message was received from {0} and was sent to the telephone number you gave us {1}.</value>
+	</data>
+	<data name="notification_referral_heading" xml:space="preserve">
+		<value>You have got a new elKompis :)</value>
+	</data>
+	<data name="consumption_demo_heading" xml:space="preserve">
+		<value>Your consumption overview will soon be ready</value>
+	</data>
+	<data name="onboarding_mobil_resend_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="onboarding_mobile_resend_heading" xml:space="preserve">
+		<value>Did you receive the sms code?</value>
+	</data>
+</root>

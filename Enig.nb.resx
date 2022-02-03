@@ -1,0 +1,4353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+						</xsd:sequence>
+						<xsd:attribute name="name" use="required" type="xsd:string" />
+						<xsd:attribute name="type" type="xsd:string" />
+						<xsd:attribute name="mimetype" type="xsd:string" />
+						<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ok" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="cancel" xml:space="preserve">
+		<value>Avbryt</value>
+	</data>
+	<data name="error" xml:space="preserve">
+		<value>Noe er feil</value>
+	</data>
+	<data name="unknown" xml:space="preserve">
+		<value>Noe gikk visst galt.
+Du kan gjerne kontakte utviklerne eller prøve på nytt senere</value>
+	</data>
+	<data name="auth_invalidCredential" xml:space="preserve">
+		<value>IDP-tokenet eller URL-en som ble foreslått fungerer ikke</value>
+	</data>
+	<data name="auth_userDisabled" xml:space="preserve">
+		<value>Serveren har ikke den brukerkontoen</value>
+	</data>
+	<data name="auth_operationNotAllowed" xml:space="preserve">
+		<value>Administratoren tillater ikke innlogging med den måten å identifisere på</value>
+	</data>
+	<data name="auth_emailAlreadyInUse" xml:space="preserve">
+		<value>E-postadressen du ville logge inn med brukes allerede</value>
+	</data>
+	<data name="auth_invalidEmail" xml:space="preserve">
+		<value>Den e-postadressen fungerer ikke</value>
+	</data>
+	<data name="auth_wrongPassword" xml:space="preserve">
+		<value>Det er ikke riktig passord å logge inn med</value>
+	</data>
+	<data name="auth_codeTooManyRequests" xml:space="preserve">
+		<value>Du har prøvd for mange ganger og må ta en pause. Kom tilbake senere.</value>
+	</data>
+	<data name="auth_userNotFound" xml:space="preserve">
+		<value>Vi finner ikke brukerkontoen som har den informasjonen.
+Vil du lage deg en ny bruker?</value>
+	</data>
+	<data name="auth_accountExistsWithDifferentCredential" xml:space="preserve">
+		<value>Vi må tilnytte brukeren</value>
+	</data>
+	<data name="auth_invalidUserToken" xml:space="preserve">
+		<value>Autorisasjonen som er lagret for brukeren fungerer ikke, så du må logge inn igjen</value>
+	</data>
+	<data name="auth_userTokenExpired" xml:space="preserve">
+		<value>Det som ble lagret har utløpt, kanskje hvis brukeren har endret passord for kontoen på en annen enhet. Da kan brukeren logge inn på den enheten og prøve på nytt.</value>
+	</data>
+	<data name="auth_userMismatch" xml:space="preserve">
+		<value>Det ble gjort et forsøk på bekrefte en bruker på nytt, men ikke med den riktige brukeren</value>
+	</data>
+	<data name="auth_credentialAlreadyInUse" xml:space="preserve">
+		<value>Forsøkte å koble opplysninger opp til en Firebase-konto som allerede har disse opplysningene</value>
+	</data>
+	<data name="auth_missingPhoneNumber" xml:space="preserve">
+		<value>Vi fikk ikke telefonnummeret som skulle bekrefte e-postadressen</value>
+	</data>
+	<data name="auth_invalidPhoneNumber" xml:space="preserve">
+		<value>Telefonnummeret som skulle bekrefte e-postadressen fungerer ikke</value>
+	</data>
+	<data name="auth_missingVerificationCode" xml:space="preserve">
+		<value>Bekreftelseskoden som ble brukt som telefonnummer-info var tom</value>
+	</data>
+	<data name="auth_invalidVerificationCode" xml:space="preserve">
+		<value>Koden som skulle bekrefte telefonnummeret fungerer ikke</value>
+	</data>
+	<data name="auth_missingVerificationID" xml:space="preserve">
+		<value>BekreftelsesID-en som ble brukt som telefonnummer-info var tom</value>
+	</data>
+	<data name="auth_invalidVerificationID" xml:space="preserve">
+		<value>ID-en som skulle bekrefte telefonnummeret fungerer ikke</value>
+	</data>
+	<data name="auth_missingAppCredential" xml:space="preserve">
+		<value>I forespørselen om verifyClient mangler enhetstokenet for APNS</value>
+	</data>
+	<data name="auth_invalidAppCredential" xml:space="preserve">
+		<value>APNS-enhetstokenet som skulle bekrefte brukeren fungerer ikke</value>
+	</data>
+	<data name="auth_sessionExpired" xml:space="preserve">
+		<value>Koden fra tekstmeldingen har utløpt</value>
+	</data>
+	<data name="auth_quotaExceeded" xml:space="preserve">
+		<value>Mengden tekstmeldinger for prosjektets er over kvoten</value>
+	</data>
+	<data name="auth_notificationNotForwarded" xml:space="preserve">
+		<value>Det gikk ikke å videresende varsel til FIRAuth fra appen</value>
+	</data>
+	<data name="auth_appNotVerified" xml:space="preserve">
+		<value>Da telefonnummeret skulle godkjennes kunne ikke Firebase bekrefte appen</value>
+	</data>
+	<data name="auth_captchaCheckFailed" xml:space="preserve">
+		<value>Det er ikke riktig reCAPTCHA-token</value>
+	</data>
+	<data name="auth_signInUserInteractionFailure" xml:space="preserve">
+		<value>Det skjedde en feil i innlogging til web-flyten</value>
+	</data>
+	<data name="auth_rejectedCredential" xml:space="preserve">
+		<value>Informasjonen var enten ikke riktig eller passet ikke</value>
+	</data>
+	<data name="auth_keychainError" xml:space="preserve">
+		<value>Noe gikk galt med å få tilgang til keychain-en</value>
+	</data>
+	<data name="auth_internalError" xml:space="preserve">
+		<value>Det har skjedd en intern feil</value>
+	</data>
+	<data name="auth_malformedJWT" xml:space="preserve">
+		<value>Det gikk ikke å lese av JTW-en riktig</value>
+	</data>
+	<data name="bad_response_error_message_format" xml:space="preserve">
+		<value>Det gikk visst ikke, og feilkoden er: {0}</value>
+	</data>
+	<data name="no_token_for_the_user_error" xml:space="preserve">
+		<value>Noe er galt, så identifikasjonen for tokenet kom ikke tilbake fra backend, 
+men ta gjerne kontakt med utviklerne for å få hjelp.</value>
+	</data>
+	<data name="failed_to_open_db_model_error" xml:space="preserve">
+		<value>Det gikk ikke å åpne database-modellen</value>
+	</data>
+	<data name="auth_user_not_found_error" xml:space="preserve">
+		<value>Du er visst ikke logget inn</value>
+	</data>
+	<data name="failed_to_save_profile_to_db_error_format" xml:space="preserve">
+		<value>Det gikk ikke å lagre bruker-profien i databasen, sånn den er nå.
+Dette er kritisk. Beklager, prøv å logge inn igjen eller kontakt utviklerne for å få hjelp.
+(Den underliggende database-feilen: {0}</value>
+	</data>
+	<data name="failed_to_decode_data_error_format" xml:space="preserve">
+		<value>Det kom uventede data fra backend {0}, men prøv gjerne på nytt senere eller kontakt utviklerne for å få hjelp.</value>
+	</data>
+	<data name="failed_to_register_customer_error" xml:space="preserve">
+		<value>Det gikk ikke å registrere kunden</value>
+	</data>
+	<data name="api_request_failed_error_format" xml:space="preserve">
+		<value>Oppkoblingen til nettet gikk ikke, og feilen er: {0}</value>
+	</data>
+	<data name="failed_to_open_persistent_stack_error_format" xml:space="preserve">
+		<value>Det gikk visst ikke å åpne en lokal database, men du kan gjerne kontakte utviklerne for å få hjelp. (Feil: {0})</value>
+	</data>
+	<data name="app_version_string_format" xml:space="preserve">
+		<value>Versjon {0}.{1}</value>
+	</data>
+	<data name="get_estimate_button_title" xml:space="preserve">
+		<value>Få en beregning</value>
+	</data>
+	<data name="welcome_message" xml:space="preserve">
+		<value>Velkommen til Skandia X. For å begynne trenger vi bare telefonnummeret ditt</value>
+	</data>
+	<data name="next_button_title" xml:space="preserve">
+		<value>Neste</value>
+	</data>
+	<data name="verify_your_number_title" xml:space="preserve">
+		<value>Bekreft telefonnummeret</value>
+	</data>
+	<data name="enter_phone_number_description" xml:space="preserve">
+		<value>Info – Du bruker det til å logge inn i appen, men vi ringer deg ikke</value>
+	</data>
+	<data name="first_name" xml:space="preserve">
+		<value>Fornavn</value>
+	</data>
+	<data name="last_name" xml:space="preserve">
+		<value>Etternavn</value>
+	</data>
+	<data name="address" xml:space="preserve">
+		<value>Adresse</value>
+	</data>
+	<data name="meter_number_hint" xml:space="preserve">
+		<value>Hint: Det finnes ofte på en gammel strømregning eller nettfaktura</value>
+	</data>
+	<data name="personal_details_title" xml:space="preserve">
+		<value>Legg til personopplysningene så kan vi gjøre dette:</value>
+	</data>
+	<data name="personal_number_input_title" xml:space="preserve">
+		<value>Vi kan søke etter adressen din ettersom du er en ny bruker:</value>
+	</data>
+	<data name="terms_and_conditions_title_format" xml:space="preserve">
+		<value>Den er grei, {0}. Før du blir enig med oss må du bare lese gjennom dette:</value>
+	</data>
+	<data name="confirm_details_title" xml:space="preserve">
+		<value>Bekreft personopplysningene:</value>
+	</data>
+	<data name="confirm_found_details_title" xml:space="preserve">
+		<value>Endre adressen hvis du vil bruke en annen måler enn denne</value>
+	</data>
+	<data name="meter_input_title_format" xml:space="preserve">
+		<value>Målernummer</value>
+	</data>
+	<data name="house_number" xml:space="preserve">
+		<value>Gatenavn og husnummer</value>
+	</data>
+	<data name="city" xml:space="preserve">
+		<value>Sted</value>
+	</data>
+	<data name="postcode" xml:space="preserve">
+		<value>Postnummer</value>
+	</data>
+	<data name="confirm" xml:space="preserve">
+		<value>Bekreft</value>
+	</data>
+	<data name="agree" xml:space="preserve">
+		<value>Bekreft</value>
+	</data>
+	<data name="unsuccessful_meter_number_overview_title" xml:space="preserve">
+		<value>Oj! Vi fant visst ikke målernummeret ditt</value>
+	</data>
+	<data name="verify_your_number_did_not_receive_sms_code" xml:space="preserve">
+		<value>Fikk du ikke koden?</value>
+	</data>
+	<data name="verify_your_number_resend" xml:space="preserve">
+		<value>Send på nytt</value>
+	</data>
+	<data name="retry" xml:space="preserve">
+		<value>Prøv på nytt</value>
+	</data>
+	<data name="sign_out" xml:space="preserve">
+		<value>Logg ut</value>
+	</data>
+	<data name="login" xml:space="preserve">
+		<value>Logg inn</value>
+	</data>
+	<data name="waiting_title" xml:space="preserve">
+		<value>Et øyeblikk, så samler vi opplysningene</value>
+	</data>
+	<data name="waiting_subtitle" xml:space="preserve">
+		<value>Et øyeblikk, bare</value>
+	</data>
+	<data name="n_digit_SSN" xml:space="preserve">
+		<value>Fødselsnummer (11 tall)</value>
+	</data>
+	<data name="ssn_description" xml:space="preserve">
+		<value>Vi passer på fødselsnummeret. Les avtalebetingelsene</value>
+	</data>
+	<data name="edit_your_details" xml:space="preserve">
+		<value>Endre personopplysninger</value>
+	</data>
+	<data name="personal_number" xml:space="preserve">
+		<value>Fødselsnummer</value>
+	</data>
+	<data name="no_meter_number_error_message_title" xml:space="preserve">
+		<value>Søren altså! Vi finner fortsatt ikke målernummeret</value>
+	</data>
+	<data name="edit_your_address_title" xml:space="preserve">
+		<value>Endre adressen</value>
+	</data>
+	<data name="someone_else_meter_subtitle" xml:space="preserve">
+		<value>Legg inn personopplysingene til den som har målernummeret registrert i sitt navn</value>
+	</data>
+	<data name="birthdate" xml:space="preserve">
+		<value>Fødselsdato</value>
+	</data>
+	<data name="look_for_meter_number" xml:space="preserve">
+		<value>Søk etter målernummeret</value>
+	</data>
+	<data name="enter_meter_number_tip_1" xml:space="preserve">
+		<value>Den faktiske måleren skal ha et nummer på seg.</value>
+	</data>
+	<data name="enter_meter_number_tip_2" xml:space="preserve">
+		<value>Du finner målernummeret på strømmåleren din, gamle strømregninger eller «Min side» hos den nåværende leverandøren din.</value>
+	</data>
+	<data name="additional_information_title" xml:space="preserve">
+		<value>Legg til kontaktinformasjon</value>
+	</data>
+	<data name="additional_information_phone_number_title" xml:space="preserve">
+		<value>Telefonnummer</value>
+	</data>
+	<data name="additional_information_phone_number_subtitle" xml:space="preserve">
+		<value>Du bruker det til å logge inn i appen, men vi ringer deg ikke</value>
+	</data>
+	<data name="additional_information_email_address_title" xml:space="preserve">
+		<value>E-postadresse</value>
+	</data>
+	<data name="email_address_subtitle" xml:space="preserve">
+		<value>Denne er til å sende deg viktige dokumenter</value>
+	</data>
+	<data name="verify_your_number_subtitle_format" xml:space="preserve">
+		<value>Skriv inn koden på 6 tall som vi sendte på melding til {0}</value>
+	</data>
+	<data name="read_full_contract" xml:space="preserve">
+		<value>Les hele avtalen</value>
+	</data>
+	<data name="have_read_contract" xml:space="preserve">
+		<value>Du leste og forsto avtalevilkårene</value>
+	</data>
+	<data name="contract_accept_receiving_information" xml:space="preserve">
+		<value>Du takker ja til å ta imot viktig informasjon (fakturaer, rapporter) på e-post</value>
+	</data>
+	<data name="contract_accept_receiving_news" xml:space="preserve">
+		<value>Du takker ja til å ta imot oppdateringer og nytt om elKompis på e-post</value>
+	</data>
+	<data name="all_good_found_meter_title" xml:space="preserve">
+		<value>Flott! 
+Vi fant deg og strømmåleren</value>
+	</data>
+	<data name="registered_under_someone_else_button_title" xml:space="preserve">
+		<value>Den står i et annet navn enn ditt</value>
+	</data>
+	<data name="enter_meter_number_placeholder" xml:space="preserve">
+		<value>Legg til målernummeret selv</value>
+	</data>
+	<data name="update_details" xml:space="preserve">
+		<value>Endre informasjonen</value>
+	</data>
+	<data name="country" xml:space="preserve">
+		<value>Land</value>
+	</data>
+	<data name="first_name_with_placeholder" xml:space="preserve">
+		<value>Fornavn f.eks. &quot;Kari&quot;</value>
+	</data>
+	<data name="last_name_required" xml:space="preserve">
+		<value>Vi må vite hva vi skal kalle deg</value>
+	</data>
+	<data name="ssn_invalid" xml:space="preserve">
+		<value>Fødselsnummeret på 11 tall har ikke riktig format.</value>
+	</data>
+	<data name="sms_code_invalid" xml:space="preserve">
+		<value>Legg til koden på 6 tall som du fikk på tekstmelding</value>
+	</data>
+	<data name="address_invalid" xml:space="preserve">
+		<value>Vi må vite adressen</value>
+	</data>
+	<data name="postcode_invalid" xml:space="preserve">
+		<value>Vi må vite postnummeret</value>
+	</data>
+	<data name="city_invalid" xml:space="preserve">
+		<value>Vi må vite byen</value>
+	</data>
+	<data name="country_invalid" xml:space="preserve">
+		<value>Vi må vite landet.</value>
+	</data>
+	<data name="phone_invalid" xml:space="preserve">
+		<value>Det telefonnummeret fungerer ikke</value>
+	</data>
+	<data name="meter_number_invalid" xml:space="preserve">
+		<value>Legg til målernummeret på 16 tall</value>
+	</data>
+	<data name="nope_start_from_the_beginning" xml:space="preserve">
+		<value>Begynn på nytt</value>
+	</data>
+	<data name="yes_restart" xml:space="preserve">
+		<value>Start fra begynnelsen</value>
+	</data>
+	<data name="restore_fail_title" xml:space="preserve">
+		<value>Vi fikk ikke til å slette informasjonen du la inn.
+Prøv på nytt, er du snill.</value>
+	</data>
+	<data name="customer_details_not_found_error_message" xml:space="preserve">
+		<value>Vi fant dessverre ikke informasjonen.
+Se over om alt stemmer og at det ikke er noen skrivefeil.</value>
+	</data>
+	<data name="user_not_found_error_message" xml:space="preserve">
+		<value>Vi fant ikke brukerkontoen, men hvis du ikke har en bruker kan du lage en.</value>
+	</data>
+	<data name="existing_customer_collision" xml:space="preserve">
+		<value>Telefonnummeret du la inn er visst registrert på en annen allerede, 
+men du kan logge inn hvis du har en bruker fra tidligere.</value>
+	</data>
+	<data name="invalid_email_address_error_message" xml:space="preserve">
+		<value>E-postadressen du la til fungerer ikke, men prøv med en du vet gjør det.</value>
+	</data>
+	<data name="invalid_address_error_message" xml:space="preserve">
+		<value>Adressen du la til fungerer ikke, men gå tilbake og se om du kan rette opp i feil ved den.</value>
+	</data>
+	<data name="unsupported_country_error_message" xml:space="preserve">
+		<value>Vi har dessverre ikke det landet du la til i systemet enda.</value>
+	</data>
+	<data name="welcome_name_format" xml:space="preserve">
+		<value>Velkommen, {0}</value>
+	</data>
+	<data name="invoice_setup_title" xml:space="preserve">
+		<value>Hit kommer strømregningene når alt er satt opp og klart</value>
+	</data>
+	<data name="complete_profile_setup" xml:space="preserve">
+		<value>Gjør ferdig profilen</value>
+	</data>
+	<data name="settings" xml:space="preserve">
+		<value>Innstillinger</value>
+	</data>
+	<data name="past_invoices" xml:space="preserve">
+		<value>Strømregningene</value>
+	</data>
+	<data name="faq" xml:space="preserve">
+		<value>Ofte stilte spørsmål</value>
+	</data>
+	<data name="invite_friends" xml:space="preserve">
+		<value>Inviter venner</value>
+	</data>
+	<data name="tap_to_continue" xml:space="preserve">
+		<value>Trykk deg videre</value>
+	</data>
+	<data name="hey_format" xml:space="preserve">
+		<value>Hei, {0}</value>
+	</data>
+	<data name="payment_setup_description_page1" xml:space="preserve">
+		<value>elKompis vil hjelpe deg med å styre strømforbruk og kostnader - helt enkelt</value>
+	</data>
+	<data name="payment_setup_description_page2" xml:space="preserve">
+		<value>Vi gir deg oversikt på hva du bruker og gir deg gode råd for å holde deg innenfor budsjett.</value>
+	</data>
+	<data name="payment_setup_description_page3" xml:space="preserve">
+		<value>Vi har flere løsninger som gir deg full kontroll på strømregningene dine</value>
+	</data>
+	<data name="your_budget" xml:space="preserve">
+		<value>Budsjettet ditt</value>
+	</data>
+	<data name="your_payment_method" xml:space="preserve">
+		<value>2. Betalingsmetoden din</value>
+	</data>
+	<data name="setup_budget_title_1" xml:space="preserve">
+		<value>1. Budsjettet ditt</value>
+	</data>
+	<data name="setup_budget_subtitle" xml:space="preserve">
+		<value>Vi gir deg oversikt på hva du bruker og gir deg gode råd for å holde deg innenfor budsjett og spare miljøet.</value>
+	</data>
+	<data name="estimated_cost_per_month_format" xml:space="preserve">
+		<value>Beregning av månedlige kostnader: {0}</value>
+	</data>
+	<data name="per_month" xml:space="preserve">
+		<value>i måneden</value>
+	</data>
+	<data name="setup_payment_method_title" xml:space="preserve">
+		<value>Velg betalingsmetoden din</value>
+	</data>
+	<data name="setup_payment_method_subtitle" xml:space="preserve">
+		<value>Du får strømregning en gang i måneden. Du kan selv velge hvordan du vil betale. Velg den betalingsløsningen som passer deg best.</value>
+	</data>
+	<data name="recurring_payments" xml:space="preserve">
+		<value>Automatisk betaling</value>
+	</data>
+	<data name="recurring_payments_subtitle" xml:space="preserve">
+		<value>Betalingen din blir trukket fra kontoen ved forfall hver måned</value>
+	</data>
+	<data name="connecting_vipps_account" xml:space="preserve">
+		<value>Kobler opp med Vipps-kontoen din</value>
+	</data>
+	<data name="add_card_option_subtitle" xml:space="preserve">
+		<value>Legg til bankkort eller kredittkort</value>
+	</data>
+	<data name="pay_as_you_go" xml:space="preserve">
+		<value>Delbetaling underveis</value>
+	</data>
+	<data name="pay_as_you_go_selection_subtitle" xml:space="preserve">
+		<value>Kontroll og mulighet til å delbetale kostnader oftere</value>
+	</data>
+	<data name="pay_invoice_manually" xml:space="preserve">
+		<value>Manuell betaling</value>
+	</data>
+	<data name="pay_manually_subtitle" xml:space="preserve">
+		<value>Se over og betal strømregningen når den er klar</value>
+	</data>
+	<data name="payment_provider_title" xml:space="preserve">
+		<value>Hva vil du betale med?</value>
+	</data>
+	<data name="methods_of_payments_title" xml:space="preserve">
+		<value>Velg din betalingsmetode</value>
+	</data>
+	<data name="payment_provider_subtitle" xml:space="preserve">
+		<value>Velg hvilken løsning du vil bruke til å betale. Du kan alltids endre denne innstillingen.</value>
+	</data>
+	<data name="selected_payment_method_format" xml:space="preserve">
+		<value>Du har valgt: {0}</value>
+	</data>
+	<data name="vipps_subtitle" xml:space="preserve">
+		<value>Rask og enkel betaling</value>
+	</data>
+	<data name="recommended" xml:space="preserve">
+		<value>Anbefalt</value>
+	</data>
+	<data name="vipps_title" xml:space="preserve">
+		<value>Vipps</value>
+	</data>
+	<data name="add_card" xml:space="preserve">
+		<value>Kort</value>
+	</data>
+	<data name="card_subtitle" xml:space="preserve">
+		<value>Skriv ned det som står på kortet du vil betale med, så regningene kan trekkes fra det</value>
+	</data>
+	<data name="enter_payments_details" xml:space="preserve">
+		<value>Legg inn kortet</value>
+	</data>
+	<data name="card_number" xml:space="preserve">
+		<value>Kortnummeret</value>
+	</data>
+	<data name="cardholder_name" xml:space="preserve">
+		<value>Navnet på kortet</value>
+	</data>
+	<data name="expiry_date" xml:space="preserve">
+		<value>Utløper</value>
+	</data>
+	<data name="security_code" xml:space="preserve">
+		<value>Sikkerhetskode</value>
+	</data>
+	<data name="review_payment_details_title" xml:space="preserve">
+		<value>Se over betalingsinformasjonen</value>
+	</data>
+	<data name="monthly_budget_subtitle" xml:space="preserve">
+		<value>Månedsbudsjettet ditt</value>
+	</data>
+	<data name="change" xml:space="preserve">
+		<value>ENDRE</value>
+	</data>
+	<data name="payment" xml:space="preserve">
+		<value>Betaling</value>
+	</data>
+	<data name="payment_type" xml:space="preserve">
+		<value>Betalingstype</value>
+	</data>
+	<data name="when_will_I_receive_invoice" xml:space="preserve">
+		<value>Dagen du får regningen</value>
+	</data>
+	<data name="payment_setup_success_message_format" xml:space="preserve">
+		<value>Du har satt opp {0} med {1}</value>
+	</data>
+	<data name="payment_setup_success_subtitle_format" xml:space="preserve">
+		<value>Strømregningen din skal være klar den {0}.</value>
+	</data>
+	<data name="finally_" xml:space="preserve">
+		<value>Sist men ikke minst,</value>
+	</data>
+	<data name="dont_miss_anything" xml:space="preserve">
+		<value>Få påminnelser</value>
+	</data>
+	<data name="notifications_tab_subtitle_1" xml:space="preserve">
+		<value>Vi vil gjerne sende deg varsler for hjelpe deg med alt fra påminnelser om regninger til gode tips om sparing og miljø.</value>
+	</data>
+	<data name="yes_please" xml:space="preserve">
+		<value>Ja takk</value>
+	</data>
+	<data name="not_now" xml:space="preserve">
+		<value>Utsett</value>
+	</data>
+	<data name="going_to_set_up" xml:space="preserve">
+		<value>Der det er husrom er det rom for å spare</value>
+	</data>
+	<data name="setup_budget_title" xml:space="preserve">
+		<value>Du bestemmer hvor mye du bruker i måneden</value>
+	</data>
+	<data name="setup_budget_comparison_format" xml:space="preserve">
+		<value>På denne tiden av året bruker hjem som likner på ditt {0}–{1}.</value>
+	</data>
+	<data name="setup_energy_target_title" xml:space="preserve">
+		<value>Du kan sette deg et månedlig budsjett</value>
+	</data>
+	<data name="will_do_later" xml:space="preserve">
+		<value>Gjør det senere</value>
+	</data>
+	<data name="done" xml:space="preserve">
+		<value>Ferdig</value>
+	</data>
+	<data name="card_checkout_fee_format" xml:space="preserve">
+		<value>Det koster {0} kroner for å godkjenne strømlevering og å gjøre alt klart, forresten. Er det greit?</value>
+	</data>
+	<data name="monthly_energy_target" xml:space="preserve">
+		<value>Månedlig busjett</value>
+	</data>
+	<data name="card" xml:space="preserve">
+		<value>Kort</value>
+	</data>
+	<data name="none_title" xml:space="preserve">
+		<value>Ingen</value>
+	</data>
+	<data name="add" xml:space="preserve">
+		<value>Legg til</value>
+	</data>
+	<data name="unpaid" xml:space="preserve">
+		<value>Ubetalt</value>
+	</data>
+	<data name="due_date_format" xml:space="preserve">
+		<value>Frist {0}</value>
+	</data>
+	<data name="current_invoice" xml:space="preserve">
+		<value>Strømregningen</value>
+	</data>
+	<data name="you_are_billed_format" xml:space="preserve">
+		<value>Du har en regning på %s</value>
+	</data>
+	<data name="make_quick_payment" xml:space="preserve">
+		<value>Betal kjapt</value>
+	</data>
+	<data name="manually" xml:space="preserve">
+		<value>Manuelt</value>
+	</data>
+	<data name="monthly" xml:space="preserve">
+		<value>i måneden</value>
+	</data>
+	<data name="pay_now" xml:space="preserve">
+		<value>Betal nå</value>
+	</data>
+	<data name="pay_amount_format" xml:space="preserve">
+		<value>Betal {0}</value>
+	</data>
+	<data name="confirm_payment_method" xml:space="preserve">
+		<value>Bekreft måten du valgte å betale på</value>
+	</data>
+	<data name="debit_card" xml:space="preserve">
+		<value>Bankkort</value>
+	</data>
+	<data name="make_a_payment" xml:space="preserve">
+		<value>Betal</value>
+	</data>
+	<data name="select_payment_method_subtitle_format" xml:space="preserve">
+		<value>Velg deg en betalingsmåte og betal hele regningen på {0}</value>
+	</data>
+	<data name="debit_or_credit_card" xml:space="preserve">
+		<value>Bankkort eller kredittkort</value>
+	</data>
+	<data name="thank_you_for_payment_title" xml:space="preserve">
+		<value>Takk for betalingen din på {0}</value>
+	</data>
+	<data name="successful_payment_details" xml:space="preserve">
+		<value>Du har betalt hele strømregningen din, så vi oppdaterer brukeren din når det har blitt overført ferdig. Da får du kvittering på e-post.</value>
+	</data>
+	<data name="all_good" xml:space="preserve">
+		<value>Fortsett</value>
+	</data>
+	<data name="view_details" xml:space="preserve">
+		<value>Detaljer</value>
+	</data>
+	<data name="paid" xml:space="preserve">
+		<value>Betalt</value>
+	</data>
+	<data name="tx_failed_with_status_format" xml:space="preserve">
+		<value>Overføringen gikk ikke og har status: {0}</value>
+	</data>
+	<data name="waiting_for_payment_result" xml:space="preserve">
+		<value>Venter på svar fra betalingen</value>
+	</data>
+	<data name="waiting_for_agreement_result" xml:space="preserve">
+		<value>Venter på svar fra avtalen</value>
+	</data>
+	<data name="insights" xml:space="preserve">
+		<value>Innblikk</value>
+	</data>
+	<data name="breakdown" xml:space="preserve">
+		<value>Det som bruker strøm</value>
+	</data>
+	<data name="tips" xml:space="preserve">
+		<value>Tips</value>
+	</data>
+	<data name="forecast" xml:space="preserve">
+		<value>Estimert strømforbruk</value>
+	</data>
+	<data name="day_total_usage_format" xml:space="preserve">
+		<value>{0} brukte du {1}</value>
+	</data>
+	<data name="day_average_usage_format" xml:space="preserve">
+		<value>I gjennomsnitt bruker du {0} i timen</value>
+	</data>
+	<data name="week_total_usage_format" xml:space="preserve">
+		<value>Hittil har du brukt {0}</value>
+	</data>
+	<data name="week_average_usage_format" xml:space="preserve">
+		<value>I gjennomsnitt bruker du {0} om dagen</value>
+	</data>
+	<data name="month_total_usage_format" xml:space="preserve">
+		<value>Hittil har du brukt {0}</value>
+	</data>
+	<data name="month_average_usage_format" xml:space="preserve">
+		<value>I gjennomsnitt bruker du {0} i uken</value>
+	</data>
+	<data name="year_total_usage_format" xml:space="preserve">
+		<value>Hittil har du brukt {0} i år</value>
+	</data>
+	<data name="year_average_usage_format" xml:space="preserve">
+		<value>Til vanlig bruker du {0} i måneden</value>
+	</data>
+	<data name="day" xml:space="preserve">
+		<value>Dag</value>
+	</data>
+	<data name="week" xml:space="preserve">
+		<value>Uke</value>
+	</data>
+	<data name="month" xml:space="preserve">
+		<value>Måned</value>
+	</data>
+	<data name="year" xml:space="preserve">
+		<value>År</value>
+	</data>
+	<data name="similar_household_graph_explanation" xml:space="preserve">
+		<value>Sammenligning med lignende hjem</value>
+	</data>
+	<data name="distribution_tab" xml:space="preserve">
+		<value>Min 
+fordeling</value>
+	</data>
+	<data name="whoops_no_data_to_show" xml:space="preserve">
+		<value>Vi har visst ikke noe å vise frem</value>
+	</data>
+	<data name="need_more_data_for_forecast" xml:space="preserve">
+		<value>Vi må nok samle informasjon i én måned, men etter det kan du få se!</value>
+	</data>
+	<data name="no_sufficient_data_for_distribution" xml:space="preserve">
+		<value>Vi har ikke nok informasjon til å vise fordelingen av strømforbruket ditt ennå, men oppdaterer så fort vi har nok data.</value>
+	</data>
+	<data name="no_enough_data_for_similar_homes" xml:space="preserve">
+		<value>Vi har dessverre ikke nok informasjon enda til å sammenligne andre hjem med ditt. Sjekk igjen snart.</value>
+	</data>
+	<data name="this_month_format" xml:space="preserve">
+		<value>Forventet i {0}</value>
+	</data>
+	<data name="distribution_description_format" xml:space="preserve">
+		<value>Mesteparten av strømmen du bruker går til {0}. Du har brukt {1} på {0}  denne måneden.</value>
+	</data>
+	<data name="you" xml:space="preserve">
+		<value>Hos deg</value>
+	</data>
+	<data name="similar_household_tab" xml:space="preserve">
+		<value>Sammenligning</value>
+	</data>
+	<data name="unknown_forecast" xml:space="preserve">
+		<value>Det er dessverre ikke nok informasjon til å sammenligne strømbruken din med lignende hjem</value>
+	</data>
+	<data name="cooking" xml:space="preserve">
+		<value>å lage mat</value>
+	</data>
+	<data name="washing" xml:space="preserve">
+		<value>å vaske klær</value>
+	</data>
+	<data name="always_on" xml:space="preserve">
+		<value>det som alltid er på</value>
+	</data>
+	<data name="lighting" xml:space="preserve">
+		<value>lys</value>
+	</data>
+	<data name="consumer_electronics" xml:space="preserve">
+		<value>elektroniske apparater</value>
+	</data>
+	<data name="heating" xml:space="preserve">
+		<value>Oppvarming</value>
+	</data>
+	<data name="solar" xml:space="preserve">
+		<value>solcellepaneler</value>
+	</data>
+	<data name="total" xml:space="preserve">
+		<value>Totalt</value>
+	</data>
+	<data name="average_usage_tab" xml:space="preserve">
+		<value>Estimert</value>
+	</data>
+	<data name="usage_forecast" xml:space="preserve">
+		<value>Estimert strømforbruk</value>
+	</data>
+	<data name="not_enough_data_for_forecast" xml:space="preserve">
+		<value>For å forvente strømbruken din 
+må vi ha minst ett år 
+med data</value>
+	</data>
+	<data name="average_temperature" xml:space="preserve">
+		<value>Normaltemperatur</value>
+	</data>
+	<data name="usage" xml:space="preserve">
+		<value>Forbruk</value>
+	</data>
+	<data name="price" xml:space="preserve">
+		<value>Det det koster</value>
+	</data>
+	<data name="forecast_this_month_title" xml:space="preserve">
+		<value>Estimert strømforbruk denne måneden</value>
+	</data>
+	<data name="thank_you_for_payment_body" xml:space="preserve">
+		<value>Du har delbetalt underveis i måneden, så vi oppdaterer beløpet til strømregningen på profilen. Du får kvittering på der og på e-post.</value>
+	</data>
+	<data name="make_payment_hello_name" xml:space="preserve">
+		<value>Hei {0}</value>
+	</data>
+	<data name="make_payment_latest_invoice" xml:space="preserve">
+		<value>Siste strømregning</value>
+	</data>
+	<data name="make_payment_savings_footprint" xml:space="preserve">
+		<value>Effekten din</value>
+	</data>
+	<data name="make_payment_invoice_summary" xml:space="preserve">
+		<value>Strømregningen</value>
+	</data>
+	<data name="make_payment_statement_amount" xml:space="preserve">
+		<value>Totalt å betale</value>
+	</data>
+	<data name="make_payment_spot_price" xml:space="preserve">
+		<value>Strømpris ({0} øre/kWh)</value>
+	</data>
+	<data name="make_payment_total_consumption" xml:space="preserve">
+		<value>Strømforbruk</value>
+	</data>
+	<data name="make_payment_total_to_pay" xml:space="preserve">
+		<value>Totalt å betale</value>
+	</data>
+	<data name="make_payment_total_charges_date" xml:space="preserve">
+		<value>Frist for å betale er {0}</value>
+	</data>
+	<data name="make_payment_view_full_invoice" xml:space="preserve">
+		<value>Se over hele regningen</value>
+	</data>
+	<data name="make_payment_invoice" xml:space="preserve">
+		<value>Strømregning</value>
+	</data>
+	<data name="make_payment_invoices" xml:space="preserve">
+		<value>Strømregninger</value>
+	</data>
+	<data name="make_payment_fixed_fee" xml:space="preserve">
+		<value>Månedsbeløp</value>
+	</data>
+	<data name="make_payment_moms" xml:space="preserve">
+		<value>Herav merverdiavgift</value>
+	</data>
+	<data name="breakdown_source_cleaning" xml:space="preserve">
+		<value>Vasking</value>
+	</data>
+	<data name="breakdown_source_consumer_electronics" xml:space="preserve">
+		<value>Elektroniske apparater</value>
+	</data>
+	<data name="breakdown_source_cooking" xml:space="preserve">
+		<value>Matlaging</value>
+	</data>
+	<data name="data_insights_this_time_last_year" xml:space="preserve">
+		<value>På denne tiden i fjor</value>
+	</data>
+	<data name="data_insights_your_total_impact" xml:space="preserve">
+		<value>Mine besparelser</value>
+	</data>
+	<data name="data_insights_energy_source" xml:space="preserve">
+		<value>Energikilde</value>
+	</data>
+	<data name="type_of_house_title" xml:space="preserve">
+		<value>Beskriv hjemmet ditt</value>
+	</data>
+	<data name="type_of_house_body" xml:space="preserve">
+		<value>Du kan fortelle litt om der du bor og få innblikk i hva strømmen går til, med skreddersydde tips til hvordan du kan spare</value>
+	</data>
+	<data name="type_of_home_title" xml:space="preserve">
+		<value>Hvilken type bolig er det?</value>
+	</data>
+	<data name="type_of_home_apartment" xml:space="preserve">
+		<value>Leilighet</value>
+	</data>
+	<data name="type_of_home_house" xml:space="preserve">
+		<value>Hus</value>
+	</data>
+	<data name="type_of_home_townhouse" xml:space="preserve">
+		<value>Rekkehus</value>
+	</data>
+	<data name="type_of_home_holiday_home" xml:space="preserve">
+		<value>Hytte/Feriehus</value>
+	</data>
+	<data name="type_of_home_semidetached" xml:space="preserve">
+		<value>Tomannsbolig</value>
+	</data>
+	<data name="other" xml:space="preserve">
+		<value>Annen</value>
+	</data>
+	<data name="size_of_home_title" xml:space="preserve">
+		<value>Hvor stort er det der?</value>
+	</data>
+	<data name="home_occupants_title" xml:space="preserve">
+		<value>Hvor mange bor det der?</value>
+	</data>
+	<data name="home_occupants_adults" xml:space="preserve">
+		<value>Voksne</value>
+	</data>
+	<data name="home_occupants_children" xml:space="preserve">
+		<value>Barn</value>
+	</data>
+	<data name="primary_heating_title" xml:space="preserve">
+		<value>Hva slags oppvarming har boligen din?</value>
+	</data>
+	<data name="primary_heating_body" xml:space="preserve">
+		<value>Velg den varmekilden du bruker mest og så den nest mest brukte som nr 2</value>
+	</data>
+	<data name="primary_heating_floor" xml:space="preserve">
+		<value>Varmekabler i gulvet</value>
+	</data>
+	<data name="primary_heating_space_heaters" xml:space="preserve">
+		<value>Elektriske ovner</value>
+	</data>
+	<data name="primary_heating_heatpump" xml:space="preserve">
+		<value>Varmepumpe</value>
+	</data>
+	<data name="primary_heating_wood" xml:space="preserve">
+		<value>Vedovn</value>
+	</data>
+	<data name="primary_heating_district" xml:space="preserve">
+		<value>Sentralvarme</value>
+	</data>
+	<data name="primary_heating_hydro" xml:space="preserve">
+		<value>Vannbåren varme</value>
+	</data>
+	<data name="primary_heating_heatpump_body" xml:space="preserve">
+		<value>Hvilken type varmepumpe bruker du?</value>
+	</data>
+	<data name="primary_heating_extra_selected" xml:space="preserve">
+		<value>Primær-varmekilden din: {0}</value>
+	</data>
+	<data name="primary_heating_extra_airtoair" xml:space="preserve">
+		<value>Ordinær luftvarmepumpe</value>
+	</data>
+	<data name="primary_heating_extra_exhaust" xml:space="preserve">
+		<value>Avtrekksvarmepumpe</value>
+	</data>
+	<data name="primary_heating_extra_geothermal" xml:space="preserve">
+		<value>Jordvarmepumpe</value>
+	</data>
+	<data name="primary_heating_extra_airtowater" xml:space="preserve">
+		<value>Luft-til-vann varmepumpe</value>
+	</data>
+	<data name="kitchen_appliances_title" xml:space="preserve">
+		<value>Hvilke hvitevarer har du?</value>
+	</data>
+	<data name="kitchen_appliances_stove" xml:space="preserve">
+		<value>Elektrisk komfyr</value>
+	</data>
+	<data name="kitchen_appliances_oven" xml:space="preserve">
+		<value>Elektrisk ovn</value>
+	</data>
+	<data name="kitchen_appliances_oven_gas" xml:space="preserve">
+		<value>Gassovn</value>
+	</data>
+	<data name="kitchen_appliances_stove_gas" xml:space="preserve">
+		<value>Gasskomfyr</value>
+	</data>
+	<data name="kitchen_appliances_microwave" xml:space="preserve">
+		<value>Mikrobølgeovn</value>
+	</data>
+	<data name="kitchen_appliances_dishwasher" xml:space="preserve">
+		<value>Oppvaskmaskin</value>
+	</data>
+	<data name="kitchen_appliances_washing_machine" xml:space="preserve">
+		<value>Vaskemaskin</value>
+	</data>
+	<data name="kitchen_appliances_dryer" xml:space="preserve">
+		<value>Tørketrommel</value>
+	</data>
+	<data name="kitchen_appliances_freezer" xml:space="preserve">
+		<value>Fryser</value>
+	</data>
+	<data name="kitchen_appliances_fridge" xml:space="preserve">
+		<value>Kjøleskap</value>
+	</data>
+	<data name="kitchen_appliances_kombi" xml:space="preserve">
+		<value>Kombiskap</value>
+	</data>
+	<data name="electronic_appliances_title" xml:space="preserve">
+		<value>Hva slags underholdningselektronikk bruker du?</value>
+	</data>
+	<data name="electronic_appliances_laptop" xml:space="preserve">
+		<value>Bærbar PC</value>
+	</data>
+	<data name="electronic_appliances_game" xml:space="preserve">
+		<value>Spillkonsoll</value>
+	</data>
+	<data name="electronic_appliances_desktop" xml:space="preserve">
+		<value>Stasjonær PC</value>
+	</data>
+	<data name="additional_items_title" xml:space="preserve">
+		<value>Har du noen av disse?</value>
+	</data>
+	<data name="additional_items_solar_panel" xml:space="preserve">
+		<value>Solcellepanel</value>
+	</data>
+	<data name="additional_items_solar_power" xml:space="preserve">
+		<value>Styrke (kWp) f.eks. “123”</value>
+	</data>
+	<data name="additional_items_solar_power_short" xml:space="preserve">
+		<value>Styrke (kWp)</value>
+	</data>
+	<data name="additional_items_electric_car" xml:space="preserve">
+		<value>Elbil</value>
+	</data>
+	<data name="additional_items_swimming" xml:space="preserve">
+		<value>Svømmebasseng</value>
+	</data>
+	<data name="household_profile_fetch_details_body" xml:space="preserve">
+		<value>Etter det kan vi skreddersy innblikket til strømbruken din</value>
+	</data>
+	<data name="household_profile_fetch_details_title" xml:space="preserve">
+		<value>Vent litt, så samler vi informasjonen om hjemmet ditt..</value>
+	</data>
+	<data name="household_profile_success_title" xml:space="preserve">
+		<value>Glimrende og gnistrende!</value>
+	</data>
+	<data name="household_profile_success_body" xml:space="preserve">
+		<value>Nå kan vi gi deg et mer nøyaktig bilde av hva du bruker strøm på</value>
+	</data>
+	<data name="methods_of_payment_subtitle" xml:space="preserve">
+		<value>Velg hvilken måte du vil betale på. Du kan endre denne innstillingen når som helst.</value>
+	</data>
+	<data name="Welcome_sales_pitch" xml:space="preserve">
+		<value>HELT ENKELT
+BILLIG STRØM
+DU FORSTÅR</value>
+	</data>
+	<data name="Welcome_get_started_button" xml:space="preserve">
+		<value>Kom i gang med elKompis</value>
+	</data>
+	<data name="price_concept_1_title" xml:space="preserve">
+		<value>Få full kontroll på strømpris og forbruk!</value>
+	</data>
+	<data name="price_concept_1_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="skip_topright" xml:space="preserve">
+		<value>Hopp over</value>
+	</data>
+	<data name="price_concept_2_title" xml:space="preserve">
+		<value>Vi tjener kr 0 på strømforbruket ditt!</value>
+	</data>
+	<data name="price_concept_2_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="price_concept_3_title" xml:space="preserve">
+		<value>Kun én avtale og ingen bindingstid!</value>
+	</data>
+	<data name="price_concept_3_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="price_concept_3_button" xml:space="preserve">
+		<value>Bytt til elKompis</value>
+	</data>
+	<data name="join_the_community_title" xml:space="preserve">
+		<value>Vær elKompis med oss</value>
+	</data>
+	<data name="join_the_community_body" xml:space="preserve">
+		<value>Fyll inn informasjon og fødselsnummer, så finner vi strømmåleren din</value>
+	</data>
+	<data name="join_the_community_info" xml:space="preserve">
+		<value>Det tar bare et par minutter</value>
+	</data>
+	<data name="join_the_community_1_title" xml:space="preserve">
+		<value>Personopplysninger</value>
+	</data>
+	<data name="join_the_community_1_body" xml:space="preserve">
+		<value>Finn strømmåleren med fødselsnummeret ditt</value>
+	</data>
+	<data name="join_the_community_2_title" xml:space="preserve">
+		<value>Målernummer</value>
+	</data>
+	<data name="join_the_community_2_body" xml:space="preserve">
+		<value>Sjekk at det stemmer eller legg til et annet</value>
+	</data>
+	<data name="join_the_community_3_title" xml:space="preserve">
+		<value>Kontaktinfo</value>
+	</data>
+	<data name="join_the_community_3_body" xml:space="preserve">
+		<value>Skriv telefonnummer og e-postadresse</value>
+	</data>
+	<data name="join_the_community_4_title" xml:space="preserve">
+		<value>Avtale</value>
+	</data>
+	<data name="join_the_community_4_body" xml:space="preserve">
+		<value>Les og signer avtalen vår</value>
+	</data>
+	<data name="last_name_with_placeholder" xml:space="preserve">
+		<value>Etternavn f.eks. “Nordmann”</value>
+	</data>
+	<data name="SSN_with_placeholder" xml:space="preserve">
+		<value>Fødselsnummer (11 tall)</value>
+	</data>
+	<data name="error_message_closed_app_before_signup" xml:space="preserve">
+		<value>Lukket du appen før du var ferdig?</value>
+	</data>
+	<data name="error_message_closed_app_before_signup_subtitle" xml:space="preserve">
+		<value>Fortsett der du slapp, eller begynn på nytt.</value>
+	</data>
+	<data name="error_message_closed_app_before_signup_invisible_button" xml:space="preserve">
+		<value>Start på nytt</value>
+	</data>
+	<data name="continue_button_title" xml:space="preserve">
+		<value>Fortsett</value>
+	</data>
+	<data name="successful_meter_number_overview_field" xml:space="preserve">
+		<value>Målernummer/målepunkt ID</value>
+	</data>
+	<data name="successful_meter_number_overview_title" xml:space="preserve">
+		<value>Sjekk at adressen stemmer</value>
+	</data>
+	<data name="successful_meter_number_overview_button" xml:space="preserve">
+		<value>Endre adressen</value>
+	</data>
+	<data name="successful_meter_number_button" xml:space="preserve">
+		<value>Bekreft</value>
+	</data>
+	<data name="additional_information_body" xml:space="preserve">
+		<value>Vi sender deg viktige dokumenter, som for eksempel strømregningen din</value>
+	</data>
+	<data name="verification_code" xml:space="preserve">
+		<value>Koden for å bekrefte er:</value>
+	</data>
+	<data name="unsuccessful_meter_number_overview_field" xml:space="preserve">
+		<value>Stemmer adressen under?</value>
+	</data>
+	<data name="no_meter_number_error_message_body" xml:space="preserve">
+		<value>En av oss i teamet fullfører bestillingen din for deg. Vi innhenter nødvendige opplysninger og tar kontakt hvis vi trenger litt hjelp fra deg.</value>
+	</data>
+	<data name="no_meter_number_error_message_button" xml:space="preserve">
+		<value>Ta kontakt</value>
+	</data>
+	<data name="enter_meter_number_title" xml:space="preserve">
+		<value>Skriv inn målernummeret</value>
+	</data>
+	<data name="contract_title" xml:space="preserve">
+		<value>Avtalen vår</value>
+	</data>
+	<data name="contract_body" xml:space="preserve">
+		<value>Når du signerer sier du også at du har lest og er enig i betingelsene nedenfor.</value>
+	</data>
+	<data name="contract_accept_button" xml:space="preserve">
+		<value>Signer</value>
+	</data>
+	<data name="sign_contract_confirmation_screen_title" xml:space="preserve">
+		<value>Så fint å være elKompis med deg!</value>
+	</data>
+	<data name="sign_contract_confirmation_screen_body" xml:space="preserve">
+		<value>Nå gjør vi ferdig brukeren din og ordner resten. Det tar omtrent to arbeidsdager.</value>
+	</data>
+	<data name="sign_contract_confirmation_screen_accept_button" xml:space="preserve">
+		<value>Signer</value>
+	</data>
+	<data name="confirmation_screen_notifications_title" xml:space="preserve">
+		<value>Du blir varslet når du er med i elKompis</value>
+	</data>
+	<data name="confirmation_screen_notifications_body" xml:space="preserve">
+		<value>Det kan ta litt tid før kontoen din er ferdig. Vi sier ifra når det er klart med mindre du skrur av alle varsler.</value>
+	</data>
+	<data name="confirmation_screen_notifications_accept_button" xml:space="preserve">
+		<value>Få varsel</value>
+	</data>
+	<data name="decline_button" xml:space="preserve">
+		<value>Skru av varsler</value>
+	</data>
+	<data name="confirmation_screen_payment_method_title" xml:space="preserve">
+		<value>Velg deg en betalingsmetode</value>
+	</data>
+	<data name="confirmation_screen_payment_method_body" xml:space="preserve">
+		<value>Få full kontroll over strømregningene dine ved å velge blant de fleksible betalingsløsningene vi har.</value>
+	</data>
+	<data name="confirmation_screen_payment_method_accept_button" xml:space="preserve">
+		<value>Velg betalingsmetode</value>
+	</data>
+	<data name="successful_payment_setup_title" xml:space="preserve">
+		<value>Den satt i sikringsboksen!</value>
+	</data>
+	<data name="successful_payment_setup_body" xml:space="preserve">
+		<value>Nå som du har valgt betaling kan du utforske mer av appen</value>
+	</data>
+	<data name="successful_payment_setup_button" xml:space="preserve">
+		<value>Fortsett</value>
+	</data>
+	<data name="home_screen_setup_household_header" xml:space="preserve">
+		<value>Hjemmet ditt</value>
+	</data>
+	<data name="home_screen_address_field" xml:space="preserve">
+		<value>{0}</value>
+	</data>
+	<data name="home_screen_personalise_title" xml:space="preserve">
+		<value>Heihei, {0}! Nå kan du skreddersy brukeren din.</value>
+	</data>
+	<data name="home_screen_household_menu_title" xml:space="preserve">
+		<value>Beskriv hjemmet ditt</value>
+	</data>
+	<data name="home_screen_household_menu_body" xml:space="preserve">
+		<value>Hvor stort er det og hva bruker dere strøm på?</value>
+	</data>
+	<data name="home_screen_household_bottom_text" xml:space="preserve">
+		<value>Snart er informasjonen klar til å analyseres</value>
+	</data>
+	<data name="notification_welcome_message_title" xml:space="preserve">
+		<value>Velkommen i elKompis, {0}!</value>
+	</data>
+	<data name="notification_welcome_message" xml:space="preserve">
+		<value>Nå kan du utforske appen og skreddersy elKompis-brukeren ved å beskrive hjemmet ditt.</value>
+	</data>
+	<data name="notification_contract_processing_title" xml:space="preserve">
+		<value>Snart er alt klart</value>
+	</data>
+	<data name="notification_contract_processing" xml:space="preserve">
+		<value>Når brukeren din er ferdig skal vi si ifra, men det kan ta opptil 2 arbeidsdager.</value>
+	</data>
+	<data name="notifications_tab_subtitle_2" xml:space="preserve">
+		<value>Tidligere</value>
+	</data>
+	<data name="notifications_tab_subtitle_2_body" xml:space="preserve">
+		<value>Det var ingen varsler her fra før!</value>
+	</data>
+	<data name="home_screen_payment_menu_title" xml:space="preserve">
+		<value>Velg betalingsmetoden din</value>
+	</data>
+	<data name="home_screen_payment_menu_body" xml:space="preserve">
+		<value>Hvordan vil du helst betale strømregninger?</value>
+	</data>
+	<data name="home_screen_processing_documents_title" xml:space="preserve">
+		<value>Hei, {0}! Nå gjør vi bare klar brukeren din</value>
+	</data>
+	<data name="home_screen_popup_documents_processed_title" xml:space="preserve">
+		<value>Snart er alt klart</value>
+	</data>
+	<data name="home_screen_popup_documents_processed_body" xml:space="preserve">
+		<value>Det kan ta omtrent 2 arbeidsdager før brukeren din er ferdig. Ta kontakt hvis du lurer på noe.</value>
+	</data>
+	<data name="home_screen_popup_documents_processed_invisible_button" xml:space="preserve">
+		<value>Kontakt elKompis</value>
+	</data>
+	<data name="notification_contract_approved_module_title" xml:space="preserve">
+		<value>Brukeren din er oppe og går!</value>
+	</data>
+	<data name="notification_contract_approved_module_body" xml:space="preserve">
+		<value>Nå har du full tilgang og innblikk i appen</value>
+	</data>
+	<data name="got_it" xml:space="preserve">
+		<value>Utforsk</value>
+	</data>
+	<data name="homescreen_usage_this_week" xml:space="preserve">
+		<value>Ukens strømforbruk</value>
+	</data>
+	<data name="homescreen_outdoor_temperature_format" xml:space="preserve">
+		<value>Temperatur ute</value>
+	</data>
+	<data name="homescreen_price_per_hour_format" xml:space="preserve">
+		<value>{0} øre denne timen</value>
+	</data>
+	<data name="home_screen_your_data_button" xml:space="preserve">
+		<value>Analyse av bruk</value>
+	</data>
+	<data name="homescreen_yesterday_format" xml:space="preserve">
+		<value>Strømbruk i går</value>
+	</data>
+	<data name="notification_contract_approved_setup_module_body" xml:space="preserve">
+		<value>Med en gang du har gjort ferdig profilen din har du full tilgang og innblikk i alt.</value>
+	</data>
+	<data name="home_screen_post_onboarding_body" xml:space="preserve">
+		<value>Hei! Før vi begynner kan du gjøre ferdig profilen din</value>
+	</data>
+	<data name="profile_percentage_complete" xml:space="preserve">
+		<value>Du har gjort ferdig {0} %% av profilen</value>
+	</data>
+	<data name="vipps_tx_cancelled" xml:space="preserve">
+		<value>Det gikk ikke å betale med Vipps</value>
+	</data>
+	<data name="water_heating" xml:space="preserve">
+		<value>varmtvann</value>
+	</data>
+	<data name="ev" xml:space="preserve">
+		<value>Elbillading</value>
+	</data>
+	<data name="cooling" xml:space="preserve">
+		<value>nedkjøling av hjemmet</value>
+	</data>
+	<data name="cleaning" xml:space="preserve">
+		<value>vasking</value>
+	</data>
+	<data name="fridge_and_freezer" xml:space="preserve">
+		<value>kjøleskap og fryser</value>
+	</data>
+	<data name="current_energy_producer_tab" xml:space="preserve">
+		<value>Hvor strømmen kommer fra</value>
+	</data>
+	<data name="current_price_drop" xml:space="preserve">
+		<value>Prisen er lav og kommer til å synke mellom klokken {1} og {2}. Du sparer på å bruke sette på en klesvask i det tidsrommet.</value>
+	</data>
+	<data name="please_enter_your_details" xml:space="preserve">
+		<value>Først må vi finne strømmåleren din</value>
+	</data>
+	<data name="vipps_agreement_rejected" xml:space="preserve">
+		<value>Avtalen med Vipps gikk ikke gjennom</value>
+	</data>
+	<data name="no_meter_number_title" xml:space="preserve">
+		<value>Oj! Vi fant visst ikke målernummeret ditt</value>
+	</data>
+	<data name="no_meter_number_subtitle" xml:space="preserve">
+		<value>Det kan hende at det står i et annet navn eller at du må rette opp i personopplysningene dine</value>
+	</data>
+	<data name="your_impact_footprint_tab" xml:space="preserve">
+		<value>Fotavtrykk</value>
+	</data>
+	<data name="your_impact_savings_tab" xml:space="preserve">
+		<value>Sparekraft</value>
+	</data>
+	<data name="your_impact_total_savings" xml:space="preserve">
+		<value>Det jeg har spart i år</value>
+	</data>
+	<data name="your_impact_ice_cream" xml:space="preserve">
+		<value>Det jeg har spart regnet i iskrem</value>
+	</data>
+	<data name="your_impact_graph_explanation" xml:space="preserve">
+		<value>Dette er basert på årlige forbruksdata av {0} elektrisitet fra Strømpris.no</value>
+	</data>
+	<data name="your_impact_CO2" xml:space="preserve">
+		<value>CO2 spart med 100 % fornybar energi</value>
+	</data>
+	<data name="your_impact_trees_planted" xml:space="preserve">
+		<value>Grantrær som fanger CO2</value>
+	</data>
+	<data name="your_impact_where_does_my_energy_come_from" xml:space="preserve">
+		<value>Dette har du i stikkontakten</value>
+	</data>
+	<data name="your_impact_graph_title" xml:space="preserve">
+		<value>elKompis er rimeligere enn strømselskaper flest</value>
+	</data>
+	<data name="completely_green" xml:space="preserve">
+		<value>100 %% fornybar</value>
+	</data>
+	<data name="home_screen_with_monthly_data_title" xml:space="preserve">
+		<value>Hittil har du brukt {0} i {1}</value>
+	</data>
+	<data name="where_does_my_energy_come_from_body" xml:space="preserve">
+		<value>Strømmen din kommer fra 100 % fornybare kilder (opprinnelsesgaranti for hele forbruket ditt).</value>
+	</data>
+	<data name="enig_customers" xml:space="preserve">
+		<value>elKompis-brukere</value>
+	</data>
+	<data name="other_providers" xml:space="preserve">
+		<value>Annen strøm</value>
+	</data>
+	<data name="less" xml:space="preserve">
+		<value>mindre</value>
+	</data>
+	<data name="more" xml:space="preserve">
+		<value>mer</value>
+	</data>
+	<data name="forecast_descripiton_format" xml:space="preserve">
+		<value>Vi tror du kommer til å bruke {0} på {1} denne måneden.</value>
+	</data>
+	<data name="forecast_description_format_with_comparison" xml:space="preserve">
+		<value>Vi tror strømforbruket ditt blir på {0} og vil koste {1} denne måneden. Det er {2}%% {3} strøm og {4}%% {5} enn i forrige måned.</value>
+	</data>
+	<data name="the_6_you_use_most" xml:space="preserve">
+		<value>Det som bruker mest</value>
+	</data>
+	<data name="complete_household_profile" xml:space="preserve">
+		<value>Beskriv hjemmet ditt</value>
+	</data>
+	<data name="mid_week_no_forecast" xml:space="preserve">
+		<value>Oi, da! Vi mangler enda litt informasjon for å forutse strømforbruket ditt.</value>
+	</data>
+	<data name="invoice_details" xml:space="preserve">
+		<value>Detaljer</value>
+	</data>
+	<data name="source_graph_renewables" xml:space="preserve">
+		<value>Fornybare</value>
+	</data>
+	<data name="source_graph_non_renewables" xml:space="preserve">
+		<value>Ikke fornybare</value>
+	</data>
+	<data name="add_card_button" xml:space="preserve">
+		<value>Lagre kort</value>
+	</data>
+	<data name="your_monthly_budget" xml:space="preserve">
+		<value>Budsjett for {0}</value>
+	</data>
+	<data name="set_up_your_budget" xml:space="preserve">
+		<value>Lag deg et budsjett</value>
+	</data>
+	<data name="no_bills_to_show_here_yet" xml:space="preserve">
+		<value>Ingen strømregning i sikte!</value>
+	</data>
+	<data name="no_bills_to_show_here_setup_profile" xml:space="preserve">
+		<value>Du må gjøre ferdig profilen din for å se strømregninger</value>
+	</data>
+	<data name="profile_page_budget_tab" xml:space="preserve">
+		<value>Budsjettet</value>
+	</data>
+	<data name="profile_page_your_bill_tab" xml:space="preserve">
+		<value>Regningen</value>
+	</data>
+	<data name="profile_set_up_budget_body" xml:space="preserve">
+		<value>Vi hjelper deg holde styr på strømbruken og gir deg gode råd for å spare penger og miljø</value>
+	</data>
+	<data name="profile_budget_under_info" xml:space="preserve">
+		<value>{0} under budsjett</value>
+	</data>
+	<data name="profile_budget_over_info" xml:space="preserve">
+		<value>{0} over budsjett</value>
+	</data>
+	<data name="profile_left_to_pay_this_month" xml:space="preserve">
+		<value>igjen å betale denne måneden</value>
+	</data>
+	<data name="profile_paid_so_far" xml:space="preserve">
+		<value>betalt fra før denne måneden</value>
+	</data>
+	<data name="payment_setup_selection_title" xml:space="preserve">
+		<value>Hvordan vil du helst betale regninger?</value>
+	</data>
+	<data name="payment_setup_selection_subtitle" xml:space="preserve">
+		<value>Velg mellom måtene under, for å betale gjennom appen. Du kan endre innstillingene senere.</value>
+	</data>
+	<data name="enter_payment_details_subtitle" xml:space="preserve">
+		<value>Skriv ned det som står på kortet du vil betale med, så regningene kan trekkes fra det</value>
+	</data>
+	<data name="bambora" xml:space="preserve">
+		<value>Trygg betaling gjennom Worldline</value>
+	</data>
+	<data name="what_appliances_title" xml:space="preserve">
+		<value>Hvilke typer apparater har du?</value>
+	</data>
+	<data name="How_are_savings_calculated" xml:space="preserve">
+		<value>Sånn regner vi ut hva du sparer</value>
+	</data>
+	<data name="how_are_savings_calulated_body" xml:space="preserve">
+		<value>Regnestykket vårt sammenligner bruken din med hvor mye det ville kostet hos en annen leverandør</value>
+	</data>
+	<data name="so_far" xml:space="preserve">
+		<value>Hittil</value>
+	</data>
+	<data name="amount_paid" xml:space="preserve">
+		<value>Det du har betalt</value>
+	</data>
+	<data name="download_invoice" xml:space="preserve">
+		<value>Last ned regningen</value>
+	</data>
+	<data name="download_invoice_subtitle" xml:space="preserve">
+		<value>Vi eksporterer strømregningen til en PDF som du får i “Dokumenter” på telefonen din</value>
+	</data>
+	<data name="download_invoice_button" xml:space="preserve">
+		<value>Last ned PDF • {0} KB</value>
+	</data>
+	<data name="add_new_card" xml:space="preserve">
+		<value>Legg til kort</value>
+	</data>
+	<data name="review_payment" xml:space="preserve">
+		<value>Se over betaling</value>
+	</data>
+	<data name="please_select_payment_option" xml:space="preserve">
+		<value>Velg måten du vil betale på</value>
+	</data>
+	<data name="review_payment_info_user_agreement" xml:space="preserve">
+		<value>Betalingen din godkjenner også planen i brukerbetingelsene som står i avtalen</value>
+	</data>
+	<data name="view_most_recent_statement" xml:space="preserve">
+		<value>Se de nyeste kvitteringene</value>
+	</data>
+	<data name="pay_button" xml:space="preserve">
+		<value>Betal</value>
+	</data>
+	<data name="remaining" xml:space="preserve">
+		<value>{0} igjen å betale</value>
+	</data>
+	<data name="view_monthly_statement" xml:space="preserve">
+		<value>Se over regningen for {0}</value>
+	</data>
+	<data name="payment_automatically_taken_countdown" xml:space="preserve">
+		<value>Strømregningen blir automatisk betalt om:</value>
+	</data>
+	<data name="automatic_payment_countdown" xml:space="preserve">
+		<value>{0}{1} fra nå</value>
+	</data>
+	<data name="winter_consumption_budget" xml:space="preserve">
+		<value>Dette er ditt månedlige strømbudsjett</value>
+	</data>
+	<data name="jan_to_april" xml:space="preserve">
+		<value>januar til april</value>
+	</data>
+	<data name="within_budget" xml:space="preserve">
+		<value>{0} innenfor budsjettet</value>
+	</data>
+	<data name="your_home" xml:space="preserve">
+		<value>Hjemmet ditt</value>
+	</data>
+	<data name="your_car" xml:space="preserve">
+		<value>Bilen din</value>
+	</data>
+	<data name="billing_information" xml:space="preserve">
+		<value>Info om regninger</value>
+	</data>
+	<data name="push_nofications" xml:space="preserve">
+		<value>Push-varsler</value>
+	</data>
+	<data name="chat_to_us" xml:space="preserve">
+		<value>Ta kontakt</value>
+	</data>
+	<data name="bill_issued" xml:space="preserve">
+		<value>Regning fra {0}</value>
+	</data>
+	<data name="set_up_budget_button" xml:space="preserve">
+		<value>Lag budsjett</value>
+	</data>
+	<data name="lets_set_up_budget" xml:space="preserve">
+		<value>Lag deg et månedsbudsjett</value>
+	</data>
+	<data name="budget_aim" xml:space="preserve">
+		<value>Hvor setter du grensen for månedlig bruk?</value>
+	</data>
+	<data name="between_months_format" xml:space="preserve">
+		<value>I løpet av {0} {1} til {2}</value>
+	</data>
+	<data name="successful_budget" xml:space="preserve">
+		<value>Mange bekker små gjør en stor å</value>
+	</data>
+	<data name="successful_budget_body" xml:space="preserve">
+		<value>Nå som du har et månedsbudsjett kan vi gi deg gode råd og hjelpe deg med å styre strømforbruket ditt gjennom de ulike årstidene</value>
+	</data>
+	<data name="more_data_similar_households" xml:space="preserve">
+		<value>For å sammenligne ditt med hjem som ligner må vi ha mer informasjon om det</value>
+	</data>
+	<data name="jan" xml:space="preserve">
+		<value>januar</value>
+	</data>
+	<data name="feb" xml:space="preserve">
+		<value>februar</value>
+	</data>
+	<data name="mar" xml:space="preserve">
+		<value>mars</value>
+	</data>
+	<data name="apr" xml:space="preserve">
+		<value>april</value>
+	</data>
+	<data name="may" xml:space="preserve">
+		<value>mai</value>
+	</data>
+	<data name="jun" xml:space="preserve">
+		<value>juni</value>
+	</data>
+	<data name="jul" xml:space="preserve">
+		<value>juli</value>
+	</data>
+	<data name="aug" xml:space="preserve">
+		<value>august</value>
+	</data>
+	<data name="sep" xml:space="preserve">
+		<value>september</value>
+	</data>
+	<data name="oct" xml:space="preserve">
+		<value>oktober</value>
+	</data>
+	<data name="nov" xml:space="preserve">
+		<value>november</value>
+	</data>
+	<data name="dec" xml:space="preserve">
+		<value>desember</value>
+	</data>
+	<data name="mon" xml:space="preserve">
+		<value>mandag</value>
+	</data>
+	<data name="tues" xml:space="preserve">
+		<value>tirsdag</value>
+	</data>
+	<data name="wed" xml:space="preserve">
+		<value>onsdag</value>
+	</data>
+	<data name="thurs" xml:space="preserve">
+		<value>torsdag</value>
+	</data>
+	<data name="fri" xml:space="preserve">
+		<value>fredag</value>
+	</data>
+	<data name="sat" xml:space="preserve">
+		<value>lørdag</value>
+	</data>
+	<data name="sun" xml:space="preserve">
+		<value>søndag</value>
+	</data>
+	<data name="better_than" xml:space="preserve">
+		<value>Du er {0} %% bedre sammenlignet med tilsvarende hjem</value>
+	</data>
+	<data name="avg_temp" xml:space="preserve">
+		<value>Normaltemperatur</value>
+	</data>
+	<data name="avg_usage" xml:space="preserve">
+		<value>Estimert strømforbruk</value>
+	</data>
+	<data name="consumption_nok" xml:space="preserve">
+		<value>Kostnad ({0})</value>
+	</data>
+	<data name="view_invoice_breakdown" xml:space="preserve">
+		<value>Se over regningen</value>
+	</data>
+	<data name="strompris" xml:space="preserve">
+		<value>Spotpris</value>
+	</data>
+	<data name="qty_format" xml:space="preserve">
+		<value>Antall: {0}</value>
+	</data>
+	<data name="completely_renewable" xml:space="preserve">
+		<value>elKompis har 100 % fornybar strøm (opprinnelsesgaranti for hele forbruket ditt)</value>
+	</data>
+	<data name="home_complete_profile" xml:space="preserve">
+		<value>Hei {0}! Før vi begynner kan du fullføre profilen din så du får fullt innblikk</value>
+	</data>
+	<data name="about" xml:space="preserve">
+		<value>Om elKompis</value>
+	</data>
+	<data name="about_body" xml:space="preserve">
+		<value>Spørsmål, avtalevilkår og retningslinjer</value>
+	</data>
+	<data name="notifications" xml:space="preserve">
+		<value>Varsler</value>
+	</data>
+	<data name="notifications_body" xml:space="preserve">
+		<value>Bestem når du vil bli varslet</value>
+	</data>
+	<data name="payments" xml:space="preserve">
+		<value>Betaling</value>
+	</data>
+	<data name="payments_body" xml:space="preserve">
+		<value>Se over og endre måten du betaler på</value>
+	</data>
+	<data name="past_invoices_body" xml:space="preserve">
+		<value>Se på tidligere regninger</value>
+	</data>
+	<data name="account" xml:space="preserve">
+		<value>Brukeren din</value>
+	</data>
+	<data name="account_body" xml:space="preserve">
+		<value>Styr alt som har med hjemmet ditt og innlogging å gjøre</value>
+	</data>
+	<data name="personal_details" xml:space="preserve">
+		<value>Fortell oss hvem du er</value>
+	</data>
+	<data name="email" xml:space="preserve">
+		<value>E-postadresse</value>
+	</data>
+	<data name="telephone" xml:space="preserve">
+		<value>Telefonnummer</value>
+	</data>
+	<data name="edit" xml:space="preserve">
+		<value>ENDRE</value>
+	</data>
+	<data name="edit_first_name" xml:space="preserve">
+		<value>Skift fornavn</value>
+	</data>
+	<data name="house_details" xml:space="preserve">
+		<value>Om hjemmet</value>
+	</data>
+	<data name="house_type" xml:space="preserve">
+		<value>Boligtype</value>
+	</data>
+	<data name="overdue" xml:space="preserve">
+		<value>Over fristen</value>
+	</data>
+	<data name="payment_error" xml:space="preserve">
+		<value>Feil med betaling</value>
+	</data>
+	<data name="type" xml:space="preserve">
+		<value>Boligtype</value>
+	</data>
+	<data name="size" xml:space="preserve">
+		<value>Størrelse</value>
+	</data>
+	<data name="people" xml:space="preserve">
+		<value>Beboere</value>
+	</data>
+	<data name="appliances" xml:space="preserve">
+		<value>Elektriske apparater</value>
+	</data>
+	<data name="emai_and_SMS" xml:space="preserve">
+		<value>E-post og tekstmeldinger</value>
+	</data>
+	<data name="other_notification_types" xml:space="preserve">
+		<value>Andre typer varsler</value>
+	</data>
+	<data name="marketing" xml:space="preserve">
+		<value>Markedsføring</value>
+	</data>
+	<data name="data_and_insights" xml:space="preserve">
+		<value>Innblikk i strømbruken</value>
+	</data>
+	<data name="anomalies" xml:space="preserve">
+		<value>Beskjeder om avvik</value>
+	</data>
+	<data name="invoice_alerts" xml:space="preserve">
+		<value>Påminnelser om regninger</value>
+	</data>
+	<data name="pause_all_switch" xml:space="preserve">
+		<value>Sett alle på pause</value>
+	</data>
+	<data name="pause_all_notifications_message" xml:space="preserve">
+		<value>Sett alle varslene på pause</value>
+	</data>
+	<data name="pause_all_notifications_body" xml:space="preserve">
+		<value>Da får du ikke lenger push-varsler, men du kan åpne elKompis og se varslene.</value>
+	</data>
+	<data name="pause_all_button" xml:space="preserve">
+		<value>Sett på pause</value>
+	</data>
+	<data name="invoice_alerts_settings" xml:space="preserve">
+		<value>Vi kan minne deg på strømregninger, så du er klar og ikke går glipp av noen når de kommer.</value>
+	</data>
+	<data name="notification" xml:space="preserve">
+		<value>Varsler</value>
+	</data>
+	<data name="notification_track_consumption" xml:space="preserve">
+		<value>Følg med på hva du bruker</value>
+	</data>
+	<data name="notification_track_consumption_message" xml:space="preserve">
+		<value>Skru på varsler hvis du vil få påminnelser og tips. Vi skal prøve å bare vise deg relevant informasjon.</value>
+	</data>
+	<data name="turn_on_notifications_button" xml:space="preserve">
+		<value>Få varsler</value>
+	</data>
+	<data name="anomalies_notification_message" xml:space="preserve">
+		<value>Hvis noe endrer seg eller virker unormalt med strømbruk og regninger kan vi si ifra og hjelpe deg spare penger.</value>
+	</data>
+	<data name="data_and_insights_message" xml:space="preserve">
+		<value>Du kan få vite hvordan du bruker strøm og vi kan gi deg tips ukentlig eller månedlig.</value>
+	</data>
+	<data name="marketing_notification_message" xml:space="preserve">
+		<value>Vi kan oppdatere deg om tilbud og siste nytt om løsninger.</value>
+	</data>
+	<data name="latest" xml:space="preserve">
+		<value>Siste</value>
+	</data>
+	<data name="notification_invoice_ready" xml:space="preserve">
+		<value>Se over regningen på profilsiden</value>
+	</data>
+	<data name="upcoming_invoice" xml:space="preserve">
+		<value>Strømregning på vei</value>
+	</data>
+	<data name="upcoming_invoice_notification" xml:space="preserve">
+		<value>Fristen for {0}-regningen er om {1}. Det er lurt å betale den nå så du slipper ekstra avgifter.</value>
+	</data>
+	<data name="notification_consumption_surge_title" xml:space="preserve">
+		<value>Økning i bruk</value>
+	</data>
+	<data name="weekly_gas_report" xml:space="preserve">
+		<value>Ukens bruk av energi</value>
+	</data>
+	<data name="weekly_gas_report_message" xml:space="preserve">
+		<value>Mellom {2} og {3} brukte du {0} og {1} på strøm</value>
+	</data>
+	<data name="notification_high_forecast_title" xml:space="preserve">
+		<value>Forventet høy strømbruk i måneden</value>
+	</data>
+	<data name="monthly_usage_report" xml:space="preserve">
+		<value>Månedens bruk</value>
+	</data>
+	<data name="on_track" xml:space="preserve">
+		<value>Alt går etter planen!</value>
+	</data>
+	<data name="on_track_notification" xml:space="preserve">
+		<value>Denne måneden er du {0} %% under budsjettet ditt. Bra jobba!</value>
+	</data>
+	<data name="time_now" xml:space="preserve">
+		<value>Strømpris i timen</value>
+	</data>
+	<data name="on_day" xml:space="preserve">
+		<value>På {0}</value>
+	</data>
+	<data name="enter_amount_to_pay" xml:space="preserve">
+		<value>Velg hvor mye du vil betale</value>
+	</data>
+	<data name="enter_amount_to_pay_body" xml:space="preserve">
+		<value>Enten delbetal strømregningen på {0} og utsett resten til slutten av måneden eller betal hele nå.</value>
+	</data>
+	<data name="paying_with" xml:space="preserve">
+		<value>Betal med</value>
+	</data>
+	<data name="sorry_payment_error" xml:space="preserve">
+		<value>Beklager, det gikk visst ikke</value>
+	</data>
+	<data name="sorry_payment_error_body" xml:space="preserve">
+		<value>Betalingsmåten du valgte ble dessverre ikke godkjent, så du må nok enten kontakte de som er ansvarlige for bankløsningen din eller prøve på nytt.</value>
+	</data>
+	<data name="try_again" xml:space="preserve">
+		<value>Prøv på nytt</value>
+	</data>
+	<data name="back_to_profile" xml:space="preserve">
+		<value>Gå til profilen</value>
+	</data>
+	<data name="efficient_compared_to_similar_homes_format" xml:space="preserve">
+		<value>Denne måneden er strømforbruket ditt {0} %% {1} effektivt enn i tilsvarende hjem.</value>
+	</data>
+	<data name="payment_issue" xml:space="preserve">
+		<value>Problem med betaling</value>
+	</data>
+	<data name="payment_issue_body" xml:space="preserve">
+		<value>Måten du valgte å betale på gikk dessverre ikke. Du kan enten endre den eller kontakte de som er ansvarlige for bankløsningen din.</value>
+	</data>
+	<data name="review_payment_method" xml:space="preserve">
+		<value>Se over betalingsmåten</value>
+	</data>
+	<data name="card_expired" xml:space="preserve">
+		<value>Kortet har utløpt</value>
+	</data>
+	<data name="card_expired_body" xml:space="preserve">
+		<value>Betalingen din gikk ikke gjennom fordi kortet du valgte har utløpt på dato. Du kan legge til et nytt eller endre betalingsmåte.</value>
+	</data>
+	<data name="payment_details" xml:space="preserve">
+		<value>Betalingsinformasjon</value>
+	</data>
+	<data name="subscription_type" xml:space="preserve">
+		<value>Valgt metode</value>
+	</data>
+	<data name="payment_method" xml:space="preserve">
+		<value>Betalingsmåte</value>
+	</data>
+	<data name="add_payment_method" xml:space="preserve">
+		<value>Legg til en måte å betale på</value>
+	</data>
+	<data name="payment_issue_banner" xml:space="preserve">
+		<value>Det gikk ikke å betale med måten du valgte, men du kan endre eller oppdatere den.</value>
+	</data>
+	<data name="payment_expired_banner" xml:space="preserve">
+		<value>Betalingsmåten din har utløpt, så du kan endre måten eller oppdatere informasjonen.</value>
+	</data>
+	<data name="total_impact_and_savings_kr" xml:space="preserve">
+		<value>Jeg har spart {0} totalt</value>
+	</data>
+	<data name="total_impact_and_savings_trees" xml:space="preserve">
+		<value>Forbruket mitt tilsvarer {0} redusert CO2-utslipp</value>
+	</data>
+	<data name="total_impact_and_savings_CO2" xml:space="preserve">
+		<value>Jeg har redusert utslipp av {0} CO2</value>
+	</data>
+	<data name="change_address_question" xml:space="preserve">
+		<value>Vil du registrere en annen adresse enn denne?</value>
+	</data>
+	<data name="change_address" xml:space="preserve">
+		<value>Velg en annen adresse</value>
+	</data>
+	<data name="update_address_button" xml:space="preserve">
+		<value>Lagre endringene</value>
+	</data>
+	<data name="meter_number_placeholder" xml:space="preserve">
+		<value>f.eks. 900900</value>
+	</data>
+	<data name="auth_generic_error" xml:space="preserve">
+		<value>Noe gikk visst galt med autorisasjonen, men prøv på nytt eller kontakt utviklerteamet for å få hjep</value>
+	</data>
+	<data name="locating_your_meter_number" xml:space="preserve">
+		<value>Her finner du nummeret på måleren:</value>
+	</data>
+	<data name="amount_kwh_day_format" xml:space="preserve">
+		<value>{0} om dagen</value>
+	</data>
+	<data name="invoice_pay_amount_now_button" xml:space="preserve">
+		<value>Betal {0} nå</value>
+	</data>
+	<data name="invoice_energy_source_enig_title" xml:space="preserve">
+		<value>elKompis</value>
+	</data>
+	<data name="select_payment_method_subtitle_full_format" xml:space="preserve">
+		<value>Velg deg en betalingsmetode og betal hele regningen på {0}.</value>
+	</data>
+	<data name="required_field_invalid" xml:space="preserve">
+		<value>Vi må vite dette</value>
+	</data>
+	<data name="sms_resent_message" xml:space="preserve">
+		<value>Nå sendte vi deg en tekstmelding med en kode på 6 tall.</value>
+	</data>
+	<data name="general_error" xml:space="preserve">
+		<value>Det har visst skjedd en feil, men prøv på nytt senere.</value>
+	</data>
+	<data name="network_error" xml:space="preserve">
+		<value>Vi fikk visst ikke til det du ba om, men prøv på nytt etter du har sjekket internett-tilkoblingen din.</value>
+	</data>
+	<data name="ssn_not_found_error" xml:space="preserve">
+		<value>Enten så er fødselsnummeret du la til i feil format, eller så stemmer det ikke overens med navnet.</value>
+	</data>
+	<data name="invalid_address_error" xml:space="preserve">
+		<value>Adressen du la til fungerer ikke.</value>
+	</data>
+	<data name="existing_customer_collision_error" xml:space="preserve">
+		<value>Telefonnummeret du la er dessverre i bruk av en annen.</value>
+	</data>
+	<data name="must_accept_terms_error" xml:space="preserve">
+		<value>Bekreft at du leste og forsto avtalen, er du snill.</value>
+	</data>
+	<data name="must_accept_important_emails_error" xml:space="preserve">
+		<value>Bekreft at du takker ja til å få viktig informasjon på e-post.</value>
+	</data>
+	<data name="invalid_sms_code_error" xml:space="preserve">
+		<value>Koden du la til fungerer ikke.</value>
+	</data>
+	<data name="wrong_sms_code_error" xml:space="preserve">
+		<value>Det er ikke riktig kode.</value>
+	</data>
+	<data name="vipps_agreement_failed" xml:space="preserve">
+		<value>Vi fikk ikke til å koble til Vipps-kontoen din, men prøv på nytt.</value>
+	</data>
+	<data name="vipps_transaction_failed" xml:space="preserve">
+		<value>Vi fikk ikke til å fullføre betalingen din med Vipps, men prøv på nytt.</value>
+	</data>
+	<data name="first_name_required" xml:space="preserve">
+		<value>Vi må vite hva vi skal kalle deg.</value>
+	</data>
+	<data name="spruce_trees_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} grantre&quot;,&quot;other&quot;:&quot;{0} grantrær&quot;}</value>
+	</data>
+	<data name="breakdown_source_heating" xml:space="preserve">
+		<value>Oppvarming</value>
+	</data>
+	<data name="breakdown_source_always_on" xml:space="preserve">
+		<value>Alltid på</value>
+	</data>
+	<data name="breakdown_source_solar" xml:space="preserve">
+		<value>Solenergi</value>
+	</data>
+	<data name="breakdown_source_lighting" xml:space="preserve">
+		<value>Belysning</value>
+	</data>
+	<data name="breakdown_source_washing" xml:space="preserve">
+		<value>Klesvask</value>
+	</data>
+	<data name="tons_format" xml:space="preserve">
+		<value>{0} tonn</value>
+	</data>
+	<data name="homescreen_price_ore" xml:space="preserve">
+		<value>{0} øre</value>
+	</data>
+	<data name="primary_heating_hydronics" xml:space="preserve">
+		<value>Hvilken type vannbåren varme bruker du mest?</value>
+	</data>
+	<data name="current_price_forecast" xml:space="preserve">
+		<value>Det lønner seg å bruke strøm mellom {0} - {1}. Da koster det bare ({2} øre)</value>
+	</data>
+	<data name="no_sufficient_data_for_forecast" xml:space="preserve">
+		<value>Vi må nok samle informasjon i ett år for å forutse årlig bruk</value>
+	</data>
+	<data name="no_sufficient_data_for_similar_homes" xml:space="preserve">
+		<value>For å sammenligne strømforbruket ditt med hjem som ligner må vi ha mer informasjon, men sjekk igjen snart!</value>
+	</data>
+	<data name="breakdown_source_water_heating" xml:space="preserve">
+		<value>Varmtvannsbereder</value>
+	</data>
+	<data name="breakdown_source_ev" xml:space="preserve">
+		<value>Elbil</value>
+	</data>
+	<data name="other_6" xml:space="preserve">
+		<value>andre ting</value>
+	</data>
+	<data name="breakdown_source_other" xml:space="preserve">
+		<value>Annet</value>
+	</data>
+	<data name="breakdown_source_cooling" xml:space="preserve">
+		<value>Kjøleanlegg</value>
+	</data>
+	<data name="breakdown_source_fridge_freezer" xml:space="preserve">
+		<value>Kjøleskap og fryser</value>
+	</data>
+	<data name="update_address_body" xml:space="preserve">
+		<value>Vi kan søke etter et annet meter i navnet ditt hvis du endrer adressen din og vi har fødselsnummeret</value>
+	</data>
+	<data name="per_hour" xml:space="preserve">
+		<value>per kilowattime</value>
+	</data>
+	<data name="good" xml:space="preserve">
+		<value>LAVERE</value>
+	</data>
+	<data name="mid" xml:space="preserve">
+		<value>MIDDELS</value>
+	</data>
+	<data name="high" xml:space="preserve">
+		<value>HØYERE</value>
+	</data>
+	<data name="this_month" xml:space="preserve">
+		<value>Denne måneden</value>
+	</data>
+	<data name="renewable_energy" xml:space="preserve">
+		<value>Fornybar energi</value>
+	</data>
+	<data name="nuclear_energy" xml:space="preserve">
+		<value>Kjernekraft</value>
+	</data>
+	<data name="coal_and_gas" xml:space="preserve">
+		<value>Kullkraft og gass</value>
+	</data>
+	<data name="fossil_fuels" xml:space="preserve">
+		<value>Fossilt brennstoff</value>
+	</data>
+	<data name="coal" xml:space="preserve">
+		<value>Kullkraft</value>
+	</data>
+	<data name="hydropower" xml:space="preserve">
+		<value>Vannkraft</value>
+	</data>
+	<data name="other_sources" xml:space="preserve">
+		<value>Andre kilder</value>
+	</data>
+	<data name="unsuccessful_meter_number_address" xml:space="preserve">
+		<value>Denne addressen fant vi med fødselsnummeret ditt:</value>
+	</data>
+	<data name="full_contract_sub" xml:space="preserve">
+		<value>Når du bekrefter, sier du også at du har lest og er enig i betingelsene nedenfor.</value>
+	</data>
+	<data name="agreement_checkmark_start_title" xml:space="preserve">
+		<value>Start og slutt</value>
+	</data>
+	<data name="agreement_checkmark_price_title" xml:space="preserve">
+		<value>Én enkel pris</value>
+	</data>
+	<data name="agreement_checkmark_price_body" xml:space="preserve">
+		<value>Vi har kun én, helt transparent strømavtale, for privatkunder med elKompis-medlemskap på 34 kr i måneden. Strømprisen du betaler er Nord Pools spot-timespriser, det samme som vi betaler. I tillegg er det 1 øre per kWh, for lovpålagte el-sertifikater. Sertifikatet ditt for 100 % fornybar energi er inkludert (opprinnelsesgaranti for hele forbruket ditt).</value>
+	</data>
+	<data name="agreement_checkmark_start_body" xml:space="preserve">
+		<value>Når du bestiller tar det vanligvis 2 uker til du får strømleveransen fra oss. Avtalen mellom oss gjelder til du sier den opp, enten via elKompis-appen eller e-post. Begge parter har angrerett.</value>
+	</data>
+	<data name="agreement_checkmark_payment_body" xml:space="preserve">
+		<value>Vi fakturerer på etterskudd, for forrige måneds strømbruk, og regningen sendes ut digitalt en av de første dagene i måneden. Betalingen kan trekkes automatisk hvis du har lagret bankkort, eller en annen form for elektronisk løsning.</value>
+	</data>
+	<data name="contract_preview" xml:space="preserve">
+		<value>Vi bruker Forbrukerombudets standardvilkår for strøm som du finner på nettsidene deres. I tillegg gjelder disse brukerbetingelsene til elKompis:
+
+• Vi kan innhente informasjon fra nettselskapet du bruker, for å registrere elKompis som leverandør på den nye adressen du flytter til, og å hente data fra tidligere forbruk.
+• Vi kan foreta kredittvurdering.
+• Vi kan styre og innhente informasjon fra smarthus-utstyr du kobler til, så du sparer enda mer.</value>
+	</data>
+	<data name="welcome_sales_pitch_simply" xml:space="preserve">
+		<value>HELT ENKELT</value>
+	</data>
+	<data name="welcome_sales_pitch_insightful" xml:space="preserve">
+		<value>BILLIG STRØM</value>
+	</data>
+	<data name="welcome_sales_pitch_energy" xml:space="preserve">
+		<value>DU FORSTÅR</value>
+	</data>
+	<data name="welcome_back" xml:space="preserve">
+		<value>Hei igjen!</value>
+	</data>
+	<data name="your_phone_number" xml:space="preserve">
+		<value>Skriv inn telefonnummeret ditt</value>
+	</data>
+	<data name="notification_consumption_surge" xml:space="preserve">
+		<value>Det ser ut til at du har høyere strømbruk enn forrige uke. Se om det hjelper å sette på vaskemaskinen, og andre apparater som tar mye strøm, når det koster lite.</value>
+	</data>
+	<data name="monthly_statement_amount" xml:space="preserve">
+		<value>Totalbeløp for {0}</value>
+	</data>
+	<data name="notification_high_forecast" xml:space="preserve">
+		<value>Den forventede bruken din denne måneden er {0}. Det er {1} %% høyere enn forrige måned.</value>
+	</data>
+	<data name="lets_select_payment_method" xml:space="preserve">
+		<value>Velg betalingsmetode</value>
+	</data>
+	<data name="no_meter_number_error_message_2" xml:space="preserve">
+		<value>Vi fant ikke målernummeret fra opplysningene du ga, dessverre. Prøv å skriv inn målernummeret igjen eller ta kontakt med noen i elKompis for å få hjelp.</value>
+	</data>
+	<data name="thank_you_for_payment" xml:space="preserve">
+		<value>Takk for betalingen din på {0}</value>
+	</data>
+	<data name="tv" xml:space="preserve">
+		<value>TV</value>
+	</data>
+	<data name="successful_preliminary_payment_message" xml:space="preserve">
+		<value>Du har delbetalt underveis i måneden, så vi oppdaterer brukeren din når det har blitt overført ferdig. Da får du kvittering på e-post.</value>
+	</data>
+	<data name="recurring_monthly" xml:space="preserve">
+		<value>Automatisk i måneden</value>
+	</data>
+	<data name="invoice_ready" xml:space="preserve">
+		<value>Strømregningen for {0} er klar</value>
+	</data>
+	<data name="casual_preferred_name" xml:space="preserve">
+		<value>Navnet du vil bruke </value>
+	</data>
+	<data name="household" xml:space="preserve">
+		<value>Beboere</value>
+	</data>
+	<data name="hot_water_tank" xml:space="preserve">
+		<value>Varmtvannsbereder</value>
+	</data>
+	<data name="edit_house_type" xml:space="preserve">
+		<value>Velg typen bolig du har</value>
+	</data>
+	<data name="update_house_type_button" xml:space="preserve">
+		<value>Oppdater boligtype</value>
+	</data>
+	<data name="update_house_size_button" xml:space="preserve">
+		<value>Oppdater størrelse</value>
+	</data>
+	<data name="edit_house_size" xml:space="preserve">
+		<value>Endre størrelsen på hjemmet</value>
+	</data>
+	<data name="edit_household" xml:space="preserve">
+		<value>Hvor mange bor det der?</value>
+	</data>
+	<data name="edit_household_button" xml:space="preserve">
+		<value>Oppdater beboere</value>
+	</data>
+	<data name="edit_heating_type" xml:space="preserve">
+		<value>Endre hva slags oppvarming som brukes</value>
+	</data>
+	<data name="edit_heating_subtitle" xml:space="preserve">
+		<value>Trykk på den varmekilden du bruker mest og så den nest mest brukte, i den rekkefølgen</value>
+	</data>
+	<data name="update_heating_button" xml:space="preserve">
+		<value>Oppdater varmekilde</value>
+	</data>
+	<data name="edit_appliances" xml:space="preserve">
+		<value>Velg elektriske apparater</value>
+	</data>
+	<data name="kitchen" xml:space="preserve">
+		<value>Kjøkkenutstyr</value>
+	</data>
+	<data name="other_appliances" xml:space="preserve">
+		<value>Vaskerom / Annet</value>
+	</data>
+	<data name="power" xml:space="preserve">
+		<value>Styrke</value>
+	</data>
+	<data name="update_appliances" xml:space="preserve">
+		<value>Oppdater apparater</value>
+	</data>
+	<data name="kwp" xml:space="preserve">
+		<value>kWp</value>
+	</data>
+	<data name="manage_payments" xml:space="preserve">
+		<value>Endre betaling</value>
+	</data>
+	<data name="method_of_payment" xml:space="preserve">
+		<value>Betalingsmetode</value>
+	</data>
+	<data name="current_subscription_plan" xml:space="preserve">
+		<value>Måten du har valgt å betale på</value>
+	</data>
+	<data name="manage_payments_subtitle" xml:space="preserve">
+		<value>Skift til en av metodene nedenfor. Du kan alltids skifte tilbake hvis du ombestemmer deg.</value>
+	</data>
+	<data name="successful_payment_change_popup" xml:space="preserve">
+		<value>Nå er den nye betalingsmetoden din {0}!</value>
+	</data>
+	<data name="payment_card" xml:space="preserve">
+		<value>Kortet ditt</value>
+	</data>
+	<data name="remove" xml:space="preserve">
+		<value>Fjern</value>
+	</data>
+	<data name="delete_payment_method_punt" xml:space="preserve">
+		<value>Er du sikker på at du vil slette betalingsmåten din?</value>
+	</data>
+	<data name="delete" xml:space="preserve">
+		<value>Slett</value>
+	</data>
+	<data name="add_payment_method_button" xml:space="preserve">
+		<value>Lagre kortet</value>
+	</data>
+	<data name="invoice_permission_not_granted_error" xml:space="preserve">
+		<value>For å laste ned regningen trenger elKompis tillatelsen din. Når du har godtatt kan du gå videre.</value>
+	</data>
+	<data name="terms_and_conditions" xml:space="preserve">
+		<value>Avtalevilkår</value>
+	</data>
+	<data name="data_policy" xml:space="preserve">
+		<value>Personvernsregler</value>
+	</data>
+	<data name="calculate_carbon_offset_button" xml:space="preserve">
+		<value>Regnestykket til karbonsparingen</value>
+	</data>
+	<data name="downloading_invoice" xml:space="preserve">
+		<value>Laster ned regningen</value>
+	</data>
+	<data name="invoice_downloaded" xml:space="preserve">
+		<value>Regningen er lagret</value>
+	</data>
+	<data name="pending" xml:space="preserve">
+		<value>Behandles</value>
+	</data>
+	<data name="days_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} dag&quot;,&quot;other&quot;:&quot;{0} dager&quot;}</value>
+	</data>
+	<data name="out_of_budget_format" xml:space="preserve">
+		<value>av {0}</value>
+	</data>
+	<data name="season_consumption_budget_format" xml:space="preserve">
+		<value>Dette er budsjettet for {0} strømbruk per måned.</value>
+	</data>
+	<data name="season_winter" xml:space="preserve">
+		<value>vinterens</value>
+	</data>
+	<data name="season_spring" xml:space="preserve">
+		<value>vårens</value>
+	</data>
+	<data name="season_summer" xml:space="preserve">
+		<value>sommerens</value>
+	</data>
+	<data name="season_fall" xml:space="preserve">
+		<value>høstens</value>
+	</data>
+	<data name="month_to_month_format" xml:space="preserve">
+		<value>{0} til {1}</value>
+	</data>
+	<data name="your_impact_footprint_title" xml:space="preserve">
+		<value>Din miljøbesparelse hittil</value>
+	</data>
+	<data name="your_impact_savings_title" xml:space="preserve">
+		<value>Dette sparer du</value>
+	</data>
+	<data name="tons_co2_format" xml:space="preserve">
+		<value>{0} t CO2</value>
+	</data>
+	<data name="profile_header_upcoming_invoice_format" xml:space="preserve">
+		<value>Neste strømregning er klar om {0}</value>
+	</data>
+	<data name="winter_months" xml:space="preserve">
+		<value>vintermånedene</value>
+	</data>
+	<data name="spring_months" xml:space="preserve">
+		<value>vårmånedene</value>
+	</data>
+	<data name="summer_months" xml:space="preserve">
+		<value>sommermånedene</value>
+	</data>
+	<data name="autumn_months" xml:space="preserve">
+		<value>høstmånedene</value>
+	</data>
+	<data name="sign_out_popup_title" xml:space="preserve">
+		<value>Logg ut</value>
+	</data>
+	<data name="sign_out_popup_subtitle" xml:space="preserve">
+		<value>Vil du logge ut?</value>
+	</data>
+	<data name="adults_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} voksen&quot;,&quot;other&quot;:&quot;{0} voksne&quot;}</value>
+	</data>
+	<data name="children_format" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} barn&quot;,&quot;other&quot;:&quot;{0} barn&quot;}</value>
+	</data>
+	<data name="update_button" xml:space="preserve">
+		<value>Oppdater</value>
+	</data>
+	<data name="entertainment" xml:space="preserve">
+		<value>Underholdningselektronikk</value>
+	</data>
+	<data name="notification_contract_notifications_on" xml:space="preserve">
+		<value>Nå har du full tilgang og innblikk i appen, så det er bare å utforske.</value>
+	</data>
+	<data name="nav_about_us" xml:space="preserve">
+		<value>Om oss</value>
+	</data>
+	<data name="nav_our_tech" xml:space="preserve">
+		<value>Vår tech</value>
+	</data>
+	<data name="nav_blogg" xml:space="preserve">
+		<value>Blogg</value>
+	</data>
+	<data name="label_get_started" xml:space="preserve">
+		<value>Kom i gang</value>
+	</data>
+	<data name="hero_heading_quite_simply" xml:space="preserve">
+		<value>HELT ENKELT</value>
+	</data>
+	<data name="hero_heading_cheap_electricity" xml:space="preserve">
+		<value>BILLIG STRØM</value>
+	</data>
+	<data name="hero_heading_easily_understood" xml:space="preserve">
+		<value>DU FORSTÅR</value>
+	</data>
+	<data name="hero_heading" xml:space="preserve">
+		<value>Her er elKompis.</value>
+	</data>
+	<data name="hero_content" xml:space="preserve">
+		<value>Vi har samlet strøm fra fornybar energi i en fantastisk kraftfull app. Avtalen er lett og tydelig, utviklet helt på dine premisser.</value>
+	</data>
+	<data name="download_apps" xml:space="preserve">
+		<value>Last ned appen til iOS og Android</value>
+	</data>
+	<data name="features_heading" xml:space="preserve">
+		<value>SLÅ BRYTEREN PÅ ELKOMPIS - DETTE FÅR DU</value>
+	</data>
+	<data name="feature_insights_heading" xml:space="preserve">
+		<value>Full innsikt til egen strømbruk</value>
+	</data>
+	<data name="feature_insights_content" xml:space="preserve">
+		<value>Se hvilken strøm du bruker på hva og når, med en rask og enkel oversikt. I stedet for å se i sikringsskapet, kan appen elKompis gi deg kraft og innsyn til hvordan du kan bruke strøm enda bedre.</value>
+	</data>
+	<data name="feature_price_heading" xml:space="preserve">
+		<value>Forutse prisen</value>
+	</data>
+	<data name="feature_price_content" xml:space="preserve">
+		<value>Vit hva du bruker og kommer til å bruke, til en hver tid. Du kan lage et budsjett og få beskjed om når det er billig strøm.</value>
+	</data>
+	<data name="feature_tips_heading" xml:space="preserve">
+		<value>Skreddersydde tips</value>
+	</data>
+	<data name="feature_tips_content" xml:space="preserve">
+		<value>Få innspill til hvordan du kan spare, og hvis strømbruken din endrer seg.</value>
+	</data>
+	<data name="feature_invoice_heading" xml:space="preserve">
+		<value>Lett strømregning</value>
+	</data>
+	<data name="feature_invoice_content" xml:space="preserve">
+		<value>Finn den måten som passer best å betale på, med Vipps, kort eller eFaktura.</value>
+	</data>
+	<data name="environmental_considerations_heading" xml:space="preserve">
+		<value>Bevisst miljøhensyn</value>
+	</data>
+	<data name="environmental_considerations_content" xml:space="preserve">
+		<value>Strømmen vår er hentet fra utelukkende fornybare kilder. elKompis gir deg kraft og innsikt til en enklere fornybar fremtid, så hjemmet ditt sparer klimaet og lommeboken samtidig.
+Du får et bevis på den rene strømmen.</value>
+	</data>
+	<data name="graph_price_heading" xml:space="preserve">
+		<value>Vann og sol i prisen</value>
+	</data>
+	<data name="graph_price_content" xml:space="preserve">
+		<value>Du har en avtale som alltid er blant de rimeligste i markedet. Nedenfor ser du din pris sammenlignet med andre tilsvarende strømavtaler.</value>
+	</data>
+	<data name="graph_description" xml:space="preserve">
+		<value>En billig strømavtale. Helt uten lureri</value>
+	</data>
+	<data name="graph_enig_label" xml:space="preserve">
+		<value>enig</value>
+	</data>
+	<data name="graph_other_label" xml:space="preserve">
+		<value>Andre leverandører</value>
+	</data>
+	<data name="graph_data_explanation" xml:space="preserve">
+		<value>Hentet fra Strømpris.no og basert på årlige bruksdata fra typisk strømbruk.</value>
+	</data>
+	<data name="switch_heading" xml:space="preserve">
+		<value>Lett som bare det å være med</value>
+	</data>
+	<data name="switch_step_1" xml:space="preserve">
+		<value>Last ned appen</value>
+	</data>
+	<data name="switch_step_2" xml:space="preserve">
+		<value>Bli med</value>
+	</data>
+	<data name="switch_step_3" xml:space="preserve">
+		<value>Vi ordner resten</value>
+	</data>
+	<data name="switch_content" xml:space="preserve">
+		<value>Du trenger ikke installere noe, ringe rundt eller vente på leveranser. Vi sier ifra til det gamle strømselskapet ditt og du får vite når alt er klart.</value>
+	</data>
+	<data name="join_enig" xml:space="preserve">
+		<value>Bli med i elKompis</value>
+	</data>
+	<data name="download_apps_and_join_us" xml:space="preserve">
+		<value>Last ned appen til iOS og Android og bli elKompis med oss</value>
+	</data>
+	<data name="contact_enig" xml:space="preserve">
+		<value>Ta (strøm)kontakt</value>
+	</data>
+	<data name="user_terms" xml:space="preserve">
+		<value>Brukerbetingelser og avtale</value>
+	</data>
+	<data name="copyright" xml:space="preserve">
+		<value>Opphavsrett {{year}} elKompis. Alle rettigheter forbeholdes</value>
+	</data>
+	<data name="pn_contract_ready_title" xml:space="preserve">
+		<value>Avtalen er klar</value>
+	</data>
+	<data name="pn_contract_ready" xml:space="preserve">
+		<value>Nå som alt er klart mellom oss er vi elKompiser!</value>
+	</data>
+	<data name="pn_invoice_ready_title" xml:space="preserve">
+		<value>Strømregningen er klar</value>
+	</data>
+	<data name="pn_invoice_ready" xml:space="preserve">
+		<value>Se mer om regningen inne på profilen din</value>
+	</data>
+	<data name="pn_invoice_reminder_title" xml:space="preserve">
+		<value>Påminnelse om regning</value>
+	</data>
+	<data name="pn_invoice_reminder" xml:space="preserve">
+		<value>Nå kan du betale den nyeste strømregningen</value>
+	</data>
+	<data name="pn_invoice_due_date_alert_title" xml:space="preserve">
+		<value>Det nærmer seg fristen for neste regning</value>
+	</data>
+	<data name="pn_invoice_due_date_alert" xml:space="preserve">
+		<value>Fristen for neste regning er om {0} dager. Det er lurt å betale den nå så du slipper ekstra avgifter.</value>
+	</data>
+	<data name="pn_consumption_surge_title" xml:space="preserve">
+		<value>Økning i bruk</value>
+	</data>
+	<data name="pn_consumption_surge" xml:space="preserve">
+		<value>Nå har du visst høyere strømbruk enn forrige uke</value>
+	</data>
+	<data name="pn_high_forecast_title" xml:space="preserve">
+		<value>Forventet høy månedlig strømbruk</value>
+	</data>
+	<data name="pn_high_forecast" xml:space="preserve">
+		<value>Den forventede bruken din denne måneden er {0} kWh. Det er {1} %% høyere enn forrige måned.</value>
+	</data>
+	<data name="pn_over_budget_title" xml:space="preserve">
+		<value>Nå er du over budsjettet!</value>
+	</data>
+	<data name="pn_over_budget" xml:space="preserve">
+		<value>Denne måneden har du gått kr {0} over budsjettet. Den forventede bruken din er på kr {1}</value>
+	</data>
+	<data name="notification_budget_on_track_title" xml:space="preserve">
+		<value>Alt går etter planen!</value>
+	</data>
+	<data name="notification_budget_on_track" xml:space="preserve">
+		<value>Denne måneden er du {0} %% under det du har i budsjettet. Bra jobba!</value>
+	</data>
+	<data name="notification_weekly_usage_report_title" xml:space="preserve">
+		<value>Oppsummering av uken</value>
+	</data>
+	<data name="notification_weekly_usage_report" xml:space="preserve">
+		<value>Mellom {2} og {3} brukte du {0} og {1} på strøm</value>
+	</data>
+	<data name="notification_monthly_usage_report_title" xml:space="preserve">
+		<value>Oppsummering av måneden</value>
+	</data>
+	<data name="notification_monthly_usage_report" xml:space="preserve">
+		<value>I {2} brukte du {0} og {1} på strøm</value>
+	</data>
+	<data name="general" xml:space="preserve">
+		<value>Generelt</value>
+	</data>
+	<data name="notification_invoice_due_date_alert_title" xml:space="preserve">
+		<value>Det nærmer seg fristen for neste regning</value>
+	</data>
+	<data name="notification_invoice_due_date_alert" xml:space="preserve">
+		<value>Fristen for {0}-regningen er om {1} dager. Det er lurt å betale den nå så du slipper ekstra avgifter.</value>
+	</data>
+	<data name="notification_over_budget_title" xml:space="preserve">
+		<value>Nå er du over budsjettet!</value>
+	</data>
+	<data name="notification_over_budget" xml:space="preserve">
+		<value>Denne måneden har du gått {0} over budsjettet. Den forventede bruken din er på {1}</value>
+	</data>
+	<data name="notification_invoice_reminder" xml:space="preserve">
+		<value>Nå kan du betale strømregningen for {0}</value>
+	</data>
+	<data name="payment_about_to_expire_banner" xml:space="preserve">
+		<value>Betalingsmåten din utløper snart, men du kan endre måten eller oppdatere informasjonen.</value>
+	</data>
+	<data name="notification_contract_ready" xml:space="preserve">
+		<value>Nå som alt er klart mellom oss er vi elKompiser!</value>
+	</data>
+	<data name="notification_contract_ready_title" xml:space="preserve">
+		<value>Avtalen er klar</value>
+	</data>
+	<data name="notification_invoice_ready_title" xml:space="preserve">
+		<value>Strømregningen for {0}</value>
+	</data>
+	<data name="notification_invoice_reminder_title" xml:space="preserve">
+		<value>Påminnelse om regning</value>
+	</data>
+	<data name="calculate_carbon_offset" xml:space="preserve">
+		<value>Ett grantre binder 2000 kg CO2 løpet av et liv på 50 år. Hvert år av grantreets liv på jorden binder det 40 kg, som er 3,3 kg i måneden. KwH som ikke er fornybar er 0,509 kg CO2. 
+
+Vi regner den månedlige strømbruken din i grantrærnes binding av karbonutslipp, siden strømmen du bruker er fornybar.</value>
+	</data>
+	<data name="legend_enig" xml:space="preserve">
+		<value>elKompis</value>
+	</data>
+	<data name="legend_others" xml:space="preserve">
+		<value>Kunder uten fornybar strøm</value>
+	</data>
+	<data name="kwh" xml:space="preserve">
+		<value>Forbruk (kWh)</value>
+	</data>
+	<data name="cheaper" xml:space="preserve">
+		<value>rimeligere</value>
+	</data>
+	<data name="expensive" xml:space="preserve">
+		<value>dyrere</value>
+	</data>
+	<data name="dialog_title" xml:space="preserve">
+		<value>Vi har visst allerede en avtale</value>
+	</data>
+	<data name="dialog_body" xml:space="preserve">
+		<value>Du har en aktiv konto hos elKompis fra før, så bare logg inn med den eller ta kontakt med oss for å få hjelp.</value>
+	</data>
+	<data name="cancel_subscription_plan" xml:space="preserve">
+		<value>Fjern betalingsmetode</value>
+	</data>
+	<data name="edit_billing_address" xml:space="preserve">
+		<value>Betalingsadresse</value>
+	</data>
+	<data name="cancel_recurring_payments_confirmation_message" xml:space="preserve">
+		<value>Vil du ikke bruke betalingsmetoden som går automatisk?</value>
+	</data>
+	<data name="your_power" xml:space="preserve">
+		<value>Din strøm</value>
+	</data>
+	<data name="price_tip_rise_low_to_medium" xml:space="preserve">
+		<value>Strømprisen er lav nå, men går opp fra {0} til {1}. Du bør derfor {2} nå eller vente til prisen er lav igjen.</value>
+	</data>
+	<data name="price_tip_rise_medium_to_high" xml:space="preserve">
+		<value>Strømprisen er middels høy nå, men går opp mellom {0} og {1}. Du kan spare penger hvis du kan {2} når prisen er lavere igjen.</value>
+	</data>
+	<data name="price_tip_rise_low_to_high" xml:space="preserve">
+		<value>Strømmen er lav nå, men den blir høyere mellom {0} og {1}. Du bør derfor {2} så fort som mulig.</value>
+	</data>
+	<data name="price_tip_drop_high_to_medium" xml:space="preserve">
+		<value>Strømprisen er høy nå, men den blir noe lavere mellom {0} og {1}. Du kan spare litt penger på å vente med å {2} til da.</value>
+	</data>
+	<data name="price_tip_drop_medium_to_low" xml:space="preserve">
+		<value>Strømprisen er middels nå, men blir lavere rundt {0} og {1}. Hvis du kan vente med å {2} kan du spare litt penger.</value>
+	</data>
+	<data name="price_tip_drop_high_to_low" xml:space="preserve">
+		<value>Strømprisen er høy nå, men den blir lavere mellom {0} og {1}. Hvis du kan vente med å {2} til da, sparer du penger!</value>
+	</data>
+	<data name="price_tip_action_shower" xml:space="preserve">
+		<value>ta en lang dusj</value>
+	</data>
+	<data name="price_tip_action_baking" xml:space="preserve">
+		<value>sette på oppvaskmaskin</value>
+	</data>
+	<data name="price_tip_action_vacuum" xml:space="preserve">
+		<value>ta et varmt bad</value>
+	</data>
+	<data name="price_tip_action_laundry" xml:space="preserve">
+		<value>senke innetemperaturen med en grad.</value>
+	</data>
+	<data name="price_tip_action_waffles" xml:space="preserve">
+		<value>ha på mye oppvarming</value>
+	</data>
+	<data name="price_tip_stable_low" xml:space="preserve">
+		<value>Strømprisen er lav hele dagen. Du bør likevel være forsiktig med strømforbruket, selv om du kan {0} når du vil i dag.</value>
+	</data>
+	<data name="price_tip_stable_medium" xml:space="preserve">
+		<value>Strømprisen er middels hele dagen. Du bør likevel være forsiktig med strømforbruket, selv om du kan {0} når du vil i dag.</value>
+	</data>
+	<data name="price_tip_stable_high" xml:space="preserve">
+		<value>Strømprisen er høy hele dagen. For å spare penger, kan du {0}</value>
+	</data>
+	<data name="change_meter_number_title" xml:space="preserve">
+		<value>Velg en annen måler</value>
+	</data>
+	<data name="change_meter_number_subtitle" xml:space="preserve">
+		<value>Det er flere enn én måler registrert på fødselsnummeret ditt. Se over og trykk på riktig adresse for den du vil bruke.</value>
+	</data>
+	<data name="dismiss_confirmation" xml:space="preserve">
+		<value>Glem endringer</value>
+	</data>
+	<data name="notification_impact_and_savings_trees" xml:space="preserve">
+		<value>Den fornybare energien min tilsvarer effekten av {0}</value>
+	</data>
+	<data name="missing_chart_data" xml:space="preserve">
+		<value>Analysen er dessverre ikke klar.</value>
+	</data>
+	<data name="feature_insights_image_alt" xml:space="preserve">
+		<value>En rosa strek går opp og ned over en graf, for å vise totalt forbruk. Teksten sier: Igår brukte du 150 kWh” og ved siden av står det: -5% pil ned, som indikerer at du vanligvis bruker mer</value>
+	</data>
+	<data name="feature_price_image_alt" xml:space="preserve">
+		<value>Nederst på skjermen er det en tidslinje, som viser nåværende tidspunkt, og over går en rosa linje. En tekstboks sier “Prisen kommer til å synke med 6 øre mellom klokken 10 og 12 i dag.” Det står også at forventet bruk den neste timen er 12 øre</value>
+	</data>
+	<data name="feature_invoice_image_alt" xml:space="preserve">
+		<value>Det er en digital strømregning hvor det står “April 2020, Frist 27.mai”. I høyre hjørne er det en merkelapp med “Ubetalt” og i midten av skjermen står totalbeløpet “209,75 NOK” og et forklaringsfelt med teksten “50,23 under budsjettet”. Over knapp med “Betal” på, står det “Se gjennom regningen for april 2020&quot;. Ved siden av står Vipps-logoen.</value>
+	</data>
+	<data name="feature_tips_image_alt" xml:space="preserve">
+		<value>En tekstboks over et kake-diagram sier: “Det ser ut til at du har 15 % høyere strømbruk enn forrige uke. Se om det hjelper å sette på vaskemaskinen og andre apparater som tar mye strøm når det koster lite”, pluss tidspunkt og dato. På diagrammet er overskriften “Mars”. Nederst er et ikon og overskiften “Vaskemaskin” med hvor mye strøm det tar og hva det koster.</value>
+	</data>
+	<data name="notification_impact_and_savings_trees_title" xml:space="preserve">
+		<value>Bra innsats for miljøet</value>
+	</data>
+	<data name="notification_price_concept_title" xml:space="preserve">
+		<value>Hvert øre teller</value>
+	</data>
+	<data name="notification_price_concept" xml:space="preserve">
+		<value>Du sparer {0} på å bruke elKompis og ikke en annen strømleverandør</value>
+	</data>
+	<data name="forecast_tab" xml:space="preserve">
+		<value>Budsjett</value>
+	</data>
+	<data name="yesterday" xml:space="preserve">
+		<value>Igår</value>
+	</data>
+	<data name="notification_credit_card_expiry_warning" xml:space="preserve">
+		<value>Endre måten du betaler på eller oppdater informasjonen, er du grei</value>
+	</data>
+	<data name="notification_credit_card_expiry_warning_title" xml:space="preserve">
+		<value>Betalingsinformasjonen din utløper</value>
+	</data>
+	<data name="pn_credit_card_expiry_warning_title" xml:space="preserve">
+		<value>Betalingsinformasjonen din utløper</value>
+	</data>
+	<data name="pn_credit_card_expiry_warning" xml:space="preserve">
+		<value>Endre måten du betaler på eller oppdater informasjonen, er du grei</value>
+	</data>
+	<data name="tabbar_home" xml:space="preserve">
+		<value>Hjem</value>
+	</data>
+	<data name="tabbar_ev" xml:space="preserve">
+		<value>Elbil</value>
+	</data>
+	<data name="tabbar_insights" xml:space="preserve">
+		<value>Min strøm</value>
+	</data>
+	<data name="tabbar_account" xml:space="preserve">
+		<value>Min konto</value>
+	</data>
+	<data name="tabbar_referal" xml:space="preserve">
+		<value>Verving</value>
+	</data>
+	<data name="minstrom_strompris_header" xml:space="preserve">
+		<value>Strømprisen min</value>
+	</data>
+	<data name="minstrom_strompris_level_high" xml:space="preserve">
+		<value>Prisen nå er høy</value>
+	</data>
+	<data name="minstrom_strompris_level_medium" xml:space="preserve">
+		<value>Prisen nå er middels høy</value>
+	</data>
+	<data name="minstrom_strompris_level_low" xml:space="preserve">
+		<value>Prisen nå er lav</value>
+	</data>
+	<data name="minstrom_prisbevis_header" xml:space="preserve">
+		<value>Mitt prisbevis</value>
+	</data>
+	<data name="minstrom_prisbevis_pricelevel" xml:space="preserve">
+		<value>Prisen din i dag er {0} billigst</value>
+	</data>
+	<data name="minstrom_miljobesparelsen_header" xml:space="preserve">
+		<value>Mitt 
+miljøbevis</value>
+	</data>
+	<data name="minstrom_miljobesparelse_trees_saved" xml:space="preserve">
+		<value>CO2 spart tilsvarer {0} trær</value>
+	</data>
+	<data name="minstrom_strompris_status_now" xml:space="preserve">
+		<value>Akkurat nå:</value>
+	</data>
+	<data name="profile_header_upcoming_invoice_format_copy" xml:space="preserve">
+		<value>Neste strømregning er klar om {0}</value>
+	</data>
+	<data name="account_main_page_header_profile" xml:space="preserve">
+		<value>Min profil</value>
+	</data>
+	<data name="account_main_page_header_homes" xml:space="preserve">
+		<value>Mine boliger</value>
+	</data>
+	<data name="account_main_page_header_cars" xml:space="preserve">
+		<value>Mine elbiler</value>
+	</data>
+	<data name="account_main_page_header_invoice" xml:space="preserve">
+		<value>Mine strømregninger</value>
+	</data>
+	<data name="account_main_page_header_payment_methode" xml:space="preserve">
+		<value>Min betalingsmåte</value>
+	</data>
+	<data name="account_main_page_header_budget" xml:space="preserve">
+		<value>Mitt budsjett</value>
+	</data>
+	<data name="account_main_page_header_notifications" xml:space="preserve">
+		<value>Mine varsler</value>
+	</data>
+	<data name="account_main_page_header_support" xml:space="preserve">
+		<value>Mitt hjelpesenter</value>
+	</data>
+	<data name="account_main_page_intro" xml:space="preserve">
+		<value>Se over kontoen din hos elKompis.</value>
+	</data>
+	<data name="account_my_profile_personal_information_username_update_button" xml:space="preserve">
+		<value>Oppdater brukernavn</value>
+	</data>
+	<data name="account_homes_header" xml:space="preserve">
+		<value>Mine boliger</value>
+	</data>
+	<data name="account_cars_header" xml:space="preserve">
+		<value>Mine registrerte elbiler</value>
+	</data>
+	<data name="account_forecast_update_button" xml:space="preserve">
+		<value>Se den nye analysen din</value>
+	</data>
+	<data name="account_support_intro" xml:space="preserve">
+		<value>Vi er her for å hjelpe deg når du trenger det</value>
+	</data>
+	<data name="referral_header" xml:space="preserve">
+		<value>elKompis</value>
+	</data>
+	<data name="referral_modal_header" xml:space="preserve">
+		<value>Last ned elKompis og kom i gang</value>
+	</data>
+	<data name="referral_modal_header_download" xml:space="preserve">
+		<value>Registreringen tar bare noen få minutter og vi håndterer byttet for deg.</value>
+	</data>
+	<data name="referral_modal_link_app_store_download" xml:space="preserve">
+		<value>Last ned fra App Store</value>
+	</data>
+	<data name="referral_modal_link_google_play_download" xml:space="preserve">
+		<value>Tilgjengelig på Google Play</value>
+	</data>
+	<data name="referral_modal_scan_qr_code" xml:space="preserve">
+		<value>Scan med mobilkamera eller QR-app på telefonen</value>
+	</data>
+	<data name="product_name" xml:space="preserve">
+		<value>elKompis</value>
+	</data>
+	<data name="priceconcept_graph_description" xml:space="preserve">
+		<value>I grafen ovenfor ser du elKompis sin pris plassering mot de andre spotavtalene i markedet. Kampanjepriser og gratis lokketilbud som kun varer i en begrenset periode, er ikke inkludert. I den rosa søylen over grafen ser du årlig kostnad for en elKompis-kunde, med et lands gjennomsnittlig forbruk på 16.000 kWh årlig.</value>
+	</data>
+	<data name="account_support_header" xml:space="preserve">
+		<value>Hei kompis!</value>
+	</data>
+	<data name="My_invoices_main_view_details" xml:space="preserve">
+		<value>Se detaljer</value>
+	</data>
+	<data name="greenconcept_main_header" xml:space="preserve">
+		<value>100 % fornybar strøm  
+-opprinnelsesgaranti for hele forbruket ditt</value>
+	</data>
+	<data name="greenconcept_description" xml:space="preserve">
+		<value>Vi anbefaler deg å kjøpe opprinnelses-
+garantier for strømforbruket ditt! 
+Slik reduserer du karbonavtrykket ditt. Vi spanderer første måneden med opprinnelsesgarantiene, deretter kan du selv bestille her i appen.</value>
+	</data>
+	<data name="minstrom_analysis_header" xml:space="preserve">
+		<value>Analysen min</value>
+	</data>
+	<data name="minstrom_status_budget_not_reached" xml:space="preserve">
+		<value>Budsjettet ditt er ikke nådd</value>
+	</data>
+	<data name="minstrom_status_budget_exceeded" xml:space="preserve">
+		<value>Budsjettet ditt er oversteget</value>
+	</data>
+	<data name="referral_advantages_header" xml:space="preserve">
+		<value>Enkelt smart og billig</value>
+	</data>
+	<data name="referral_advantages_text" xml:space="preserve">
+		<value>{0} is a customer of elKompis, the digital power company. If you sign up, you both get{1}  deducted from your bill.</value>
+	</data>
+	<data name="referral_graph_header" xml:space="preserve">
+		<value>Alltid blant de billigste</value>
+	</data>
+	<data name="referral_graph_body" xml:space="preserve">
+		<value>{0}  er kunde hos elKompis, det digitale strømselskapet. Om du blir kunde, får dere begge{1} som trekkes fra strømregningen. Bonusen får du når du har lastet ned elKompis-appen og blitt kunde.</value>
+	</data>
+	<data name="referral_header_header" xml:space="preserve">
+		<value>{0}  har invitert deg til elKompis</value>
+	</data>
+	<data name="referral_header_promo_text" xml:space="preserve">
+		<value>{0}  er kunde hos elKompis, det digitale strømselskapet. Om du blir kunde, får dere begge {1}  som trekkes fra strømregningen.</value>
+	</data>
+	<data name="referral_get_started_button" xml:space="preserve">
+		<value>Få dine cash</value>
+	</data>
+	<data name="referral_get_started_header" xml:space="preserve">
+		<value>Din vervekode</value>
+	</data>
+	<data name="referral_mainpage_header_get_started" xml:space="preserve">
+		<value>Verv en venn!</value>
+	</data>
+	<data name="referral_mainpage_description_get_started" xml:space="preserve">
+		<value>Verv nye elKompiser! Verver du en venn, får dere begge {0} kroner som &lt;u&gt;trekkes av på fakturaen&lt;/u&gt;</value>
+	</data>
+	<data name="referral_mainpage_cta_get_started" xml:space="preserve">
+		<value>Verv en venn!</value>
+	</data>
+	<data name="referral_mainpage_earn_cta_get_started" xml:space="preserve">
+		<value>Tjen {0} kroner</value>
+	</data>
+	<data name="referral_mainpage_button_share_link" xml:space="preserve">
+		<value>Del lenke for å verve</value>
+	</data>
+	<data name="referral_mainpage_header_reffered" xml:space="preserve">
+		<value>Takk for at du er med! Verv nye elKompisre for å tjene mer!</value>
+	</data>
+	<data name="referral_mainpage_description_reffered" xml:space="preserve">
+		<value>Kom i gang med å verve dine venner til elKompis! Både du og dine venner får &lt;u&gt; strøm&lt;/u&gt; til en verdi a kr {0},-.</value>
+	</data>
+	<data name="referral_mainpage_number_of_buddies_referred" xml:space="preserve">
+		<value>Mine elKompiser</value>
+	</data>
+	<data name="referral_mainpage_cash_earned_reffered" xml:space="preserve">
+		<value>Mine opptjente cash</value>
+	</data>
+	<data name="referral_mainpage_header_have_reffered" xml:space="preserve">
+		<value>Godt jobba! Fortsett å verve nye elKompiser!</value>
+	</data>
+	<data name="referral_mainpage_description_have_reffered" xml:space="preserve">
+		<value>Verv flere nye elKompiser! Både du og dine venner får &lt;u&gt; strøm&lt;/u&gt; til en verdi a kr {0} ,-. </value>
+	</data>
+	<data name="referral_infobox_about_refferal_header" xml:space="preserve">
+		<value>Verv venner – få gratis strøm!</value>
+	</data>
+	<data name="referral_infobox_about_refferal_body" xml:space="preserve">
+		<value>Tips vennene dine om det gode tilbudet til elKompis! Verver du en venn, får dere begge strøm til en verdi av {0} kroner. 
+
+Du kan verve så mange du vil, og jo flere du verver, desto mer strøm tjener du. Beløpet blir trukket fra på strømregningen din ;)</value>
+	</data>
+	<data name="priceconcept_comparison_average" xml:space="preserve">
+		<value>i forhold til gjennomsnittet</value>
+	</data>
+	<data name="priceconcept_comparison_5_most_expensive" xml:space="preserve">
+		<value>i forhold til de fem dyreste</value>
+	</data>
+	<data name="priceconcept_infobox_header" xml:space="preserve">
+		<value>Alltid blant de billigste!</value>
+	</data>
+	<data name="priceconcept_infobox_body" xml:space="preserve">
+		<value>Vi vil at du skal være trygg på at du har en billig pris. Helt oversiktlig. Ingenting med liten skrift. Derfor kan du enkelt selv se og kontrollere hvordan din pris er sammenlignet resten av markedet. Kanskje ikke den aller, aller billigste. Men garantert billig. Og garantert uten tull og lokketilbud. Prisene vi sammenligner med har vi hentet fra Forbrukerrådets side, strømpris.no. Lurer du på noe? Spør oss gjerne! :) Vil at du skal føle deg helt trygg!</value>
+	</data>
+	<data name="greenconcept_infobox_header" xml:space="preserve">
+		<value>Med fornybar strøm sparer du CO2</value>
+	</data>
+	<data name="greenconcept_info" xml:space="preserve">
+		<value>elKompis gir deg bare 100 % fornybar energi som reduserer ditt karbonavtrykk betydelig og tar vare på miljøet. Målet vårt er å akselerere etterspørselen etter bærekraftige løsninger. Sammen med deg vil ta ansvarlige valg. Din mest bærekraftige energi er energien du ikke bruker. Ved å redusere forbruket ditt, vil du derfor ta det beste valget for planeten. Men det nest beste er fornybar energi, garantert gjennom opprinnelsesgaranterte energisertifikater. Dette garanterer at forbruket ditt kommer fra fornybare energikilder. Miljøeffekten av fornybar energi kan forklares gjennom trær. Vi beregner strømforbruket ditt i grantrærnes binding av karbon. Ett grantre binder 2000 kg CO2 i løpet av 50 års levetid. Hvert år av treets liv binder det 40 kg, som er 3,3 kg i måneden. Ikke-fornybar strøm tilsvarer 0,509 kg CO2. Vi håper denne utregningen vil engasjere deg og motivere deg til å fortsette å ta de beste valgene. Sammen kan vi gjøre en forskjell. &lt; 3</value>
+	</data>
+	<data name="setup_payment_method_efaktura_desciption" xml:space="preserve">
+		<value>Betal i nettbank eller Vipps eFaktura.</value>
+	</data>
+	<data name="setup_payment_method_efaktura_avtalegiro_desciption" xml:space="preserve">
+		<value>Automatisk betaling og eFaktura.</value>
+	</data>
+	<data name="setup_payment_method_vipps_desciption" xml:space="preserve">
+		<value>Automatisk betaling via Vipps.</value>
+	</data>
+	<data name="setup_payment_method_card_desciption" xml:space="preserve">
+		<value>Automatisk betaling via et av dine betalingskort.</value>
+	</data>
+	<data name="setup_payment_method_button" xml:space="preserve">
+		<value>Fortsett</value>
+	</data>
+	<data name="greenconcept_trees" xml:space="preserve">
+		<value>trær</value>
+	</data>
+	<data name="greenconcept_tons" xml:space="preserve">
+		<value>tonn</value>
+	</data>
+	<data name="greenconcept_hundred_percent" xml:space="preserve">
+		<value>100 %</value>
+	</data>
+	<data name="payment_method_title" xml:space="preserve">
+		<value>Din betalingsmåte</value>
+	</data>
+	<data name="payment_method_subtitle" xml:space="preserve">
+		<value>Fra neste måned får du strømregning 1 gang i måneden fra oss. Har du valgt automatisk eFaktura i din nettbank, sender vi strømregningen din direkte dit fra januar. </value>
+	</data>
+	<data name="payment_method_my_account_efaktura" xml:space="preserve">
+		<value>Betal regningen via eFaktura. Administrasjon av denne betalingsløsning gjøres i nettbanken din.</value>
+	</data>
+	<data name="payment_method_my_account_efaktura_avtalegiro" xml:space="preserve">
+		<value>Automatisk betaling med AvtaleGiro og eFaktura. Administrasjon av denne betalingsløsningen gjøres i nettbanken din.</value>
+	</data>
+	<data name="setup_payment_external_vipps_header" xml:space="preserve">
+		<value>Strømregning fra elKompis</value>
+	</data>
+	<data name="setup_payment_external_vipps_subtitle" xml:space="preserve">
+		<value>Du får strømregning månedlig fra elKompis som betales automatisk. Beløpet vil variere ut fra strømpris og ditt strømforbruk.</value>
+	</data>
+	<data name="referral_link_title" xml:space="preserve">
+		<value>Vervelenke</value>
+	</data>
+	<data name="price_concept_graph_subtitle" xml:space="preserve">
+		<value>Alle prisene er hentet fra strømpris.no</value>
+	</data>
+	<data name="payment_method_change_button" xml:space="preserve">
+		<value>Endre betalingsmåte</value>
+	</data>
+	<data name="referral_page_title" xml:space="preserve">
+		<value>Kom i gang med elKompis</value>
+	</data>
+	<data name="homescreen_hi_customer" xml:space="preserve">
+		<value>God kveld, {0}!</value>
+	</data>
+	<data name="homescreen_greeting_alt1" xml:space="preserve">
+		<value>Miljøbesparelsen din målt i grantrær</value>
+	</data>
+	<data name="homescreen_header" xml:space="preserve">
+		<value>Din oversikt for {0}</value>
+	</data>
+	<data name="homescreen_cost_so_far" xml:space="preserve">
+		<value>Mitt 
+forbruk</value>
+	</data>
+	<data name="homescreen_cost_estimated" xml:space="preserve">
+		<value>{0} forventet denne måneden.</value>
+	</data>
+	<data name="homescreen_budget" xml:space="preserve">
+		<value>Mitt budsjett</value>
+	</data>
+	<data name="homescreen_budget_status_well" xml:space="preserve">
+		<value>Du ligger godt an</value>
+	</data>
+	<data name="homescreen_thief" xml:space="preserve">
+		<value>Jeg bruker mest strøm på</value>
+	</data>
+	<data name="homescreen_thief_status" xml:space="preserve">
+		<value>{0} %% av strømmen din</value>
+	</data>
+	<data name="payment_error_alert" xml:space="preserve">
+		<value>FEIL. DETALJER</value>
+	</data>
+	<data name="payment_button_pay_now" xml:space="preserve">
+		<value>Betal nå</value>
+	</data>
+	<data name="payment_error_desciption_header" xml:space="preserve">
+		<value>Feil ved betaling</value>
+	</data>
+	<data name="payment_error_description_body" xml:space="preserve">
+		<value>Betalingen din ble dessverre ikke fullført. Gå gjennom eller endre betalingsmåten, eller forsøk å betale på nytt ved å klikke på &quot;Betal nå&quot;.</value>
+	</data>
+	<data name="payment_error_description_cta" xml:space="preserve">
+		<value>Se over eller endre betalinsgmåte</value>
+	</data>
+	<data name="payment_error_card_expired" xml:space="preserve">
+		<value>Kort utløpt</value>
+	</data>
+	<data name="payment_error_card_header" xml:space="preserve">
+		<value>Feil ved betaling</value>
+	</data>
+	<data name="payment_error_card_body" xml:space="preserve">
+		<value>Oooops! Noe gikk galt med betalingen din..</value>
+	</data>
+	<data name="household_profile_setup_card_header" xml:space="preserve">
+		<value>Beskriv hjemmet ditt</value>
+	</data>
+	<data name="household_profile_setup_card_body" xml:space="preserve">
+		<value>Informasjon om størrelse og oppvarming, gir deg fult utbytte av appen.</value>
+	</data>
+	<data name="payment_setup_changed_confirmation" xml:space="preserve">
+		<value>Betalingsmåten din har blitt endret.</value>
+	</data>
+	<data name="payment_setup_changed_cta" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="payment_setup_changed_error" xml:space="preserve">
+		<value>Betalingsmetoden din kunne ikke endres.</value>
+	</data>
+	<data name="home_message_price" xml:space="preserve">
+		<value>Strømprisen din er alltid blant de billigste!</value>
+	</data>
+	<data name="home_message_trees" xml:space="preserve">
+		<value>Med elKompis har du 100 % fornybar energi</value>
+	</data>
+	<data name="home_message_price_level" xml:space="preserve">
+		<value>Strømprisen er nå {0}</value>
+	</data>
+	<data name="home_message_invoices" xml:space="preserve">
+		<value>Du har {0} faktura(er) til betaling</value>
+	</data>
+	<data name="home_message_buddies" xml:space="preserve">
+		<value>Du har fått {0} denne måneden</value>
+	</data>
+	<data name="home_message_usage" xml:space="preserve">
+		<value>Denne uka har forbruket ditt gått {0}</value>
+	</data>
+	<data name="home_message_budget" xml:space="preserve">
+		<value>{0} er på vei! Justere budsjettet?</value>
+	</data>
+	<data name="home_message_price_alert" xml:space="preserve">
+		<value>Strømprisen vil være uvanlig høy i dag!</value>
+	</data>
+	<data name="homescreen_price_savings" xml:space="preserve">
+		<value>Dette sparer du</value>
+	</data>
+	<data name="homescreen_price_description" xml:space="preserve">
+		<value>Besparelse sammenlignet med snittet</value>
+	</data>
+	<data name="homescreen_price_now" xml:space="preserve">
+		<value>Pris nå</value>
+	</data>
+	<data name="homescreen_price_kwh" xml:space="preserve">
+		<value>per kWh</value>
+	</data>
+	<data name="homescreen_price_level_high" xml:space="preserve">
+		<value>høy</value>
+	</data>
+	<data name="homescreen_price_level_medium" xml:space="preserve">
+		<value>middels</value>
+	</data>
+	<data name="homescreen_price_level_low" xml:space="preserve">
+		<value>lav</value>
+	</data>
+	<data name="homescreen_good_morning" xml:space="preserve">
+		<value>God morgen, {0}!</value>
+	</data>
+	<data name="homescreen_good_morning_later" xml:space="preserve">
+		<value>Hei, {0}!</value>
+	</data>
+	<data name="homescreen_good_afternoon" xml:space="preserve">
+		<value>Hei, {0}!</value>
+	</data>
+	<data name="homescreen_good_evening" xml:space="preserve">
+		<value>Hei, {0}!</value>
+	</data>
+	<data name="buddies_format_plural" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;{0} ny elKompis&quot;,&quot;other&quot;:&quot;{0} nye elKompiser&quot;}</value>
+	</data>
+	<data name="up" xml:space="preserve">
+		<value>opp</value>
+	</data>
+	<data name="down" xml:space="preserve">
+		<value>ned</value>
+	</data>
+	<data name="home_message_usage_same" xml:space="preserve">
+		<value>Strømforbruket ditt er likt som sist uke</value>
+	</data>
+	<data name="homescreen_budget_status_bad" xml:space="preserve">
+		<value>Du ligger ikke så godt an</value>
+	</data>
+	<data name="priceconcept_infobox_body" xml:space="preserve">
+		<value>Med elKompis får du alltid spotpris fra Nord Pool!
+
+Spotpris er den avtalen Forbrukertilsynet anbefaler, og betyr at du betaler det samme for strømmen som vi gjør når vi kjøper den.
+
+I den blå grafen ser du leverandører som tilbyr spotpris. Den rosa søylen viser hvordan elKompis ligger an i forhold til de andre leverandørene.
+
+Vi viser deg også hvor mye du sparer ved å velge elKompis, både sammenliknet med gjennomsnittsprisen på markedet og de fem dyreste leverandørene.
+
+Prisene er hentet fra strømpris.no, som er Forbrukertilsynets oversikt over alle strømleverandører og -produkter (kampanjepriser og lokketilbud som kun varer i en begrenset periode er ikke inkludert).</value>
+	</data>
+	<data name="greenconcept_infobox_body" xml:space="preserve">
+		<value>Med 100 % fornybar strøm fra elKompis, reduserer du karbonavtrykket ditt. 
+
+Vi viser deg hvor mange tonn CO2 du sparer miljøet for når vi leverer strømmen din. I tillegg får du oversikt over hvor mange trær det tilsvarer.</value>
+	</data>
+	<data name="unpaid_invoices_plural" xml:space="preserve">
+		<value>{&quot;one&quot;:&quot;%d ubetalt&quot;,&quot;other&quot;:&quot;%d ubetalt&quot;}</value>
+	</data>
+	<data name="home_message_invoice" xml:space="preserve">
+		<value>Du har 1 ubetalt faktura</value>
+	</data>
+	<data name="read_more" xml:space="preserve">
+		<value>Les mer</value>
+	</data>
+	<data name="minstrom_budget_line" xml:space="preserve">
+		<value>Budsjett</value>
+	</data>
+	<data name="estimated" xml:space="preserve">
+		<value>Forventet</value>
+	</data>
+	<data name="new_meter" xml:space="preserve">
+		<value>Legg til ny måler</value>
+	</data>
+	<data name="payment_setup_card_header" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="home_message_not_ready" xml:space="preserve">
+		<value>Velkommen til elKompis! Det kan ta omtrent to virkedager til brukeren din er helt ferdig. Du kan da bruke alle funksjonene i appen</value>
+	</data>
+	<data name="so_far_month" xml:space="preserve">
+		<value>Hittil i  {0}</value>
+	</data>
+	<data name="minstrom_level_you" xml:space="preserve">
+		<value>Deg</value>
+	</data>
+	<data name="minstrom_level_similar_household" xml:space="preserve">
+		<value>Hjem som ligner mest</value>
+	</data>
+	<data name="evcharge_card_price" xml:space="preserve">
+		<value>Smart lading til lavest pris, time for time</value>
+	</data>
+	<data name="evcharge_card_insight" xml:space="preserve">
+		<value>Du har ladet for {0} kroner de siste 30 dagene.</value>
+	</data>
+	<data name="evcharge_tab_insight" xml:space="preserve">
+		<value>Se min smarte elbillading</value>
+	</data>
+	<data name="evcharge_status_charging" xml:space="preserve">
+		<value>Lader</value>
+	</data>
+	<data name="evcharge_status_not_charging" xml:space="preserve">
+		<value>Ikke tilkoblet lader</value>
+	</data>
+	<data name="evcharge_status_hours" xml:space="preserve">
+		<value>{0} timer, {1} minutter til ferdig ladet</value>
+	</data>
+	<data name="evcharge_status_time" xml:space="preserve">
+		<value>Ferdig klokken {0}</value>
+	</data>
+	<data name="evcharge_status_completed" xml:space="preserve">
+		<value>Ferdig</value>
+	</data>
+	<data name="evcharge_on_off" xml:space="preserve">
+		<value>Smart elbillading</value>
+	</data>
+	<data name="evcharge_settings" xml:space="preserve">
+		<value>Bilen min skal være ferdig kl</value>
+	</data>
+	<data name="evcharge_km" xml:space="preserve">
+		<value>{0} km</value>
+	</data>
+	<data name="evcharge_percent" xml:space="preserve">
+		<value>{0} %</value>
+	</data>
+	<data name="evcharge_insight_price_graph" xml:space="preserve">
+		<value>Bilen din smartlades til laveste strømpris, time for time</value>
+	</data>
+	<data name="evcharge_insight_30_days" xml:space="preserve">
+		<value>Du har brukt {0} kWh og {1} kroner på smart lading siste 30 dager.</value>
+	</data>
+	<data name="evcharge_insight_month" xml:space="preserve">
+		<value>Du har brukt {0} kWh og {1} kroner på smart lading i {2}</value>
+	</data>
+	<data name="evcharge_tab_last_charge" xml:space="preserve">
+		<value>Siste døgn</value>
+	</data>
+	<data name="evcharge_tab_30_days" xml:space="preserve">
+		<value>30 dager</value>
+	</data>
+	<data name="evcharge_tab_month" xml:space="preserve">
+		<value>Måned</value>
+	</data>
+	<data name="eccharge_status_not_enough_time" xml:space="preserve">
+		<value>Rekker ikke frist</value>
+	</data>
+	<data name="evcharge_status_not_ready_info" xml:space="preserve">
+		<value>Bilen trenger lengre tid på å bli optimalt ladet enn fristen du har oppgitt</value>
+	</data>
+	<data name="on" xml:space="preserve">
+		<value>PÅ</value>
+	</data>
+	<data name="off" xml:space="preserve">
+		<value>AV</value>
+	</data>
+	<data name="evcharge_price_graph_header" xml:space="preserve">
+		<value>Strømpris time for time</value>
+	</data>
+	<data name="evcharge_30_days_graph_header" xml:space="preserve">
+		<value>Lading og pris</value>
+	</data>
+	<data name="evcharge_month_graph_header" xml:space="preserve">
+		<value>Lading og pris hittil i måneden</value>
+	</data>
+	<data name="evharge_not_ready_info_cta" xml:space="preserve">
+		<value>Skru av smart lading nå</value>
+	</data>
+	<data name="evcharge_confirmation_off" xml:space="preserve">
+		<value>Smart lading er av. Bilen lades så fort som mulig. Skru på smart lading igjen når du ønsker å smartlade billigst mulig.</value>
+	</data>
+	<data name="evcharge_confirmation_on" xml:space="preserve">
+		<value>Smart lading er på. Bilen lades så billig som mulig.</value>
+	</data>
+	<data name="evcharge_confirmation_not_ready" xml:space="preserve">
+		<value>Ladetid er lengre enn tidsfrist. Bilen lades så mye som mulig frem til kl {0}</value>
+	</data>
+	<data name="evcharge_settings_header" xml:space="preserve">
+		<value>Innstillinger for din smartlading</value>
+	</data>
+	<data name="evcharge_settings_body" xml:space="preserve">
+		<value>Optimal lading til lavest mulig pris, time for time. Bestem når bilen må være ferdig ladet og velg &quot;Smart elbillading på&quot;.</value>
+	</data>
+	<data name="evcharge_setting_limit" xml:space="preserve">
+		<value>Ferdig innen</value>
+	</data>
+	<data name="evcharge_settings_save" xml:space="preserve">
+		<value>Lagre innstillinger</value>
+	</data>
+	<data name="evcharge_confirmation_time_updated" xml:space="preserve">
+		<value>Tidsfristen er oppdatert. Bilen din lades smart og billig.</value>
+	</data>
+	<data name="evcharge_status_last_updated" xml:space="preserve">
+		<value>Sist oppdatert {0}</value>
+	</data>
+	<data name="evcharge_settings_more_info_header" xml:space="preserve">
+		<value>Slik fungerer smart elbillading</value>
+	</data>
+	<data name="evcharge_settings_more_info_body" xml:space="preserve">
+		<value>Bilen lades billigst mulig til optimal batteristatus. Vi velger de billigste tidene i perioden frem til fristen du har satt. Jo lengre frist, jo større mulighet for lavest pris. Se oversikt over din smarte lading her.</value>
+	</data>
+	<data name="evcharge_settings_add_car" xml:space="preserve">
+		<value>LEGG TIL ELBIL</value>
+	</data>
+	<data name="evcharge_cta_adjust_deadline" xml:space="preserve">
+		<value>Endre tidsfrist</value>
+	</data>
+	<data name="details_description" xml:space="preserve">
+		<value>Skriv inn telefonnummeret ditt, så finner vi deg og boligen din.</value>
+	</data>
+	<data name="about_meter_details" xml:space="preserve">
+		<value>Vi bruker telefonnummeret ditt til å finne ut hvor du bor, sånn at vi kan lese av strømmåleren din.</value>
+	</data>
+	<data name="next_button" xml:space="preserve">
+		<value>Fortsett</value>
+	</data>
+	<data name="agreement_header" xml:space="preserve">
+		<value>Din smarte strømavtale</value>
+	</data>
+	<data name="agreement_body" xml:space="preserve">
+		<value>Avtalen din følger spotprisen fra NordPool + inntil 1 øre/kWh som går til innkjøpskostnader og lovpålagte sertifikater. Du betaler kun kr 34,- per måned for å være kunde hos oss.</value>
+	</data>
+	<data name="agreement_sales_pitch_one" xml:space="preserve">
+		<value>Alltid blant de billigste</value>
+	</data>
+	<data name="agreement_sales_pitch_two" xml:space="preserve">
+		<value>Ingen bindingstid</value>
+	</data>
+	<data name="agreement_sales_pitch_three" xml:space="preserve">
+		<value>Full kontroll</value>
+	</data>
+	<data name="agreement_sales_pitch_four" xml:space="preserve">
+		<value>Sparing og innsikt</value>
+	</data>
+	<data name="join_button" xml:space="preserve">
+		<value>Bytt til elKompis</value>
+	</data>
+	<data name="name_buddy" xml:space="preserve">
+		<value>Siri Byddysen</value>
+	</data>
+	<data name="agreements_terms_accept" xml:space="preserve">
+		<value>Når du klikker på «Bytt til elKompis», godtar du vilkårene for strømavtalen og bekrefter at du er kjent med angreretten.</value>
+	</data>
+	<data name="find_me_button" xml:space="preserve">
+		<value>Finn meg</value>
+	</data>
+	<data name="confirm_button" xml:space="preserve">
+		<value>Bekreft</value>
+	</data>
+	<data name="confirm_phone_number_heading" xml:space="preserve">
+		<value>Bekreft telefonnummeret ditt</value>
+	</data>
+	<data name="confirm_phone_number_body" xml:space="preserve">
+		<value>Du fikk nettopp en kode på sms. Den skriver du inn i feltet under.</value>
+	</data>
+	<data name="confirm_phone_number_code" xml:space="preserve">
+		<value>Bekreftelseskode</value>
+	</data>
+	<data name="confirm_phone_number_not_recieved" xml:space="preserve">
+		<value>Fikk du ikke kode?</value>
+	</data>
+	<data name="onboarding_wait" xml:space="preserve">
+		<value>Vent mens vi spinner av gårde for å finne boligen din …</value>
+	</data>
+	<data name="meter_found_header" xml:space="preserve">
+		<value>Vi fant strømmåleren din!</value>
+	</data>
+	<data name="meter_found_not_right" xml:space="preserve">
+		<value>Feil adresse og måler? Rett opp adressen, så søker vi på nytt.</value>
+	</data>
+	<data name="address_search_again_cta" xml:space="preserve">
+		<value>Endre adresse og søk på nytt</value>
+	</data>
+	<data name="meter_found_confirm_button" xml:space="preserve">
+		<value>Dette er riktig</value>
+	</data>
+	<data name="meter_found_control_information" xml:space="preserve">
+		<value>Se gjennom at disse opplysningene stemmer</value>
+	</data>
+	<data name="account_my_registered_meters" xml:space="preserve">
+		<value>Mine målere</value>
+	</data>
+	<data name="welcome_header" xml:space="preserve">
+		<value>Velkommen til elKompis!</value>
+	</data>
+	<data name="your_producer" xml:space="preserve">
+		<value>Din produsent av fornybar energi</value>
+	</data>
+	<data name="your_price_today" xml:space="preserve">
+		<value>Din pris i dag</value>
+	</data>
+	<data name="ore_kwh" xml:space="preserve">
+		<value>øre per kWh</value>
+	</data>
+	<data name="welcome_body" xml:space="preserve">
+		<value>Nå er du en av oss! Sammen gjør vi strøm billigere, enklere og smartere.</value>
+	</data>
+	<data name="set_up_profile_button" xml:space="preserve">
+		<value>Fullfør min profil</value>
+	</data>
+	<data name="description_household" xml:space="preserve">
+		<value>Hvilken boligtype har du?</value>
+	</data>
+	<data name="housing_type" xml:space="preserve">
+		<value>Boligtype</value>
+	</data>
+	<data name="confirm_address" xml:space="preserve">
+		<value>Er måleren på denne adressen?</value>
+	</data>
+	<data name="new_address" xml:space="preserve">
+		<value>Måleren står registrert på en annen adresse. </value>
+	</data>
+	<data name="owner_address" xml:space="preserve">
+		<value>Er du eier på denne adressen i dag?</value>
+	</data>
+	<data name="yes_owner_address" xml:space="preserve">
+		<value>Ja, jeg er eier</value>
+	</data>
+	<data name="not_owner_address" xml:space="preserve">
+		<value>Nei, jeg skal overta som eier</value>
+	</data>
+	<data name="change_address_search" xml:space="preserve">
+		<value>Oppgi adressen til boligen der strømmåleren er, så finner vi riktig målernummer.</value>
+	</data>
+	<data name="not_right_meter" xml:space="preserve">
+		<value>Ikke riktig måler?</value>
+	</data>
+	<data name="change_address_several_meters" xml:space="preserve">
+		<value>Endre og søk på nytt</value>
+	</data>
+	<data name="accept_terms_several_meters" xml:space="preserve">
+		<value>Du godtar vilkår for strømavtalen og bekrefter at du er kjent med angreretten, ved å klikke på «Bli med».</value>
+	</data>
+	<data name="search_button" xml:space="preserve">
+		<value>Søk</value>
+	</data>
+	<data name="add_address_new_meter" xml:space="preserve">
+		<value>Oppgi adressen til ny måler</value>
+	</data>
+	<data name="size_home" xml:space="preserve">
+		<value>Hvor stor er boligen din?</value>
+	</data>
+	<data name="number_of_people" xml:space="preserve">
+		<value>Hvor mange personer bruker denne boligen?</value>
+	</data>
+	<data name="more_info" xml:space="preserve">
+		<value>Hvilke apparater og andre elektriske artikler har du?</value>
+	</data>
+	<data name="date_new_owner" xml:space="preserve">
+		<value>Datoen når jeg blir eier</value>
+	</data>
+	<data name="moving_house_address" xml:space="preserve">
+		<value>Oppgi adressen til boligen der strømmåleren er, så finner vi riktig målernummer.</value>
+	</data>
+	<data name="confirmation_header_new_meter" xml:space="preserve">
+		<value>Alt bra!</value>
+	</data>
+	<data name="confirmation_body_new_meter" xml:space="preserve">
+		<value>Din nye måler er nå registrert! For å gi deg gode analyser, vil vi gjerne vite litt om deg og boligen din.</value>
+	</data>
+	<data name="meter_registered_card_header" xml:space="preserve">
+		<value>Det er supert!</value>
+	</data>
+	<data name="meter_registered_card_body" xml:space="preserve">
+		<value>Nå har vi alt vi trenger for å gi deg gode analyser og den beste opplevelsen! ;)</value>
+	</data>
+	<data name="set_up_payment_new_meter_header" xml:space="preserve">
+		<value>Velg hvordan du vil betale</value>
+	</data>
+	<data name="paymentsetup_new_meter_efaktura" xml:space="preserve">
+		<value>En ny avtale om eFaktura på denne måleren må settes opp.</value>
+	</data>
+	<data name="paymentsetup_new_meter_efaktura_avtalegiro" xml:space="preserve">
+		<value>En ny avtale om eFaktura og AvtaleGiro på denne måleren må settes opp.</value>
+	</data>
+	<data name="paymentsetup_new_meter_avtalegiro" xml:space="preserve">
+		<value>En ny avtale om AvtaleGiro på denne måleren må settes opp.</value>
+	</data>
+	<data name="found_several_meters_header" xml:space="preserve">
+		<value>Vi fant flere målere</value>
+	</data>
+	<data name="found_several_meters_body" xml:space="preserve">
+		<value>Sjekk at opplysningene stemmer og velg den måleren du vil registrere. Vil du legge til flere målere, må du ta en av gangen.</value>
+	</data>
+	<data name="evcharge_settings_remove_car" xml:space="preserve">
+		<value>Fjern elbil</value>
+	</data>
+	<data name="remove_car_header" xml:space="preserve">
+		<value>Fjern elbil fra smart lading</value>
+	</data>
+	<data name="remove_car_body" xml:space="preserve">
+		<value>Koblingen som er satt opp mellom elKompis og din elbil fjernes slik at smart lading ikke kan gjennomføres. Merk at slettingen foretas for alle dine elbiler i samme bilmerke (koblet til samme elbilapp). Du kan når som helst legge til igjen denne bilen eller annen elbil.</value>
+	</data>
+	<data name="remove_car_button" xml:space="preserve">
+		<value>Fjerne</value>
+	</data>
+	<data name="not_remove_car" xml:space="preserve">
+		<value>Nei, jeg vil ikke fjerne bilen.</value>
+	</data>
+	<data name="one_moment" xml:space="preserve">
+		<value>Vent mens vi spinner av gårde for å finne boligen din …</value>
+	</data>
+	<data name="more_info_onboarding" xml:space="preserve">
+		<value>Vi må vite litt mer om deg for å finne boligen din.</value>
+	</data>
+	<data name="payment_vipps_product_name" xml:space="preserve">
+		<value>Strømregning fra elKompis</value>
+	</data>
+	<data name="payment_vipps_product_description" xml:space="preserve">
+		<value>Beløpet varierer fra måned til måned, basert på pris og forbruk. Betales automatisk på forfallsdato.</value>
+	</data>
+	<data name="description_address_ssn" xml:space="preserve">
+		<value>Tast inn enten fødselsnummer eller adresse for å finne måleren din.</value>
+	</data>
+	<data name="address_check_header" xml:space="preserve">
+		<value>Fant vi riktig adresse?</value>
+	</data>
+	<data name="address_check_body" xml:space="preserve">
+		<value>Bekreft opplysningene, eller skriv inn adressen der strømmåleren du vil registrere er.</value>
+	</data>
+	<data name="help_us_find_meter" xml:space="preserve">
+		<value>Hjelp oss å finne strømmåleren din.</value>
+	</data>
+	<data name="help_meter_number" xml:space="preserve">
+		<value>Har du målernummeret ditt?</value>
+	</data>
+	<data name="enter_meter_number" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="help_partner" xml:space="preserve">
+		<value>Er den gamle strømavtalen din registrert på et annet navn?</value>
+	</data>
+	<data name="register_on_partner" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="help_moving" xml:space="preserve">
+		<value>Skal du overta en bolig?</value>
+	</data>
+	<data name="moving_register" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="meter_on_partner" xml:space="preserve">
+		<value>Strømmåleren skal fortsatt være registrert på et annet navn</value>
+	</data>
+	<data name="meter_partner_description" xml:space="preserve">
+		<value>Start flyttingen av strømavtalen på nytt med riktig navn.</value>
+	</data>
+	<data name="taking_over_cta" xml:space="preserve">
+		<value>Jeg skal overta strømavtalen</value>
+	</data>
+	<data name="taking_over_meter" xml:space="preserve">
+		<value>Jeg skal overta en bolig</value>
+	</data>
+	<data name="taking_over_description" xml:space="preserve">
+		<value>Skriv inn overtakelsesdato, målernummer og riktig adresse.</value>
+	</data>
+	<data name="date_takeover" xml:space="preserve">
+		<value>Dato for overtakelse</value>
+	</data>
+	<data name="meternumber_takeover" xml:space="preserve">
+		<value>Målernummer (kan oppgis senere)</value>
+	</data>
+	<data name="send_confirmation" xml:space="preserve">
+		<value>Send igjen</value>
+	</data>
+	<data name="send_info" xml:space="preserve">
+		<value>Ved å klikke send bekrefter du at du skal overta bolig og få strømleveranse fra elKompis. Vi kontakter deg om vi mangler noen opplysninger.</value>
+	</data>
+	<data name="confirmation_takeover" xml:space="preserve">
+		<value>Takk! Vi sørger for at du overtar denne boligen og får en smart strømavtale fra elKompis!</value>
+	</data>
+	<data name="info_takeover_missing_info" xml:space="preserve">
+		<value>Vi tar kontakt med deg hvis vi mangler noen opplysninger.</value>
+	</data>
+	<data name="thank_you_contact" xml:space="preserve">
+		<value>Takk for at du ønsker å bli med i elKompis!</value>
+	</data>
+	<data name="existing_address" xml:space="preserve">
+		<value>Er måleren på en eksisterende adresse?</value>
+	</data>
+	<data name="manual_process_header" xml:space="preserve">
+		<value>Vi klarte ikke å fullføre bestillingen din, så vi ordner det manuelt</value>
+	</data>
+	<data name="agreement_manual_process" xml:space="preserve">
+		<value>Dette er den smarte strømavtalen du får fra elKompis.</value>
+	</data>
+	<data name="terms_confirm_manual_process" xml:space="preserve">
+		<value>Ved å klikke på «Bekreft», godtar du avtale- og brukervilkårene våre. Du gir oss også lov til å hente opplysninger vi trenger til bestillingen.</value>
+	</data>
+	<data name="all_details" xml:space="preserve">
+		<value>Les hele avtalen</value>
+	</data>
+	<data name="more_info_order" xml:space="preserve">
+		<value>Vi trenger litt mer informasjon.</value>
+	</data>
+	<data name="confirm_moving" xml:space="preserve">
+		<value>Takk for at du vil bruke elKompis!</value>
+	</data>
+	<data name="intercom_elbuddy_info_external_id_missing" xml:space="preserve">
+		<value>elKompis-ID mangler i informasjonen fra Intercom</value>
+	</data>
+	<data name="intercom_elbuddy_info_user_not_found" xml:space="preserve">
+		<value>Finner ikke en bruker med den angitte ID-en</value>
+	</data>
+	<data name="intercom_elbuddy_info_full_name" xml:space="preserve">
+		<value>Navn</value>
+	</data>
+	<data name="intercom_elbuddy_info_phone_number" xml:space="preserve">
+		<value>Telefonnummer</value>
+	</data>
+	<data name="intercom_elbuddy_info_email" xml:space="preserve">
+		<value>E-post</value>
+	</data>
+	<data name="intercom_elbuddy_info_yes" xml:space="preserve">
+		<value>Ja</value>
+	</data>
+	<data name="intercom_elbuddy_info_no" xml:space="preserve">
+		<value>Nei</value>
+	</data>
+	<data name="review" xml:space="preserve">
+		<value>Se detaljer</value>
+	</data>
+	<data name="intercom_cancel_metering_point_which_meter_header" xml:space="preserve">
+		<value>Hvilken måler vil du opphøre?</value>
+	</data>
+	<data name="intercom_cancel_metering_point_thank_you_message" xml:space="preserve">
+		<value>**Takk!** Vi behandler forespørselen din snart.</value>
+	</data>
+	<data name="previous_invoices" xml:space="preserve">
+		<value>Tidligere strømregninger</value>
+	</data>
+	<data name="payment_method_not_set_up" xml:space="preserve">
+		<value>Betalingsmetode ble ikke registrert</value>
+	</data>
+	<data name="payment_setup_several_meters" xml:space="preserve">
+		<value>Husk å velge betalingsmetode for din nye måler. Det tar 1–2 dager før strømavtalen er aktiv. Bytt målervisning for å se analyser for {0}.</value>
+	</data>
+	<data name="payment_setup_now" xml:space="preserve">
+		<value>Sett opp betalingsmetode nå</value>
+	</data>
+	<data name="termination_moving" xml:space="preserve">
+		<value>Opphør / Flytting</value>
+	</data>
+	<data name="add_car" xml:space="preserve">
+		<value>Legg til bil</value>
+	</data>
+	<data name="cty_kwh" xml:space="preserve">
+		<value>Antall kWh: {0}</value>
+	</data>
+	<data name="cty_month" xml:space="preserve">
+		<value>Antall mnd: {0}</value>
+	</data>
+	<data name="cost" xml:space="preserve">
+		<value>Kostnad</value>
+	</data>
+	<data name="email_address" xml:space="preserve">
+		<value>Skriv inn e-postadressen din</value>
+	</data>
+	<data name="marketing_accept" xml:space="preserve">
+		<value>Ja takk, jeg vil ha informasjon om nye produkter og tjenester!</value>
+	</data>
+	<data name="evcharge_status_not_plugged_in" xml:space="preserve">
+		<value>Ikke koblet til</value>
+	</data>
+	<data name="evcharge_status_fully_charged" xml:space="preserve">
+		<value>Fulladet</value>
+	</data>
+	<data name="evcharge_status_manually_stopped" xml:space="preserve">
+		<value>Stanset manuelt</value>
+	</data>
+	<data name="evcharge_status_smart_charging_delay" xml:space="preserve">
+		<value>Smartlading venter</value>
+	</data>
+	<data name="evcharge_status_manually_started" xml:space="preserve">
+		<value>Manuelt startet</value>
+	</data>
+	<data name="evcharge_status_smart_charging_active" xml:space="preserve">
+		<value>Smartlading aktiv</value>
+	</data>
+	<data name="evcharge_status_smart_charging_deadline" xml:space="preserve">
+		<value>Smartlader til tidsfrist</value>
+	</data>
+	<data name="evcharge_current_range" xml:space="preserve">
+		<value>{0}km</value>
+	</data>
+	<data name="evcharge_battery_level" xml:space="preserve">
+		<value>{0} %%</value>
+	</data>
+	<data name="explanation_invoice" xml:space="preserve">
+		<value>Dette er en forhåndsvisning.  Last ned pdf for å se vervebonus og andre fakturadetaljer.</value>
+	</data>
+	<data name="meternumber_mpid" xml:space="preserve">
+		<value>Målernummer/målepunkt ID</value>
+	</data>
+	<data name="help_onboarding" xml:space="preserve">
+		<value>Jeg får det ikke til og trenger hjelp</value>
+	</data>
+	<data name="send_button" xml:space="preserve">
+		<value>Send</value>
+	</data>
+	<data name="save_button" xml:space="preserve">
+		<value>Lagre</value>
+	</data>
+	<data name="intercom_update_user_info_email_label" xml:space="preserve">
+		<value>E-post</value>
+	</data>
+	<data name="intercom_update_user_info_phone_label" xml:space="preserve">
+		<value>Telefon</value>
+	</data>
+	<data name="intercom_update_user_info_street_label" xml:space="preserve">
+		<value>Gate</value>
+	</data>
+	<data name="intercom_update_user_info_post_code_label" xml:space="preserve">
+		<value>Postnummer</value>
+	</data>
+	<data name="intercom_update_user_info_city_label" xml:space="preserve">
+		<value>Poststed</value>
+	</data>
+	<data name="intercom_update_user_info_submit_label" xml:space="preserve">
+		<value>Send inn</value>
+	</data>
+	<data name="referral_cta" xml:space="preserve">
+		<value>Verv så mange du vil! ;)</value>
+	</data>
+	<data name="accrued" xml:space="preserve">
+		<value>Påløpt</value>
+	</data>
+	<data name="greensavings_homepage" xml:space="preserve">
+		<value>Lik {0} CO2 og {1} trær.</value>
+	</data>
+	<data name="comparison_home" xml:space="preserve">
+		<value>Du er {0}%% {1} effektiv.</value>
+	</data>
+	<data name="forecast_home" xml:space="preserve">
+		<value>Min
+prognose</value>
+	</data>
+	<data name="distribution_home" xml:space="preserve">
+		<value>Du bruker {0}%% på {1}.</value>
+	</data>
+	<data name="cost_so_far_home" xml:space="preserve">
+		<value>{0} så langt denne måneden.</value>
+	</data>
+	<data name="priceconcept_explanation" xml:space="preserve">
+		<value>Alltid blant de billigste!</value>
+	</data>
+	<data name="priceconcept_elaboration" xml:space="preserve">
+		<value>Med elKompis får du alltid spotpris fra Nord Pool!
+
+Spotpris er den avtalen Forbrukertilsynet anbefaler, og betyr at du betaler det samme for strømmen som vi gjør når vi kjøper den.
+
+I den blå grafen ser du leverandører som tilbyr spotpris. Den rosa søylen viser hvordan elKompis ligger an i forhold til de andre leverandørene.
+
+Vi viser deg også hvor mye du sparer ved å velge elKompis, både sammenliknet med gjennomsnittsprisen på markedet og de fem dyreste leverandørene.
+
+Prisene er hentet fra strømpris.no, som er Forbrukertilsynets oversikt over alle strømleverandører og -produkter (kampanjepriser og lokketilbud som kun varer i en begrenset periode er ikke inkludert).</value>
+	</data>
+	<data name="consumption_monthly_header" xml:space="preserve">
+		<value>Ditt månedlige strømforbruk</value>
+	</data>
+	<data name="consumption_month" xml:space="preserve">
+		<value>Så langt denne måneden har du brukt {0} kWh og {1} kr.</value>
+	</data>
+	<data name="consumption_yearly_header" xml:space="preserve">
+		<value>Ditt årlige strømforbruk</value>
+	</data>
+	<data name="consumption_year" xml:space="preserve">
+		<value>Så langt i år har du brukt {0} kWh og {1} kr.</value>
+	</data>
+	<data name="consumption_daily_header" xml:space="preserve">
+		<value>Ditt daglige strømforbruk</value>
+	</data>
+	<data name="consumption_day" xml:space="preserve">
+		<value>Denne dagen brukte du {0} kWh og {1} kr.</value>
+	</data>
+	<data name="distribution_header" xml:space="preserve">
+		<value>Slik bruker du strømmen din</value>
+	</data>
+	<data name="forecast_header" xml:space="preserve">
+		<value>Månedens prognose</value>
+	</data>
+	<data name="kWh" xml:space="preserve">
+		<value>kWh</value>
+	</data>
+	<data name="comparison_header" xml:space="preserve">
+		<value>Sammenlikn deg med andre</value>
+	</data>
+	<data name="comparison_similarhome" xml:space="preserve">
+		<value>Se hvor effektivt du bruker strømmen.</value>
+	</data>
+	<data name="similar_homes_20" xml:space="preserve">
+		<value>20 %% mest effektive</value>
+	</data>
+	<data name="efaktura_changes" xml:space="preserve">
+		<value>Fjern i nettbanken for å endre i appen.</value>
+	</data>
+	<data name="add_paymentmethod_avtalegiro" xml:space="preserve">
+		<value>Registrer betalingsmåte på {0}.</value>
+	</data>
+	<data name="overview_header_home" xml:space="preserve">
+		<value>DAGENS STRØMOVERSIKT</value>
+	</data>
+	<data name="comparison_header_home" xml:space="preserve">
+		<value>Hjem som ligner</value>
+	</data>
+	<data name="ev_charging" xml:space="preserve">
+		<value>Lading</value>
+	</data>
+	<data name="ev_charging_kwh" xml:space="preserve">
+		<value>Lading (kWh)</value>
+	</data>
+	<data name="kl" xml:space="preserve">
+		<value>Kl.</value>
+	</data>
+	<data name="consumption_no_data" xml:space="preserve">
+		<value>Vi har ikke nok informasjon om forbruket ditt, men oppdaterer så fort vi får data fra netteieren.</value>
+	</data>
+	<data name="consumption_no_data_graph" xml:space="preserve">
+		<value>Mangler data</value>
+	</data>
+	<data name="moving_house_registered" xml:space="preserve">
+		<value>Opplysninger om innflytting/overtakelse er registrert.</value>
+	</data>
+	<data name="terms_confirm_moving_new_house" xml:space="preserve">
+		<value>Du godkjenner våre avtale og brukervilkår, og bekrefter at du skal overta denne boligen ved å klikke Bekreft.
+</value>
+	</data>
+	<data name="moving_information" xml:space="preserve">
+		<value>Opplysninger om innflytting/overtakelse</value>
+	</data>
+	<data name="moving_new_address" xml:space="preserve">
+		<value>Hvor vil du flytte inn?</value>
+	</data>
+	<data name="moving_new_address_information" xml:space="preserve">
+		<value>Oppgi adresse til boligen du overtar</value>
+	</data>
+	<data name="moving_out_registered" xml:space="preserve">
+		<value>Utflyttingen er registrert.</value>
+	</data>
+	<data name="moving_continues_elkompis" xml:space="preserve">
+		<value>Du tar med deg elKompis til din nye adresse.</value>
+	</data>
+	<data name="confirm_moving_out" xml:space="preserve">
+		<value>Bekreft utflytting</value>
+	</data>
+	<data name="moving_date_address_confirmation" xml:space="preserve">
+		<value>Oppgi dato og bekreft adressen du flytter fra</value>
+	</data>
+	<data name="moving_current_address" xml:space="preserve">
+		<value>Her er ditt anlegg</value>
+	</data>
+	<data name="moving_pick_current_address" xml:space="preserve">
+		<value>Velg adressen du vil flytte fra</value>
+	</data>
+	<data name="moving_list_current_addresses" xml:space="preserve">
+		<value>Her er dine anlegg</value>
+	</data>
+	<data name="moving" xml:space="preserve">
+		<value>Skal du flytte?</value>
+	</data>
+	<data name="moving_information_old_new" xml:space="preserve">
+		<value>Her kan du enkelt flytte den smarte strømavtalen til din nye bolig. Gi beskjed minimum 3 virkedager før utflytting, så ordner vi resten.</value>
+	</data>
+	<data name="intercom_elkompis_admin_transfer_cancel_body" xml:space="preserve">
+		<value>Oppsigelse:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}
+
+
+Målernummer: {0}
+Overtakelsesdato: {0}</value>
+	</data>
+	<data name="postal_code_not_found" xml:space="preserve">
+		<value>Ugyldig postnummer</value>
+	</data>
+	<data name="onboarding_street" xml:space="preserve">
+		<value>Gateadresse</value>
+	</data>
+	<data name="onboarding_postal_place" xml:space="preserve">
+		<value>Poststed</value>
+	</data>
+	<data name="name" xml:space="preserve">
+		<value>Navn</value>
+	</data>
+	<data name="moving_house_information" xml:space="preserve">
+		<value>Vi innhenter nødvendige opplysninger og tar kontakt med deg hvis vi lurer på noe.</value>
+	</data>
+	<data name="street_name" xml:space="preserve">
+		<value>Gateadresse</value>
+	</data>
+	<data name="moving_information_date_confirmation" xml:space="preserve">
+		<value>Fyll inn dato for overtakelse, målernummer og bekreft eller endre adressen.</value>
+	</data>
+	<data name="intercom_elkompis_admin_transfer_new_body" xml:space="preserve">
+		<value>Ny måler:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}
+
+
+Målernummer: {0}
+Overtakelsesdato: {0}</value>
+	</data>
+	<data name="number" xml:space="preserve">
+		<value>Nummer</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_payment_method" xml:space="preserve">
+		<value>Betalingstype</value>
+	</data>
+	<data name="intercom_elbuddy_info_yearly_consumption" xml:space="preserve">
+		<value>Årlig forbruk</value>
+	</data>
+	<data name="intercom_elbuddy_info_user_locations_not_loaded" xml:space="preserve">
+		<value>Vi klarte ikke å laste inn målerdetaljer</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_address" xml:space="preserve">
+		<value>Adresse</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_city" xml:space="preserve">
+		<value>Poststed</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_post_code" xml:space="preserve">
+		<value>Postnummer</value>
+	</data>
+	<data name="intercom_elbuddy_info_location_consumption" xml:space="preserve">
+		<value>Forbruk i år</value>
+	</data>
+	<data name="smart_evcharge" xml:space="preserve">
+		<value>Smart lading</value>
+	</data>
+	<data name="error_payment_method" xml:space="preserve">
+		<value>Betalingsmetoden er ikke lenger gyldig.</value>
+	</data>
+	<data name="evcharge_heading" xml:space="preserve">
+		<value>Lad elbilen når strømmen er billigst!</value>
+	</data>
+	<data name="evcharge_explanation_text" xml:space="preserve">
+		<value>Med smartlading fra elKompis lader du alltid når strømmen er billigst. Appen gir deg oversikt over ladingene dine.</value>
+	</data>
+	<data name="evcharge_add_car_smartcharge" xml:space="preserve">
+		<value>Legg til elbil for å smartlade</value>
+	</data>
+	<data name="error_add_payment" xml:space="preserve">
+		<value>Legg til eFaktura/AvtaleGiro på din adresse</value>
+	</data>
+	<data name="error_add_efaktura" xml:space="preserve">
+		<value>Legg til eFaktura på din adresse</value>
+	</data>
+	<data name="welcome_to" xml:space="preserve">
+		<value>Velkommen til elKompis</value>
+	</data>
+	<data name="add_household_profil" xml:space="preserve">
+		<value>Sett opp husstandsprofilen din</value>
+	</data>
+	<data name="data_soon_coming" xml:space="preserve">
+		<value>Dine data kommer snart!</value>
+	</data>
+	<data name="data_show" xml:space="preserve">
+		<value>Her vil du få dine data</value>
+	</data>
+	<data name="share_link" xml:space="preserve">
+		<value>Del lenke for å verve</value>
+	</data>
+	<data name="price_concept_home" xml:space="preserve">
+		<value>Mitt 
+prisbevis</value>
+	</data>
+	<data name="my_consumption_home" xml:space="preserve">
+		<value>Mitt 
+forbruk</value>
+	</data>
+	<data name="my_environmental_savings_home" xml:space="preserve">
+		<value>Mitt 
+miljøbevis</value>
+	</data>
+	<data name="my_distribution_home" xml:space="preserve">
+		<value>Min 
+fordeling</value>
+	</data>
+	<data name="my_forecast_home" xml:space="preserve">
+		<value>Min 
+prognose</value>
+	</data>
+	<data name="similar_homes_home" xml:space="preserve">
+		<value>Hjem som ligner</value>
+	</data>
+	<data name="account_billing_address" xml:space="preserve">
+		<value>Fakturaadressen din kan være en annen adresse enn den måleren står på</value>
+	</data>
+	<data name="account_profile_billing_address" xml:space="preserve">
+		<value>Skriv inn den adressen du vil at vi skal sende fakturaen din til.</value>
+	</data>
+	<data name="confirm_billing_address" xml:space="preserve">
+		<value>Bekreft betalingsadressen din</value>
+	</data>
+	<data name="intercom_elkompis_admin_onboarding_help_body" xml:space="preserve">
+		<value>Hjelp med å registrere måler:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}
+
+Målernummer: {0}</value>
+	</data>
+	<data name="consumption_receive" xml:space="preserve">
+		<value>Her ser du ditt forbruk så snart vi har mottatt det fra din netteier. Det skjer vanligvis ca kl 10. </value>
+	</data>
+	<data name="paymentcard_remove" xml:space="preserve">
+		<value>Fjern betalingskort</value>
+	</data>
+	<data name="onboarding_explanation_heading" xml:space="preserve">
+		<value>Hvordan kan vi være så billige?</value>
+	</data>
+	<data name="onboarding_explanation" xml:space="preserve">
+		<value>Vi digitaliserer alle ledd for at du skal få billigst mulig strøm!</value>
+	</data>
+	<data name="onboarding_explanation_one_heading" xml:space="preserve">
+		<value>Digitalt innkjøp</value>
+	</data>
+	<data name="onboarding_explanation_one_text" xml:space="preserve">
+		<value>Heldigital prosess fra innkjøp til levering hos deg.</value>
+	</data>
+	<data name="onboarding_explanation_two_heading" xml:space="preserve">
+		<value>Digital drift</value>
+	</data>
+	<data name="onboarding_explanation_two_text" xml:space="preserve">
+		<value>Heldigital innhenting av målerdata og løpende forbruk av kWh.</value>
+	</data>
+	<data name="onboarding_explanation_three_heading" xml:space="preserve">
+		<value>Digital fakturering</value>
+	</data>
+	<data name="onboarding_explanation_three_text" xml:space="preserve">
+		<value>Heldigital innhenting av spotpriser fra Nord Pool sikrer riktig strømregning.</value>
+	</data>
+	<data name="onboarding_explanation_four_heading" xml:space="preserve">
+		<value>Digital strømfaktura</value>
+	</data>
+	<data name="onboarding_explanation_four_text" xml:space="preserve">
+		<value>Heldigital produksjon, kontroll og utsendelse via eFaktura/Vipps og e-post.</value>
+	</data>
+	<data name="payment_check" xml:space="preserve">
+		<value>Se over din betalingsmetode</value>
+	</data>
+	<data name="payment_efaktura_heading" xml:space="preserve">
+		<value>Din betalingsmåte er eFaktura</value>
+	</data>
+	<data name="payment_efaktura_text" xml:space="preserve">
+		<value>Du får strømregning en gang i måneden fra oss direkte inn i din mobil- og/eller nettbank. Du trenger ikke å gjøre noe mer, fordi du allerede har inngått avtale om eFaktura (ja takk til alle). Hvis du også ønsker AvtaleGiro, kan du gjøre dette i din nettbank.  </value>
+	</data>
+	<data name="more_information" xml:space="preserve">
+		<value>Mer informasjon</value>
+	</data>
+	<data name="price_now" xml:space="preserve">
+		<value>Pris nå</value>
+	</data>
+	<data name="payment_do_not_have_efaktura_heading" xml:space="preserve">
+		<value>eFaktura</value>
+	</data>
+	<data name="payment_do_not_have_efaktura_text" xml:space="preserve">
+		<value>Inngå avtale om eFaktura i nettbanken din (Ja takk til alle) for å automatisk få eFaktura som betalingsmetode i appen. Du kan da også velge å betale din faktura i Vipps. Du får strømregning 1 gang i måneden fra oss. </value>
+	</data>
+	<data name="shop_homescreen" xml:space="preserve">
+		<value>elKompis shop</value>
+	</data>
+	<data name="fixed_price_homescreen" xml:space="preserve">
+		<value>Bestill fastpris</value>
+	</data>
+	<data name="agreement_homescreen" xml:space="preserve">
+		<value>Avtalen 
+din</value>
+	</data>
+	<data name="fixed_price_confirmation_heading" xml:space="preserve">
+		<value>Den satt i sikringsboksen!</value>
+	</data>
+	<data name="fixed_price_confirmation_text" xml:space="preserve">
+		<value>Du har nå bestilt fastpris.  \&quot;Prisen nå \&quot; som du ser på hjemskjermen, vil fortsatt være spotpris, selv om du har en fastpris. </value>
+	</data>
+	<data name="fixed_price_heading" xml:space="preserve">
+		<value>Bestill fastpris i {0} måneder</value>
+	</data>
+	<data name="fixed_price_text" xml:space="preserve">
+		<value>Med fast strømavtale får du forutsigbarhet og trygghet for prisen din. Prisen kan med andre ord verken gå opp eller ned i perioden. Du betaler for forbruket ditt til en fastsatt pris per kWt. Nettleien kommer i tillegg.</value>
+	</data>
+	<data name="fixed_price_bulletspoints_one" xml:space="preserve">
+		<value>Strømpris {0} øre/kWh</value>
+	</data>
+	<data name="fixed_price_bulletspoints_two" xml:space="preserve">
+		<value>Månedlig fastbeløp: {0} kr/mnd</value>
+	</data>
+	<data name="fixed_price_bulletspoints_three" xml:space="preserve">
+		<value>{0} måneder binding</value>
+	</data>
+	<data name="fixed_price_bulletspoints_four" xml:space="preserve">
+		<value>Lik pris i hele perioden</value>
+	</data>
+	<data name="fixed_price_bulletspoints_five" xml:space="preserve">
+		<value>Du unngår prissvingninger</value>
+	</data>
+	<data name="fixed_price_confirmation_terms" xml:space="preserve">
+		<value>Jeg bekrefter å ha lest vilkårene og betingelsene</value>
+	</data>
+	<data name="fixed_price_order" xml:space="preserve">
+		<value>Bestill</value>
+	</data>
+	<data name="fixed_price_offer_heading" xml:space="preserve">
+		<value>Vil du ha fastpris?</value>
+	</data>
+	<data name="fixed_price_offer_text" xml:space="preserve">
+		<value>Unngå unødige svingninger med fastpris på strømmen. Du betaler en fastsatt pris pr kWh for perioden du velger.</value>
+	</data>
+	<data name="fixed_price_offer_one_period" xml:space="preserve">
+		<value>{0} måneder: {1}</value>
+	</data>
+	<data name="fixed_price_offer_two_period" xml:space="preserve">
+		<value>{0} måneder: {1}</value>
+	</data>
+	<data name="fixed_price_offer_two_price_area_one" xml:space="preserve">
+		<value>øre/kWh</value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_one" xml:space="preserve">
+		<value>øre/kWh</value>
+	</data>
+	<data name="fixed_price_read_more" xml:space="preserve">
+		<value>Les mer og bestill</value>
+	</data>
+	<data name="fixed_price_top" xml:space="preserve">
+		<value>FASTPRIS</value>
+	</data>
+	<data name="payment_top" xml:space="preserve">
+		<value>DIN BETALINGSMETODE</value>
+	</data>
+	<data name="payment_method_card_heading" xml:space="preserve">
+		<value>Din betalingsmetode er betalingskort</value>
+	</data>
+	<data name="payment_method_card_text" xml:space="preserve">
+		<value>Du får strømregning en gang i måneden fra oss</value>
+	</data>
+	<data name="payment_method_choose_other" xml:space="preserve">
+		<value>Velg annen betalingsmåte</value>
+	</data>
+	<data name="fixed_price_to_come_heading" xml:space="preserve">
+		<value>Du kan snart bestille fastpris i appen!</value>
+	</data>
+	<data name="fixed_price_to_come_text" xml:space="preserve">
+		<value>Med en god fastprisavtale har du kontroll på strømutgiftene dine.</value>
+	</data>
+	<data name="homepage_price_now_ore" xml:space="preserve">
+		<value>øre</value>
+	</data>
+	<data name="agreement_top" xml:space="preserve">
+		<value>AVTALEN DIN</value>
+	</data>
+	<data name="agreement_heading" xml:space="preserve">
+		<value>Din billige strømavtale</value>
+	</data>
+	<data name="agreement_text" xml:space="preserve">
+		<value>Du har en smart, billig og fornøy strøm hos elKompis. I tillegg til selve strømmen, betaler du kun 1 øre/kWh inkludert mva, og 34 kr pr måned. </value>
+	</data>
+	<data name="agreement_text_bullets_three" xml:space="preserve">
+		<value>100 % fornybar strøm -opprinnelsesgaranti for hele forbruket ditt</value>
+	</data>
+	<data name="agreement_text_bullets_two" xml:space="preserve">
+		<value>Innsikt og rådgiving</value>
+	</data>
+	<data name="agreement_text_bullets_four" xml:space="preserve">
+		<value>Smart elbillading</value>
+	</data>
+	<data name="agreement_text_bullets_one" xml:space="preserve">
+		<value>Billig strøm</value>
+	</data>
+	<data name="agreement_sales_pitch_five" xml:space="preserve">
+		<value>34,- per måned</value>
+	</data>
+	<data name="homescreen_info_delivery" xml:space="preserve">
+		<value>Velkommen til elKompis! Det tar {0} dager før vi kan aktivere avtalen din.</value>
+	</data>
+	<data name="onboarding_start_delivery_heading" xml:space="preserve">
+		<value>Vil du at strømavtalen skal starte så fort som mulig?</value>
+	</data>
+	<data name="onboarding_start_delivery_text" xml:space="preserve">
+		<value>Velger du «Oppstart snarest mulig», overstyrer du angrefristen på 14 dager. Hvis du likevel vil benytte deg av angreretten, vil den ikke gjelde for strøm du allerede har brukt.</value>
+	</data>
+	<data name="onboarding_start_delivery_soon" xml:space="preserve">
+		<value>Oppstart snarest mulig</value>
+	</data>
+	<data name="onboarding_start_delivery_ahead" xml:space="preserve">
+		<value>Oppstart om 14 dager</value>
+	</data>
+	<data name="onboarding_start_delivery_confirmation" xml:space="preserve">
+		<value>Jeg bekrefter snarlig oppstart</value>
+	</data>
+	<data name="onboarding_start_delivery_complete" xml:space="preserve">
+		<value>Fullfør</value>
+	</data>
+	<data name="homescreen_info_delivery_link" xml:space="preserve">
+		<value>Ønsker du å få strøm fra elKompis før?</value>
+	</data>
+	<data name="greenconcept_infobox_body_savings_in_trees" xml:space="preserve">
+		<value>Miljøeffekten av 100 % fornybar energi kan sammenlignes med det grantrærne gjør for miljøet. På samme måte som du sparer karbon ved å kjøpe fornybar energi, sparer grantrærne miljøet ved å binde karbon. Derfor måler vi miljøbesparelsen din i antall grantrær.</value>
+	</data>
+	<data name="greenconcept_infobox_header_savings_in_trees" xml:space="preserve">
+		<value>Din CO2 besparelse målt i trær</value>
+	</data>
+	<data name="agreement_sales_pitch_six" xml:space="preserve">
+		<value>1 øre/kWh</value>
+	</data>
+	<data name="consumption_advice_see_all" xml:space="preserve">
+		<value>Se alle</value>
+	</data>
+	<data name="consumption_advice_see_few" xml:space="preserve">
+		<value>Se færre</value>
+	</data>
+	<data name="consumption_advice_tip_one" xml:space="preserve">
+		<value>Planlegg forbruket etter når strømmen er billigst.</value>
+	</data>
+	<data name="consumption_advice_tip_two" xml:space="preserve">
+		<value>Lad elbilen om natten.</value>
+	</data>
+	<data name="consumption_advice_tip_three" xml:space="preserve">
+		<value>Bruk termostater til å regulere romtemperaturen.</value>
+	</data>
+	<data name="consumption_advice_tip_four" xml:space="preserve">
+		<value>Senk temperaturen inne med én grad.</value>
+	</data>
+	<data name="consumption_advice_tip_five" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_six" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_seven" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_eight" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_nine" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_ten" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_advice_tip_eleven" xml:space="preserve">
+		<value>Fyll opp vaskemaskinen og tørketrommelen helt.</value>
+	</data>
+	<data name="consumption_advice_tip_twelve" xml:space="preserve">
+		<value>Skru av lys i rom du ikke er i.</value>
+	</data>
+	<data name="consumption_advice_tip_thirteen" xml:space="preserve">
+		<value>Skru av varmen i rom du ikke bruker.</value>
+	</data>
+	<data name="consumption_advice_tip_fourteen" xml:space="preserve">
+		<value>Lukk dører så varmen ikke slipper ut.</value>
+	</data>
+	<data name="consumption_advice_tip_fifteen" xml:space="preserve">
+		<value>Skru ned varmen på varmekablene.</value>
+	</data>
+	<data name="consumption_advice_tip_sixteen" xml:space="preserve">
+		<value>Bytt til LED-pærer eller sparepærer </value>
+	</data>
+	<data name="consumption_advice_tip_seventeen" xml:space="preserve">
+		<value>Vurder om du kan bruke andre oppvarmingskilder enn strøm, for eksempel ved </value>
+	</data>
+	<data name="consumption_advice_tip_eighteen" xml:space="preserve">
+		<value>Trekk for gardinene om kvelden </value>
+	</data>
+	<data name="consumption_advice_tip_nineteen" xml:space="preserve">
+		<value>Vask klær på lavere temperatur </value>
+	</data>
+	<data name="consumption_advice_tip_twenty" xml:space="preserve">
+		<value>Pass på temperaturen i fryser og kjøleskap </value>
+	</data>
+	<data name="consumption_tip_heading" xml:space="preserve">
+		<value>ENKLE TIPS FOR Å REDUSERE FORBRUKET DITT</value>
+	</data>
+	<data name="consumption_changes" xml:space="preserve">
+		<value>Forbruket ditt {0} {1} %% siden forrige uke.</value>
+	</data>
+	<data name="comparison_less_effective_home" xml:space="preserve">
+		<value>20 % minst effektive hjem</value>
+	</data>
+	<data name="consumption_most_effective_homes" xml:space="preserve">
+		<value>20 % mest effektive hjem</value>
+	</data>
+	<data name="green_concept_energy_mix_heading" xml:space="preserve">
+		<value>Vi anbefaler 100 % fornybar strøm</value>
+	</data>
+	<data name="green_concept_energy_mix_text" xml:space="preserve">
+		<value>Kunder som ikke har opprinnelsesgarantier har kun 11 % fornybar strøm ifølge NVE. 
+
+Den øverste figuren viser de ulike produksjonskildene i det felles nordiske strømmarkedet, som består av kjernekraft, kull og gass, og fornybar strøm - i praksis vann- og vindproduksjon.
+
+Hvis du ikke har opprinnelsesgaranti på strømforbruket ditt, er produksjonskilden til strømmen din fra 30 % kjernekraft og 57 % kullkraft og gass. Kun 11 % kommer fra vann og vind.
+
+Den nederste figuren viser opprinnelsen for kunder som har 100 % fornybar strøm. I elKompis kan du enkelt kjøpe inn opprinnelsesgaranti for hele strømforbruket ditt. Slik sikrer du ett bedre karbonavtrykk og sparer miljøet. </value>
+	</data>
+	<data name="price_concept_heading" xml:space="preserve">
+		<value>PRISBESPARELSE</value>
+	</data>
+	<data name="greenconcept_main_heading" xml:space="preserve">
+		<value>MILJØBESPARELSE</value>
+	</data>
+	<data name="close_button" xml:space="preserve">
+		<value>Lukk</value>
+	</data>
+	<data name="fixed_price_confirmation_terms_two" xml:space="preserve">
+		<value>Vilkår og betingelser</value>
+	</data>
+	<data name="intercom_elkompis_admin_expedited_import_request_body" xml:space="preserve">
+		<value>Kunde {0} {0} (tlf. {0}) ønsker at vi skal endre oppstart på måler {0} til raskest mulige dato.</value>
+	</data>
+	<data name="adress_unhappypath" xml:space="preserve">
+		<value>Fyll inn adressen som du ønsker strømmen levert til</value>
+	</data>
+	<data name="onboarding_elwin_failure" xml:space="preserve">
+		<value>Skriv inn navn og fødselsnummer, så finner vi deg og boligen din</value>
+	</data>
+	<data name="demo" xml:space="preserve">
+		<value>Demo</value>
+	</data>
+	<data name="ev_charge_possible" xml:space="preserve">
+		<value>Her kan du smartlade elbil</value>
+	</data>
+	<data name="increased" xml:space="preserve">
+		<value>har økt</value>
+	</data>
+	<data name="reduced" xml:space="preserve">
+		<value>er redusert</value>
+	</data>
+	<data name="fixed_price_monthfee" xml:space="preserve">
+		<value>34,-</value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_two" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_three" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_one_price_area_four" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_two_period_area_two" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_two_period_area_three" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="fixed_price_offer_two_period_area_four" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="consumption_demo" xml:space="preserve">
+		<value>Demovisning</value>
+	</data>
+	<data name="consumption_demo_top_text" xml:space="preserve">
+		<value>Vi har ennå ikke nok informasjon til å analysere fordelingen av strømforbruket ditt. Din fordeling kommer snart!</value>
+	</data>
+	<data name="comparison__demo_text" xml:space="preserve">
+		<value>Denne måneden er strømforbruket ditt 25 % mer effektivt enn tilsvarende hjem</value>
+	</data>
+	<data name="comparison_demo_top_text" xml:space="preserve">
+		<value>Vi har ikke nok informasjon til å se hvor effektivt du bruker strøm, sammenlignet med hjem som ligner på ditt. Denne analysen får du snart.</value>
+	</data>
+	<data name="consumption_demo_explanation" xml:space="preserve">
+		<value>Mesteparten av strømmen du bruker går til oppvarming. Du har brukt 750 kroner på oppvarming denne måneden. </value>
+	</data>
+	<data name="onboarding_unhappy_path_meter_not_found_heading" xml:space="preserve">
+		<value>Bekreft avtalen din, så får du strøm fra oss</value>
+	</data>
+	<data name="start_delivery_header" xml:space="preserve">
+		<value>OPPSTART</value>
+	</data>
+	<data name="intercom_elkompis_admin_manual_onboarding_body" xml:space="preserve">
+		<value>Manuell registrering nødvendig:
+{0} {0}
+{0} {0}
+{0} {0}
+{0}
+
+{0}
+{0}</value>
+	</data>
+	<data name="fixed_price_already_ordered_heading" xml:space="preserve">
+		<value>Du har allerede bestilt fastpris i {0} måneder</value>
+	</data>
+	<data name="fixed_price_already_ordered_text" xml:space="preserve">
+		<value>Vi har registrert din fastpris, og du vil få en bekreftelse på dette på mail førstkommende virkedag. Under &quot;Avtalen din&quot; i appen vises fortsatt din ordinære spotprisavtale, selv om du har bestilt fastpris for en periode. </value>
+	</data>
+	<data name="fixed_price_offer_price" xml:space="preserve">
+		<value>{0} øre/kWh</value>
+	</data>
+	<data name="fixed_price_offer_period" xml:space="preserve">
+		<value>{0} måneder: {1}</value>
+	</data>
+	<data name="fixed_price_already_ordered_error" xml:space="preserve">
+		<value>Du har allerede bestilt fastpris</value>
+	</data>
+	<data name="referral_mainpage_customer_not_ready_text" xml:space="preserve">
+		<value>Så fort strømmåleren din er aktiv, kan du begynne å verve nye elKompiser.</value>
+	</data>
+	<data name="referral_mainpage_earn_cta_get_started_not_ready" xml:space="preserve">
+		<value>Tjen gratis strøm</value>
+	</data>
+	<data name="consumption_advice_tip_one_heading" xml:space="preserve">
+		<value>Planlegg strømbruken ut fra når strømprisen er lavest</value>
+	</data>
+	<data name="consumption_advice_tip_one_body" xml:space="preserve">
+		<value>Bruk appen og planlegg strømbruken ut fra når strømprisen er lavest. Du kan spare masse på å redusere strømforbruket i de dyreste timene. Det anbefales ikke å bruke brannfarlige produkter om natten.</value>
+	</data>
+	<data name="consumption_advice_tip_two_heading" xml:space="preserve">
+		<value>Senk innetemperaturen med én grad.</value>
+	</data>
+	<data name="consumption_advice_tip_two_body" xml:space="preserve">
+		<value>I en gjennomsnittlig bolig i Norge går mellom 60-80 prosent av strømforbruket til oppvarming. Ved å senke innetemperaturen med én grad kan du redusere strømforbruket med hele fem prosent. Generelt anbefales en innetemperatur på 18-21°C.</value>
+	</data>
+	<data name="consumption_advice_tip_three_heading" xml:space="preserve">
+		<value>Lad elbilen om natten.</value>
+	</data>
+	<data name="consumption_advice_tip_three_body" xml:space="preserve">
+		<value>Strømprisen er ofte lavere om natten. Dersom du har en trygg og smart hjemmelader, bør du vurdere å lade elbilen om natten. Husk at du med smartlading fra elKompis kan lade bilen automatisk i de timene i døgnet når strømmen er billigst.</value>
+	</data>
+	<data name="consumption_advice_tip_four_heading" xml:space="preserve">
+		<value>Skru av elektriske apparater.</value>
+	</data>
+	<data name="consumption_advice_tip_four_body" xml:space="preserve">
+		<value>Dersom du ikke bruker PC-en eller TV-en burde du skru de helt av, og ikke la dem stå i standby-modus. Mange elektriske apparater bruker nemlig like mye strøm når de står i standby som når de er i bruk. Gjør det derfor til en vane å skru av elektriske apparater når du ikke bruker dem.</value>
+	</data>
+	<data name="consumption_advice_tip_five_heading" xml:space="preserve">
+		<value>Ta korte dusjer.</value>
+	</data>
+	<data name="consumption_advice_tip_five_body" xml:space="preserve">
+		<value>Etter oppvarming bruker vi mest strøm til varmt vann. Omtrent 20 prosent av strømforbruket ditt går til oppvarming av vann. I perioder hvor strømprisen er høy, kan det være smart å ta kortere dusjer.</value>
+	</data>
+	<data name="priceconcept_comparison_saving" xml:space="preserve">
+		<value>Du sparer</value>
+	</data>
+	<data name="fixed_price_duration" xml:space="preserve">
+		<value>{0} måneder</value>
+	</data>
+	<data name="referral_notification" xml:space="preserve">
+		<value>Din elKompis har nå bekreftet avtalen sin. Vervingen er i boks!</value>
+	</data>
+	<data name="onboarding_telephonenumber_change" xml:space="preserve">
+		<value>Endre telefonnummer</value>
+	</data>
+	<data name="legend_elkompis" xml:space="preserve">
+		<value>100% fornybar strøm fra elKompis</value>
+	</data>
+	<data name="onboarding_mobile_resend_body" xml:space="preserve">
+		<value>Meldingen kommer fra {0} og ble sendt til telefonnummeret du oppga {1}.</value>
+	</data>
+	<data name="notification_referral_heading" xml:space="preserve">
+		<value>Du har fått en ny elKompis :)</value>
+	</data>
+	<data name="consumption_demo_heading" xml:space="preserve">
+		<value>Oversikt over ditt forbruk kommer snart</value>
+	</data>
+	<data name="onboarding_mobil_resend_body" xml:space="preserve">
+		<value></value>
+	</data>
+	<data name="onboarding_mobile_resend_heading" xml:space="preserve">
+		<value>Fikk du ikke kode?</value>
+	</data>
+</root>
